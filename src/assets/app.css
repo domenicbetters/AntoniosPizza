@@ -8,11 +8,53 @@ body {
 h1 {
     color: hotpink;
 }
-.navbar-expand-lg .navbar-collapse {
-    display: flex !important;
+.navbar-collapse {
     flex-basis: auto;
-    justify-content: space-between;
+    justify-content: center;
 }
-.btn {
-    color: var(--ap-orange-color);
+
+.navbar-expand-lg {
+    justify-content: center;
+
+}
+.navbar-dark {
+    background: rgba(118, 118, 118, 0.304) !important;
+}
+
+.navbar {
+    position: absolute;
+    width: 100vw;
+    top: 10px;
+}
+
+@media (max-width: 992px) {
+    .collapse {
+        display: flex;
+        justify-content: right;
+     }
+     .navbar-expand-lg {
+        justify-content: right !important ;
+    }
+    .navbar-collapse {
+        justify-content: right ;
+    }
+    .container-fluid {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: right !important;
+        width: 100%;
+    }
+    .navbar {
+        position: relative;
+        top: -40px;
+        width:fit-content;
+        border-radius: 15px 0  0 15px ;
+    }  
+    .header-menu {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+    
+
 }
