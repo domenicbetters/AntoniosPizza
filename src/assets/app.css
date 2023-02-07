@@ -1,0 +1,18 @@
+:root {
+    --ap-orange-color: orange;
+}
+
+body { 
+    background-color: black;
+}
+h1 {
+    color: hotpink;
+}
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+.btn {
+    color: var(--ap-orange-color);
+}
