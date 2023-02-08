@@ -27,6 +27,10 @@ h1 {
     top: 10px;
 }
 
+.dropdown-menu {
+    
+}
+
 @media (max-width: 992px) {
     .collapse {
         display: flex;

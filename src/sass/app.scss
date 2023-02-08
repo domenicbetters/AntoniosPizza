@@ -1,7 +1,15 @@
 
 //custom variable
+//navbar
+$navbar-dark-hover-color:#FFFAA1;
+//drop down
+$dropdown-bg: rgb(118, 118, 118);
+$dropdown-link-color: white;
+$dropdown-divider-bg: rgb(61, 61, 61);
+$dropdown-border-radius: 15px;
 
-$navbar-dark-hover-color:          hotpink;
+
+
 // import bootstrap
 
 @import '~bootstrap/scss/bootstrap.scss';

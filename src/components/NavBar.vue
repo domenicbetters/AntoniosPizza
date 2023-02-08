@@ -12,11 +12,14 @@
         <li class="nav-item">
           <a @click="dothat()" class="nav-link active" aria-current="page" href="#" >Location and Hours</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item">
+          <a @click="dothat()" class="nav-link active" aria-current="page" href="#" >Order Online</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
             Menus
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" >
             <li><a class="dropdown-item" href="#">Full Menu</a></li>
             <li><a class="dropdown-item" href="#">Vegan Menu</a></li>
           </ul>
