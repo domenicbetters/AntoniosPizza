@@ -36,6 +36,14 @@ export default {
 
 
 <style>
+
+@font-face {
+    font-family: 'juice';
+    src: local('juice'),
+    url(./fonts/juice.ttf);
+}
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

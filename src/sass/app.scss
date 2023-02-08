@@ -1,12 +1,17 @@
 
 //custom variable
 //navbar
-$navbar-dark-hover-color:#FFFAA1;
+$navbar-dark-hover-color:#FFFAA1 !important;
+$navbar-dark-active-color: #a9a4a3;
+$navbar-dark-brand-hover-color:#FFFAA1;
+$navbar-dark-color: white;
 //drop down
-$dropdown-bg: rgb(118, 118, 118);
+$dropdown-bg: rgb(67, 67, 67);
 $dropdown-link-color: white;
 $dropdown-divider-bg: rgb(61, 61, 61);
 $dropdown-border-radius: 15px;
+$dropdown-link-hover-bg: rgba(0, 0, 0, 0);
+$dropdown-link-hover-color: #FFFAA1;
 
 
 

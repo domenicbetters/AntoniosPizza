@@ -6,6 +6,7 @@ import App from './App.vue'
 import "../css/app.min.css"
 import "../src/assets/app.css"
 
+
 Vue.config.productionTip = false
 
 new Vue({
