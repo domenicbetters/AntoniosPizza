@@ -5,9 +5,7 @@
 body { 
     background-color: black;
 }
-h1 {
-    color: hotpink;
-}
+
 .navbar-collapse {
     flex-basis: auto;
     justify-content: center;
@@ -25,7 +23,7 @@ h1 {
     position: relative;
     width: 100vw;
     top: -50px;
-    border-bottom: 3px double white;
+    border-bottom: 8px double white;
     border-radius: 10px;
 }
 
@@ -41,7 +39,35 @@ h1 {
     font-family: 'juice', sans-serif;
     font-size: 2em;
 }
+ .image-fluid{
+    display: none  !important;
+}
 
+.location-body {
+    display: flex;
+    width: 95%;
+    border: 1px solid white;
+    background-image: url("./images/shopfront.jpg");
+
+}
+
+.hours-location-box {
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 15px;
+    border: 2px solid #FFFAA1;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.479);
+    padding: 10px;
+}
+
+.map-box {
+    margin: 15px;
+    border: 5px solid #FFFAA1;
+
+
+}
 
 @media (max-width: 992px) {
     
@@ -63,7 +89,7 @@ h1 {
     }
 
     #header-logo {
-        width: 95%;
+        width: 65%;
     }
 }
 

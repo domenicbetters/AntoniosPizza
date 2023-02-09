@@ -1,33 +1,42 @@
-<template> <div id="app">
-    <div class ="header-menu"><NavBar @do-the-thing="dothething"/></div>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld v-show="helloexists === 'yes'" msg="Welcome to Your Vue.js App"/>
-    <div v-show="hellopyexists === 'yes'"><HellOpy/></div>
-  </div>
+<template> 
+<div id="app">
+    <div class ="header-menu"><NavBar 
+      @show-home="ShowHome"
+      @show-location="ShowLocation"/></div>
+    <div v-show="HomeExists === 'yes'" class = "car-holder"><MainPage/></div>
+    <div  class="location" v-show="LocationExists === 'yes'"><LocationPage/></div>
+    <div><FooterBar/></div>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue'
-import HellOpy from './components/HellOpy.vue'
+import LocationPage from './components/LocationPage.vue'
+import MainPage from './components/MainPage.vue'
+import FooterBar from './components/FooterBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     NavBar,
-    HellOpy
+    LocationPage,
+    MainPage,
+    FooterBar,
   },
   data(){
     return {
-      hellopyexists: 'no',
-      helloexists: 'yes',
+      HomeExists: 'yes',
+      LocationExists: 'no',
     }
   },
   methods: {
-     dothething() {
-      this.hellopyexists =  'yes',
-      this.helloexists = 'no'
+     ShowHome() {
+      this.HomeExists =  'yes',
+      this.LocationExists = 'no'
+     },
+     ShowLocation() {
+      this.HomeExists =  'no',
+      this.LocationExists = 'yes'
      }
   }
  
@@ -42,6 +51,14 @@ export default {
     src: local('juice'),
     url(./fonts/juice.ttf);
 }
+.car-holder {
+  margin:10px;
+}
+@media (max-width: 991.5px) {
+  .header-menu {
+    font-size: .75em;
+  }
+}
 
 
 #app {
@@ -49,7 +66,13 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #1684f3;
+  color: white;
   margin-top: 60px;
+  display:flex;
+  flex-direction: column;
+}
+.location {
+  display: flex;
+  justify-content: center;
 }
 </style>
