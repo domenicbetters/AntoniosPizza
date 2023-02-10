@@ -66,9 +66,11 @@ export default {
   }
   }
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
