@@ -64,8 +64,9 @@
   align-items: center;
 }
 .car-box {
-  width:95%;
-  border: 4px solid white;
+  max-width: 95%;
+  min-width: 75%;
+  box-shadow: 0 0 5px 5px #FFFAA1;
 }
 </style>
 
