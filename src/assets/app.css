@@ -45,31 +45,97 @@ body {
 
 .location-body {
     display: flex;
-    width: 95%;
-    border: 1px solid white;
-    background-image: url("./images/shopfront.jpg");
+    max-width: 95%;
+    min-width: 75%;
+    box-shadow: 0 0 5px 5px #FFFAA1;
+    background-image: url(./images/shopfrontt3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+.location-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width:50%;
+}
+
+.location-left {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: end;
+    width:50%;
+    height: 100%;
+
+}
+
+.shop-image {
+    display: flex;
+    object-fit:contain;
+    width:100%;
+    object-position: center;
+}
+
+.location-left-mobile {
+    display: none;
 }
 
 .hours-location-box {
     display:flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: first baseline;
     margin: 15px;
     border: 2px solid #FFFAA1;
     height: fit-content;
     background: rgba(0, 0, 0, 0.479);
     padding: 10px;
+    width: fit-content;
 }
 
 .map-box {
     margin: 15px;
     border: 5px solid #FFFAA1;
-
-
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.5px) {
+
+    .mobile-no {
+        display: none;
+    }
+    .location-body {
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+    .location-left {
+        display: none;
+    }
+    .location-right {
+        width:100%;
+        flex-direction: row;
+    }
+
+    .location-left-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: baseline;
+        border: 2px solid #FFFAA1;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .mobile-shop-image {
+        display: flex;
+        width: 95%;
+        object-fit: contain;
+    }
+
+    .no-border {
+        border:none;
+    }
     
     .container-fluid {
         display: flex !important;
@@ -91,10 +157,20 @@ body {
     #header-logo {
         width: 65%;
     }
+    .nav-address {
+        display: none;
+      }
 }
 
 @media (max-width: 1685.5px) and (min-width: 991.5px) {
     .container-fluid  {
        flex-direction: column;
     }
+    .nav-address {
+        display: none;
+      }
+      #header-logo {
+        width: 65%;
+    }
+     
 }

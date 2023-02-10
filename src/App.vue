@@ -60,6 +60,12 @@ export default {
   }
 }
 
+@media (max-width: 1685.5px) and (min-width: 991.5px) {
+  .header-menu {
+    font-size: .75em;
+  }
+  }
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

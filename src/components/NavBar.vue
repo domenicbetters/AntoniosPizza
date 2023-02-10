@@ -36,7 +36,7 @@
           </li>
         </ul> 
       </div>
-      <a class="nav-link" aria-current="page" href="#">758 Brookline Blvd. | 412-388-1000 <br>Mon-Thurs 11 - 10 | Sat 11-11 | Sun 12-10</a>
+      <a class="nav-link nav-address" aria-current="page" href="#">758 Brookline Blvd. | 412-388-1000 <br>Mon-Thurs 11 - 10 | Sat 11-11 | Sun 12-10</a>
     </div>
   </nav>
 </template>

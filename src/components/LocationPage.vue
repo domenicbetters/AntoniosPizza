@@ -1,22 +1,32 @@
 <template>
  <div class ="location-body">
+  <div class = "location-left">
+  </div>
+  <div class ="location-right">
     <div class = "hours-location-box">
       <h2>Shop Hours</h2>
       <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
       <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
       <p>Sunday: 12:00 PM - 10:00 PM</p>
+      <CTAButton text="Place Your Order Now" :link="'https://antoniospizzeria.hungerrush.com/'"/>
     </div>
     <div class = "hours-location-box">
       <h2>Our Address</h2>
       <p>758 Brookline Blvd.</p>
       <p>Pittsburgh, PA 15226</p>
+      <p>Home of the Cheesey Breadsticks!</p>
+      <CTAButton text="Get Directions" :link="'https://goo.gl/maps/NSE8EaTPEAsYvR4y5'"/>
     </div>
-    <div class="hours-location-box"><h2>We deliver anywhere with in a 2 mile radius of our location.</h2>
-    <CTAButton text="See if you are in range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
+    <div class="hours-location-box mobile-no"><h4>We deliver anywhere with in a 2 mile radius of our location.</h4>
+      <CTAButton text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
     </div>
-    <div class = "map-box">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.7328574412745!2d-80.02136098860775!3d40.39261298700861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f73a84dbfabf%3A0x268afdbb5f2f1950!2sAntonio&#39;s%20Pizzeria!5e0!3m2!1sen!2sus!4v1675967980869!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class = "location-left-mobile">
+    <div><img class = "mobile-shop-image" src = "../assets/images/shopfront.jpg" /></div>
+    <div class="hours-location-box no-border"><h4>We deliver anywhere with in a 2 mile radius of our location.</h4>
+      <CTAButton text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
     </div>
+  </div>
 </div>
 </template>
 
