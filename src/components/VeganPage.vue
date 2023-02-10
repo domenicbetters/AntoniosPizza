@@ -1,12 +1,15 @@
 <template>
+  <div>
  <h1>vegan shit</h1>
+ <CTAButton/>
+</div>
 </template>
 
 <script>
 import CTAButton from './CTAbutton.vue'
 
 export default {
-  name: 'Vegan',
+  name: 'VeganPage',
   components: {
     CTAButton,
   },

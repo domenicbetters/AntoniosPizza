@@ -26,7 +26,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Vegan Love</a>
+            <a class="nav-link " @click="ShowVegan()" v-bind:class="{active: VeganisActive}" aria-current="page" href="#">Vegan Love</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " aria-current="page" href="#">About Us</a>
@@ -46,7 +46,8 @@ export default {
   data(){
     return {
       HomeisActive: true,
-      LocationisActive: false
+      LocationisActive: false,
+      VeganisActive: false
     }
   },
  
@@ -55,11 +56,19 @@ export default {
       this.$emit('show-home')
       this.HomeisActive = true
       this.LocationisActive = false
+      this.VeganisActive = false
   },
     ShowLocation() {
       this.$emit('show-location')
       this.HomeisActive = false
       this.LocationisActive = true
+      this.VeganisActive = false
+    },
+    ShowVegan() {
+      this.$emit('show-vegan')
+      this.HomeisActive = false
+      this.LocationisActive = false
+      this.VeganisActive = true
     }
      }
   }
