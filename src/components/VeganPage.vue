@@ -1,7 +1,17 @@
 <template>
-  <div>
- <h1>vegan shit</h1>
- <CTAButton/>
+  <div class = "vegan-body">
+    <div class = "vegan-box">
+      <h1>vegan shit</h1>
+     <CTAButton/>
+    </div>
+    <div class = "vegan-box">
+      <h1>vegan shit</h1>
+     <CTAButton/>
+    </div>
+    <div class = "vegan-box">
+      <h1>vegan shit</h1>
+     <CTAButton/>
+    </div>
 </div>
 </template>
 

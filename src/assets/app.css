@@ -99,6 +99,18 @@ body {
     border: 5px solid #FFFAA1;
 }
 
+.vegan-body {
+    display: flex;
+    justify-content: space-around;
+    max-width: 95%;
+    min-width: 75%;
+    box-shadow: 0 0 5px 5px #FFFAA1;
+}
+.vegan-box {
+    width: 30%;
+    border: 5px solid #FFFAA1;
+}
+
 @media (max-width: 991.5px) {
 
     .mobile-no {

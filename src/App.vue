@@ -95,4 +95,8 @@ export default {
   display: flex;
   justify-content: center;
 }
+.vegan {
+  display: flex;
+  justify-content: center;
+}
 </style>
