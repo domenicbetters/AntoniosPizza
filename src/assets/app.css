@@ -101,14 +101,50 @@ body {
 
 .vegan-body {
     display: flex;
-    justify-content: space-around;
-    max-width: 95%;
-    min-width: 75%;
+    flex-direction: column;
+    max-width: 75%;
+    margin:10px;
     box-shadow: 0 0 5px 5px #FFFAA1;
 }
 .vegan-box {
     width: 30%;
-    border: 5px solid #FFFAA1;
+    padding: 10px;
+    margin:15px;
+    border: 2px solid #FFFAA1;
+}
+
+.card-image {
+    object-fit: cover;
+    width:98%;
+}
+.vegan-intro-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:10px;
+    padding: 15px;
+}
+.vegan-intro-image {
+    width: 50%;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+.about-roster-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:10px;
+    padding: 15px;
+}
+@media (min-width: 991.5px) {
+    .vegan-intro-image-mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 991.5px) {
@@ -172,6 +208,24 @@ body {
     .nav-address {
         display: none;
       }
+    .vegan-body {
+        min-width: 95%;
+    }
+    .vegan-intro-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .vegan-box {
+        width:95%;
+    }
+    .vegan-intro-image {
+        display: none;
+    }
+    .vegan-intro-image-mobile {
+        width: 95%;
+        object-fit: contain;
+        margin: 10px;
+    }
 }
 
 @media (max-width: 1685.5px) and (min-width: 991.5px) {

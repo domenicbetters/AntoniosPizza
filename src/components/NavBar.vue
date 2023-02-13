@@ -29,7 +29,7 @@
             <a class="nav-link " @click="ShowVegan()" v-bind:class="{active: VeganisActive}" aria-current="page" href="#">Vegan Love</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">About Us</a>
+            <a class="nav-link " @click="ShowAbout()" v-bind:class="{active: AboutisActive}" aria-current="page" href="#">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " aria-current="page" href="#">Contact</a>
@@ -47,7 +47,8 @@ export default {
     return {
       HomeisActive: true,
       LocationisActive: false,
-      VeganisActive: false
+      VeganisActive: false,
+      AboutisActive: false,
     }
   },
  
@@ -57,19 +58,29 @@ export default {
       this.HomeisActive = true
       this.LocationisActive = false
       this.VeganisActive = false
+      this.AboutisActive = false
   },
     ShowLocation() {
       this.$emit('show-location')
       this.HomeisActive = false
       this.LocationisActive = true
       this.VeganisActive = false
+      this.AboutisActive = false
     },
     ShowVegan() {
       this.$emit('show-vegan')
       this.HomeisActive = false
       this.LocationisActive = false
       this.VeganisActive = true
-    }
+      this.AboutisActive = false
+    },
+    ShowAbout() {
+      this.$emit('show-about')
+      this.HomeisActive = false
+      this.LocationisActive = false
+      this.VeganisActive = false
+      this.AboutisActive = true
+    },
      }
   }
 </script>

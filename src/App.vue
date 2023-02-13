@@ -3,10 +3,13 @@
     <div class ="header-menu"><NavBar 
       @show-home="ShowHome"
       @show-location="ShowLocation"
-      @show-vegan="ShowVegan"/></div>
+      @show-vegan="ShowVegan"
+      @show-about="ShowAbout"
+      /></div>
     <div v-show="HomeExists === 'yes'" class = "car-holder"><MainPage/></div>
     <div  class="location" v-show="LocationExists === 'yes'"><LocationPage/></div>
     <div  class="vegan" v-show="VeganExists === 'yes'"><VeganPage/></div>
+    <div  class="about" v-show="AboutExists === 'yes'"><AboutPage/></div>
     <div><FooterBar/></div>
 </div>
 </template>
@@ -17,6 +20,7 @@ import LocationPage from './components/LocationPage.vue'
 import MainPage from './components/MainPage.vue'
 import FooterBar from './components/FooterBar.vue'
 import VeganPage from './components/VeganPage.vue'
+import AboutPage from './components/AboutPage.vue'
 
 export default {
   name: 'App',
@@ -26,12 +30,14 @@ export default {
     MainPage,
     FooterBar,
     VeganPage,
+    AboutPage,
   },
   data(){
     return {
       HomeExists: 'yes',
       LocationExists: 'no',
       VeganExists: 'no',
+      AboutExists: 'no',
     }
   },
   methods: {
@@ -39,16 +45,25 @@ export default {
       this.HomeExists =  'yes',
       this.LocationExists = 'no'
       this.VeganExists = 'no'
+      this.AboutExists = 'no'
      },
      ShowLocation() {
       this.HomeExists =  'no',
       this.LocationExists = 'yes'
       this.VeganExists = 'no'
+      this.AboutExists = 'no'
      },
      ShowVegan() {
       this.HomeExists =  'no',
       this.LocationExists = 'no'
       this.VeganExists = 'yes'
+      this.AboutExists = 'no'
+     },
+     ShowAbout() {
+      this.HomeExists =  'no',
+      this.LocationExists = 'no'
+      this.VeganExists = 'no'
+      this.AboutExists = 'yes'
      },
   }
  
@@ -96,6 +111,10 @@ export default {
   justify-content: center;
 }
 .vegan {
+  display: flex;
+  justify-content: center;
+}
+.about {
   display: flex;
   justify-content: center;
 }
