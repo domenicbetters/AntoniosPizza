@@ -32,7 +32,7 @@
             <a class="nav-link " @click="ShowAbout()" v-bind:class="{active: AboutisActive}" aria-current="page" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Contact</a>
+            <a class="nav-link " @click="ShowContact()" v-bind:class="{active: ContactisActive}" aria-current="page" href="#">Contact</a>
           </li>
         </ul> 
       </div>
@@ -49,6 +49,7 @@ export default {
       LocationisActive: false,
       VeganisActive: false,
       AboutisActive: false,
+      ContactisActive: false,
     }
   },
  
@@ -59,6 +60,7 @@ export default {
       this.LocationisActive = false
       this.VeganisActive = false
       this.AboutisActive = false
+      this.ContactisActive = false
   },
     ShowLocation() {
       this.$emit('show-location')
@@ -66,6 +68,7 @@ export default {
       this.LocationisActive = true
       this.VeganisActive = false
       this.AboutisActive = false
+      this.ContactisActive = false
     },
     ShowVegan() {
       this.$emit('show-vegan')
@@ -73,6 +76,7 @@ export default {
       this.LocationisActive = false
       this.VeganisActive = true
       this.AboutisActive = false
+      this.ContactisActive = false
     },
     ShowAbout() {
       this.$emit('show-about')
@@ -80,7 +84,17 @@ export default {
       this.LocationisActive = false
       this.VeganisActive = false
       this.AboutisActive = true
+      this.ContactisActive = false
     },
+    ShowContact() {
+      this.$emit('show-contact')
+      this.HomeisActive = false
+      this.LocationisActive = false
+      this.VeganisActive = false
+      this.AboutisActive = false
+      this.ContactisActive = true
+    },
+
      }
   }
 </script>

@@ -34,6 +34,8 @@
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 15px;
   box-shadow: 0px 10px 8px -7px #FFFAA1;
+  border-radius: 15px 0 15px 0;
+  overflow: hidden;
 }
 
 /* This container is needed to position the front and back side */
@@ -44,6 +46,7 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -68,7 +71,7 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: rgb(10, 10, 10);
   color: white;
   transform: rotateY(180deg);
 }

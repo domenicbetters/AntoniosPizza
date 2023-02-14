@@ -1,6 +1,5 @@
 <template>
-  <div class = "main-window">
-    <div class = "car-box">
+  <div class = "main-body">
       <b-carousel
         id="carousel-1"
         v-model="slide"
@@ -43,32 +42,11 @@
           </template>
         </b-carousel-slide>
 
-        <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-        <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-            a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-          </p>
-        </b-carousel-slide>
       </b-carousel>
   </div>
-</div>
 </template>
 
-<style scoped>
 
-.main-window {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.car-box {
-  max-width: 95%;
-  min-width: 75%;
-  box-shadow: 0 0 5px 5px #FFFAA1;
-}
-</style>
 
 <script>
   export default {

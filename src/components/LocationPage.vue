@@ -1,5 +1,5 @@
 <template>
- <div class ="location-body">
+ <div class ="main-body location-body">
   <div class = "location-left">
   </div>
   <div class ="location-right">

@@ -5,6 +5,14 @@
 body { 
     background-color: black;
 }
+.main-body {
+    display: flex;
+    flex-direction: column;
+    min-width: 75%;
+    max-width: 75%;
+    margin:10px;
+    box-shadow: 0 0 5px 5px #FFFAA1;
+}
 
 .navbar-collapse {
     flex-basis: auto;
@@ -45,9 +53,7 @@ body {
 
 .location-body {
     display: flex;
-    max-width: 95%;
-    min-width: 75%;
-    box-shadow: 0 0 5px 5px #FFFAA1;
+    flex-direction: row;
     background-image: url(./images/shopfrontt3.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -99,13 +105,7 @@ body {
     border: 5px solid #FFFAA1;
 }
 
-.vegan-body {
-    display: flex;
-    flex-direction: column;
-    max-width: 75%;
-    margin:10px;
-    box-shadow: 0 0 5px 5px #FFFAA1;
-}
+
 .vegan-box {
     width: 30%;
     padding: 10px;
@@ -141,6 +141,12 @@ body {
     margin:10px;
     padding: 15px;
 }
+.contact-body {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
 @media (min-width: 991.5px) {
     .vegan-intro-image-mobile {
         display: none;
@@ -208,7 +214,7 @@ body {
     .nav-address {
         display: none;
       }
-    .vegan-body {
+    .main-body {
         min-width: 95%;
     }
     .vegan-intro-box {
@@ -226,6 +232,10 @@ body {
         object-fit: contain;
         margin: 10px;
     }
+    .contact-body {
+        flex-direction: column;
+        overflow:auto;
+    }
 }
 
 @media (max-width: 1685.5px) and (min-width: 991.5px) {
@@ -237,6 +247,9 @@ body {
       }
       #header-logo {
         width: 65%;
+    }
+    .contact-body {
+        flex-direction: column;
     }
      
 }

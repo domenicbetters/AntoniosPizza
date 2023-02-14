@@ -5,11 +5,13 @@
       @show-location="ShowLocation"
       @show-vegan="ShowVegan"
       @show-about="ShowAbout"
+      @show-contact="ShowContact"
       /></div>
-    <div v-show="HomeExists === 'yes'" class = "car-holder"><MainPage/></div>
-    <div  class="location" v-show="LocationExists === 'yes'"><LocationPage/></div>
-    <div  class="vegan" v-show="VeganExists === 'yes'"><VeganPage/></div>
-    <div  class="about" v-show="AboutExists === 'yes'"><AboutPage/></div>
+    <div class="main" v-show="HomeExists === 'yes'"><MainPage/></div>
+    <div class="main" v-show="LocationExists === 'yes'"><LocationPage/></div>
+    <div class="main" v-show="VeganExists === 'yes'"><VeganPage/></div>
+    <div class="main" v-show="AboutExists === 'yes'"><AboutPage/></div>
+    <div class="main" v-show="ContactExists === 'yes'"><ContactPage/></div>
     <div><FooterBar/></div>
 </div>
 </template>
@@ -21,6 +23,7 @@ import MainPage from './components/MainPage.vue'
 import FooterBar from './components/FooterBar.vue'
 import VeganPage from './components/VeganPage.vue'
 import AboutPage from './components/AboutPage.vue'
+import ContactPage from './components/ContactPage.vue'
 
 export default {
   name: 'App',
@@ -31,6 +34,7 @@ export default {
     FooterBar,
     VeganPage,
     AboutPage,
+    ContactPage,
   },
   data(){
     return {
@@ -38,6 +42,7 @@ export default {
       LocationExists: 'no',
       VeganExists: 'no',
       AboutExists: 'no',
+      ContactExists: 'no',
     }
   },
   methods: {
@@ -46,24 +51,35 @@ export default {
       this.LocationExists = 'no'
       this.VeganExists = 'no'
       this.AboutExists = 'no'
+      this.ContactExists = 'no'
      },
      ShowLocation() {
       this.HomeExists =  'no',
       this.LocationExists = 'yes'
       this.VeganExists = 'no'
       this.AboutExists = 'no'
+      this.ContactExists = 'no'
      },
      ShowVegan() {
       this.HomeExists =  'no',
       this.LocationExists = 'no'
       this.VeganExists = 'yes'
       this.AboutExists = 'no'
+      this.ContactExists = 'no'
      },
      ShowAbout() {
       this.HomeExists =  'no',
       this.LocationExists = 'no'
       this.VeganExists = 'no'
       this.AboutExists = 'yes'
+      this.ContactExists = 'no'
+     },
+     ShowContact() {
+      this.HomeExists =  'no',
+      this.LocationExists = 'no'
+      this.VeganExists = 'no'
+      this.AboutExists = 'no'
+      this.ContactExists = 'yes'
      },
   }
  
@@ -77,9 +93,6 @@ export default {
     font-family: 'juice';
     src: local('juice'),
     url(./fonts/juice.ttf);
-}
-.car-holder {
-  margin:10px;
 }
 @media (max-width: 991.5px) {
   .header-menu {
@@ -106,15 +119,7 @@ export default {
   display:flex;
   flex-direction: column;
 }
-.location {
-  display: flex;
-  justify-content: center;
-}
-.vegan {
-  display: flex;
-  justify-content: center;
-}
-.about {
+.main {
   display: flex;
   justify-content: center;
 }
