@@ -21,7 +21,7 @@
               Menus
             </a>
             <ul class="dropdown-menu" >
-              <li><a class="dropdown-item" href="#">Full Menu</a></li>
+              <li><a @click="ShowMenu()" v-bind:class="{active: MenuisActive}" class="dropdown-item" href="#">Full Menu</a></li>
               <li><a class="dropdown-item" href="#">Vegan Menu</a></li>
             </ul>
           </li>
@@ -50,6 +50,7 @@ export default {
       VeganisActive: false,
       AboutisActive: false,
       ContactisActive: false,
+      MenuisActive: false,
     }
   },
  
@@ -61,6 +62,7 @@ export default {
       this.VeganisActive = false
       this.AboutisActive = false
       this.ContactisActive = false
+      this.MenuisActive = false
   },
     ShowLocation() {
       this.$emit('show-location')
@@ -69,6 +71,7 @@ export default {
       this.VeganisActive = false
       this.AboutisActive = false
       this.ContactisActive = false
+      this.MenuisActive = false
     },
     ShowVegan() {
       this.$emit('show-vegan')
@@ -77,6 +80,7 @@ export default {
       this.VeganisActive = true
       this.AboutisActive = false
       this.ContactisActive = false
+      this.MenuisActive = false
     },
     ShowAbout() {
       this.$emit('show-about')
@@ -85,6 +89,7 @@ export default {
       this.VeganisActive = false
       this.AboutisActive = true
       this.ContactisActive = false
+      this.MenuisActive = false
     },
     ShowContact() {
       this.$emit('show-contact')
@@ -93,6 +98,16 @@ export default {
       this.VeganisActive = false
       this.AboutisActive = false
       this.ContactisActive = true
+      this.MenuisActive = false
+    },
+    ShowMenu() {
+      this.$emit('show-menu')
+      this.HomeisActive = false
+      this.LocationisActive = false
+      this.VeganisActive = false
+      this.AboutisActive = false
+      this.ContactisActive = false
+      this.MenuisActive = true
     },
 
      }

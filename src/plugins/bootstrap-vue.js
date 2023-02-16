@@ -7,5 +7,7 @@ import { DropdownPlugin, TablePlugin } from 'bootstrap-vue'
 Vue.use(DropdownPlugin)
 Vue.use(TablePlugin)
 
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue, {
+    bNavbar: {type: 'light'}
+})
 

@@ -3,12 +3,14 @@
     <div class ="header-menu"><NavBar 
       @show-home="ShowHome"
       @show-location="ShowLocation"
+      @show-menu="ShowMenu"
       @show-vegan="ShowVegan"
       @show-about="ShowAbout"
       @show-contact="ShowContact"
       /></div>
     <div class="main" v-show="HomeExists === 'yes'"><MainPage/></div>
     <div class="main" v-show="LocationExists === 'yes'"><LocationPage/></div>
+    <div class="main" v-show="MenuExists === 'yes'"><MenuPage/></div>
     <div class="main" v-show="VeganExists === 'yes'"><VeganPage/></div>
     <div class="main" v-show="AboutExists === 'yes'"><AboutPage/></div>
     <div class="main" v-show="ContactExists === 'yes'"><ContactPage/></div>
@@ -24,6 +26,7 @@ import FooterBar from './components/FooterBar.vue'
 import VeganPage from './components/VeganPage.vue'
 import AboutPage from './components/AboutPage.vue'
 import ContactPage from './components/ContactPage.vue'
+import MenuPage from './components/MenuPage.vue'
 
 export default {
   name: 'App',
@@ -35,6 +38,7 @@ export default {
     VeganPage,
     AboutPage,
     ContactPage,
+    MenuPage,
   },
   data(){
     return {
@@ -43,6 +47,7 @@ export default {
       VeganExists: 'no',
       AboutExists: 'no',
       ContactExists: 'no',
+      MenuExists: 'no',
     }
   },
   methods: {
@@ -52,6 +57,7 @@ export default {
       this.VeganExists = 'no'
       this.AboutExists = 'no'
       this.ContactExists = 'no'
+      this.MenuExists = 'no'
      },
      ShowLocation() {
       this.HomeExists =  'no',
@@ -59,6 +65,7 @@ export default {
       this.VeganExists = 'no'
       this.AboutExists = 'no'
       this.ContactExists = 'no'
+      this.MenuExists = 'no'
      },
      ShowVegan() {
       this.HomeExists =  'no',
@@ -66,6 +73,7 @@ export default {
       this.VeganExists = 'yes'
       this.AboutExists = 'no'
       this.ContactExists = 'no'
+      this.MenuExists = 'no'
      },
      ShowAbout() {
       this.HomeExists =  'no',
@@ -73,6 +81,7 @@ export default {
       this.VeganExists = 'no'
       this.AboutExists = 'yes'
       this.ContactExists = 'no'
+      this.MenuExists = 'no'
      },
      ShowContact() {
       this.HomeExists =  'no',
@@ -80,6 +89,15 @@ export default {
       this.VeganExists = 'no'
       this.AboutExists = 'no'
       this.ContactExists = 'yes'
+      this.MenuExists = 'no'
+     },
+     ShowMenu() {
+      this.HomeExists =  'no',
+      this.LocationExists = 'no'
+      this.VeganExists = 'no'
+      this.AboutExists = 'no'
+      this.ContactExists = 'no'
+      this.MenuExists = 'yes'
      },
   }
  
