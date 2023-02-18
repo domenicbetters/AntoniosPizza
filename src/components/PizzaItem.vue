@@ -1,6 +1,6 @@
 <template>
 <div class="food-list" >
-  <div class = "food-name"><h2>{{ item.name }}</h2></div>
+  <div class = "food-name"><h4>{{ item.name }}</h4></div>
   <div class = "food-desc"><p>{{item.desc}}</p></div>
 </div>
  </template>
@@ -22,6 +22,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+p {
+  font-size: .65em;
+}
 ul {
   display: block;
   padding: 0;

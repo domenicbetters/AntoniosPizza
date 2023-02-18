@@ -7,6 +7,7 @@
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
               <b-nav-item href="#">Pizza</b-nav-item>
+              <b-nav-item href="#">Specialty Pizza</b-nav-item>
               <b-nav-item href="#">Sandwiches</b-nav-item>
               <b-nav-item href="#">Salads</b-nav-item>
               <b-nav-item href="#">Appetizers</b-nav-item>

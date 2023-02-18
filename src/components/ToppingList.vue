@@ -1,28 +1,26 @@
 <template>
-<div>
-  <div class = "size-name"><h4>{{ size.name }}</h4></div>
-  <div class = "size-price"><h4>{{size.price}}</h4></div>
-</div>
+  <p>{{ topping.name }}</p>
  </template>
 
 
 <script>
 
 export default {
-  name: 'SizePrice',
+  name: 'ToppingList',
   
   components: {
   },
   props: {
-    size: Object
-  }
+    topping: Object
+  },
+
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 10px;
+p {
+  font-size: .65em;
 }
 ul {
   display: block;
@@ -36,11 +34,5 @@ a {
   color: #42b983;
 }
 
-.size-name {
-  grid-column-start: 1;
-}
-.size-price {
-  grid-column-start: 2;
-}
 
 </style>

@@ -6,21 +6,34 @@
         <h2>Sizes and Styles</h2>
       <SizePrice  class = "size-list" :key="size.name" v-for="(size) in sizes" :size="size"/>
       </div>
+      <div class="style-box">
+        <h2>Topping Prices</h2>
+      <SizePrice  class = "size-list" :key="toppingPrice.name" v-for="(toppingPrice) in toppingPrices" :size="toppingPrice"/>
+      </div>
     </div>
-    <div class = "food-box">
-    <PizzaItem class="food-list" :key="item.name" v-for="(item) in items" :item="item" />
-    </div>
+    <div class = "right-side ">
+      <div class = "food-box">
+        <h2>Pizzas and Everything Else</h2>
+      <PizzaItem class="food-list" :key="item.name" v-for="(item) in items" :item="item" />
+      </div>
+      <div class = "food-box">
+        <h2>Toppings</h2>
+        <div class="topping-list">
+          <ToppingList class="topping-item" :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
+        </div>
+      </div>
+    
     <div class = "picture-box">
        <img src="../assets/images/pizza1.jpg"/>
        <img src="../assets/images/calzone.jpg"/>
        <img src="../assets/images/pizza1.jpg"/>
-       <CTAButton text="Order Now" :link="'https://antoniospizzeria.hungerrush.com/'"/>
     </div>
+  </div>
   </div>
 </template>
 
 <script>
-import CTAButton from './CTAbutton.vue'
+import ToppingList from './ToppingList.vue'
 import PizzaItem from './PizzaItem.vue'
 import SizePrice from './SizePrice.vue'
 export default {
@@ -28,16 +41,41 @@ export default {
   components: {
     PizzaItem,
     SizePrice,
-    CTAButton,
+    ToppingList,
   },
   data() {
   return {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-      { name: 'Cheese', desc: 'Top however you would like.  Additional Charge per Topping' },
-      { name: 'Buffalo chicken', desc: 'Chicken, ranch, and hot sauce' },
-      { name: 'Meat Lovers', desc: 'Get all the meats' },
+      { name: 'Hand Tossed Pizza', desc: 'Top however you would like.  Additional Charge per Topping' },
+      { name: 'Calzone', desc: 'Cheese, sauce Ricotta' },
+      { name: 'Stromboli', desc: 'Sauce cheese and ham and bacon' },
+    ],
+    toppingPrices: [
+      { name: '18"', price: '2.75' },
+      { name: '16"', price: '2.50' },
+      { name: '14"', price: '2.25' },
+    ],
+    toppings: [
+      { name: 'Pepperoni'},
+      { name: 'Sausage'},
+      { name: 'Veggies'},
+      { name: 'Pepperoni'},
+      { name: 'Sausage'},
+      { name: 'Veggies'},
+      { name: 'Pepperoni'},
+      { name: 'Sausage'},
+      { name: 'Veggies'},
+      { name: 'Pepperoni'},
+      { name: 'Sausage'},
+      { name: 'Veggies'},
+      { name: 'Pepperoni'},
+      { name: 'Sausage'},
+      { name: 'Veggies'},
+      { name: 'Pepperoni'},
+      { name: 'Sausage'},
+      { name: 'Veggies'},
     ],
     sizes: [
       { name: 'Checooole', price: '15.00' },
@@ -63,7 +101,6 @@ export default {
 },
 findlength() {
     this.sizeColumnWidth = this.GetLengthOfLongestElement(this.sizes)+'ch'
-    this.foodColumnWidth = this.GetLengthOfLongestElement(this.items)+'ch'
 },
 
   },
@@ -77,7 +114,7 @@ this.findlength()
 <style scoped>
 img {
   height: 250px;
-  width: 100%;
+  width: 25%;
   object-fit: cover;
   margin: 10px;
   border: 2px solid #FFFAA1;
@@ -101,11 +138,20 @@ li {
   align-items: center;
   width:20%;
 }
+
+.right-side {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
 .style-box {
   border: 3px double white;
+  height: 470px;
   border-radius: 10px;
   width: fit-content;
-  padding:20px;
+  margin-bottom:5px;
 }
 
 
@@ -114,7 +160,8 @@ li {
   width: 100%;
   column-gap:30px;
   text-align: left;
-  grid-auto-columns: v-bind('sizeColumnWidth');
+  margin:2px;
+  grid-template-columns: v-bind('sizeColumnWidth') max-content;
 }
 
 .food-list {
@@ -127,6 +174,19 @@ li {
   padding: 0;
 }
 
+.topping-list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.topping-item {
+  margin-right: 4px;
+}
+
 .menu-section {
   width: 100%;
   height: 100%;
@@ -134,12 +194,12 @@ li {
 }
 
 .food-box {
-  width: 33%;
-  height: 400px;
+  width: 100%;
+  height: 390px;
   border: 3px double white;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -148,11 +208,11 @@ li {
 
 
 .picture-box {
-  width: 33%;
-  padding: 20px;
-  margin: 20px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 
