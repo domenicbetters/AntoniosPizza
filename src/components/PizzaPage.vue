@@ -24,15 +24,15 @@
       </div>
     
     <div class = "picture-box">
-       <img src="../assets/images/pizza1.jpg"/>
-       <img src="../assets/images/calzone.jpg"/>
-       <img src="../assets/images/pizza1.jpg"/>
+      <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
+      <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
     </div>
   </div>
   </div>
 </template>
 
 <script>
+import RosterCard from './RosterCard.vue'
 import ToppingList from './ToppingList.vue'
 import PizzaItem from './PizzaItem.vue'
 import SizePrice from './SizePrice.vue'
@@ -42,6 +42,7 @@ export default {
     PizzaItem,
     SizePrice,
     ToppingList,
+    RosterCard,
   },
   data() {
   return {
@@ -151,7 +152,7 @@ li {
 }
 .style-box {
   border: 3px double white;
-  height: 470px;
+  height: 460px;
   border-radius: 10px;
   width: fit-content;
   margin-bottom:5px;
@@ -172,7 +173,7 @@ li {
   width: 100%;
   flex-direction: column;
   flex-wrap: nowrap;
-  border-bottom:1px solid white;
+  border-bottom:1px dashed white;
   margin: 0;
   padding: 0;
 }
@@ -198,7 +199,7 @@ li {
 
 .food-box {
   width: 100%;
-  height: 390px;
+  height: 432px;
   border: 3px double white;
   border-radius: 10px;
   padding: 20px;
@@ -214,6 +215,7 @@ li {
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
