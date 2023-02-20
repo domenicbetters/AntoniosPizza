@@ -2,13 +2,15 @@
   <div class = "menu-section">
     <div class ="left-side">
       <h1>Pizzas, Calzones, Strombolis, and More</h1>
-      <div class="style-box">
-        <h2>Sizes and Styles</h2>
-      <SizePrice  class = "size-list" :key="size.name" v-for="(size) in sizes" :size="size"/>
-      </div>
-      <div class="style-box">
-        <h2>Topping Prices</h2>
-      <SizePrice  class = "size-list" :key="toppingPrice.name" v-for="(toppingPrice) in toppingPrices" :size="toppingPrice"/>
+      <div class="mobile-styles">
+        <div class="style-box">
+          <h2>Sizes and Styles</h2>
+        <SizePrice  class = "size-list" :key="size.name" v-for="(size) in sizes" :size="size"/>
+        </div>
+        <div class="style-box">
+          <h2>Topping Prices</h2>
+        <SizePrice  class = "size-list" :key="toppingPrice.name" v-for="(toppingPrice) in toppingPrices" :size="toppingPrice"/>
+        </div>
       </div>
     </div>
     <div class = "right-side ">
@@ -137,6 +139,7 @@ li {
 
 .left-side {
   margin: 20px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -241,5 +244,30 @@ li {
   border-radius: 20px;
   border: 3px solid #FFFAA1;
 }
+
+
+@media (max-width: 991.5px) {
+  .menu-section {
+    flex-direction: column;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .mobile-styles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .style-box {
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+  .right-side {
+    width: 90%;
+    flex-direction: column;
+  }
+  }
+
 
 </style>

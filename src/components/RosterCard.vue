@@ -29,7 +29,7 @@
 <style scoped>
 .flip-card {
   background-color: transparent;
-  width: 300px;
+  width: 40%;
   height: 200px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 15px;
@@ -82,5 +82,12 @@
  width: 100%;
  height: 100%;
 }
+
+@media (max-width: 991.5px) {
+  .flip-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  }
 
 </style>

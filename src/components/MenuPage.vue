@@ -1,7 +1,7 @@
 <template>
   <div class="main-body">
     <div class ="menu-body">
-      <div>
+      <div class="navvy">
         <b-navbar toggleable="lg" type="dark" variant="info">
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
@@ -73,6 +73,17 @@ a {
 
 .section-view {
   width:100%;
+}
+
+@media (max-width: 991.5px) {
+  .section-view {
+    overflow: hidden;
+  }
+  .navvy {
+    position: absolute;
+    background: rgb(0,0,0,.90);
+  }
+
 }
 
 </style>
