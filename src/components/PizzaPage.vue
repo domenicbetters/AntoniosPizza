@@ -139,7 +139,6 @@ li {
 
 .left-side {
   margin: 20px;
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,6 +251,8 @@ li {
   }
   .left-side {
     width: 100%;
+    margin: 5px;
+    margin-top: 60px;
   }
   .mobile-styles {
     display: flex;
@@ -266,6 +267,10 @@ li {
   .right-side {
     width: 90%;
     flex-direction: column;
+    justify-content: center;
+  }
+  .picture-box {
+    justify-content: center;
   }
   }
 
