@@ -262,6 +262,7 @@ li {
   }
   .style-box {
     margin-right: 4px;
+    height: fit-content;
     margin-left: 4px;
   }
   .right-side {

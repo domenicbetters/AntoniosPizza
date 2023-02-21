@@ -235,11 +235,15 @@ li {
 
 
 @media (max-width: 991.5px) {
+  h2 {
+    margin-bottom: 10px;
+  }
   .menu-section {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
   .left-side {
-    width: 100%;
+    width: 30%;
     margin: 5px;
     margin-top: 60px;
   }
@@ -251,6 +255,7 @@ li {
   }
   .style-box {
     margin-right: 4px;
+    height: fit-content;
     margin-left: 4px;
   }
   .right-side {
@@ -261,6 +266,13 @@ li {
   .picture-box {
     justify-content: center;
   }
+  }
+
+  @media (max-width: 400.5px) {
+    .menu-section {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
 
