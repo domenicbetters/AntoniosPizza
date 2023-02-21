@@ -6,8 +6,8 @@
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-              <b-nav-item href="#">Pizza</b-nav-item>
-              <b-nav-item href="#">Specialty Pizza</b-nav-item>
+              <b-nav-item  @click="ShowPizza()" v-bind:class="{active: PizzaisActive}" href="#">Pizza</b-nav-item>
+              <b-nav-item @click="ShowSpecial()" v-bind:class="{active: SpecialisActive}" href="#">Specialty Pizza</b-nav-item>
               <b-nav-item href="#">Sandwiches</b-nav-item>
               <b-nav-item href="#">Salads</b-nav-item>
               <b-nav-item href="#">Appetizers</b-nav-item>
@@ -21,7 +21,8 @@
         </b-navbar>
       </div>
       <div class = "section-view">
-        <PizzaPage/>
+        <div v-show="PizzaExists === 'yes'"><PizzaPage/></div>
+        <div v-show="SpecialExists === 'yes'"><SpecialPizza/></div>
       </div>
     </div>
   </div>
@@ -29,12 +30,44 @@
 
 <script>
 import PizzaPage from './PizzaPage.vue'
+import SpecialPizza from './SpecialPizza.vue'
 
 export default {
   name: 'MenuPage',
   
   components: {
     PizzaPage,
+    SpecialPizza,
+  },
+  data(){
+    return {
+      PizzaExists: 'yes',
+      PizzaisActive: true,
+
+      SpecialExists: 'no',
+      SpecialisActive: false,
+    
+      
+    }
+  },
+  methods: {
+  ShowPizza() {
+      this.PizzaExists =  'yes',
+      this.SpecialExists = 'no',
+
+      this.PizzaisActive = true,
+      this.SpecialisActive = false
+
+     },
+
+     ShowSpecial() {
+      this.PizzaExists =  'no',
+      this.SpecialExists = 'yes',
+
+      this.PizzaisActive = false,
+      this.SpecialisActive = true
+
+     },
   },
   props: {
     msg: String
