@@ -22,7 +22,7 @@
             </a>
             <ul class="dropdown-menu" >
               <li><a @click="ShowMenu()" v-bind:class="{active: MenuisActive}" class="dropdown-item" href="#">Full Menu</a></li>
-              <li><a class="dropdown-item" href="#">Vegan Menu</a></li>
+              <li><a @click="ToggleVegan()" v-bind:class="{active: VeganMenuisActive}" class="dropdown-item" href="#">Vegan Menu</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -51,10 +51,22 @@ export default {
       AboutisActive: false,
       ContactisActive: false,
       MenuisActive: false,
+      VeganMenuisActive: false,
     }
   },
  
   methods: {
+    ToggleVegan() {
+      this.$emit('toggle-vegan-on')
+      this.$emit('show-menu')
+      this.HomeisActive = false
+      this.LocationisActive = false
+      this.VeganisActive = false
+      this.AboutisActive = false
+      this.ContactisActive = false
+      this.MenuisActive = false
+      this.VeganMenuisActive= true
+    },
     ShowHome() {
       this.$emit('show-home')
       this.HomeisActive = true
@@ -63,6 +75,7 @@ export default {
       this.AboutisActive = false
       this.ContactisActive = false
       this.MenuisActive = false
+      this.VeganMenuisActive= false
   },
     ShowLocation() {
       this.$emit('show-location')
@@ -72,6 +85,7 @@ export default {
       this.AboutisActive = false
       this.ContactisActive = false
       this.MenuisActive = false
+      this.VeganMenuisActive= false
     },
     ShowVegan() {
       this.$emit('show-vegan')
@@ -81,6 +95,7 @@ export default {
       this.AboutisActive = false
       this.ContactisActive = false
       this.MenuisActive = false
+      this.VeganMenuisActive= false
     },
     ShowAbout() {
       this.$emit('show-about')
@@ -90,6 +105,7 @@ export default {
       this.AboutisActive = true
       this.ContactisActive = false
       this.MenuisActive = false
+      this.VeganMenuisActive= false
     },
     ShowContact() {
       this.$emit('show-contact')
@@ -99,15 +115,18 @@ export default {
       this.AboutisActive = false
       this.ContactisActive = true
       this.MenuisActive = false
+      this.VeganMenuisActive= false
     },
     ShowMenu() {
       this.$emit('show-menu')
+      this.$emit('toggle-vegan-off')
       this.HomeisActive = false
       this.LocationisActive = false
       this.VeganisActive = false
       this.AboutisActive = false
       this.ContactisActive = false
       this.MenuisActive = true
+      this.VeganMenuisActive= false
     },
 
      }

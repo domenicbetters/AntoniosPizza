@@ -7,7 +7,11 @@
       @show-vegan="ShowVegan"
       @show-about="ShowAbout"
       @show-contact="ShowContact"
+      @toggle-vegan-on="ToggleVeganOn"
+      @toggle-vegan-off="ToggleVeganOff"
       /></div>
+      <h1 v-show="MenuExists==='yes' && veganOnly === false">Full Menu</h1>
+      <h1 v-show="MenuExists==='yes' && veganOnly === true">Vegan Menu</h1>
     <div class="main" v-show="HomeExists === 'yes'"><MainPage/></div>
     <div class="main" v-show="LocationExists === 'yes'"><LocationPage/></div>
     <div class="main" v-show="MenuExists === 'yes'"><MenuPage :veganOnly="veganOnly"/></div>
@@ -42,7 +46,7 @@ export default {
   },
   data(){
     return {
-      veganOnly: true,
+      veganOnly: false,
       HomeExists: 'yes',
       LocationExists: 'no',
       VeganExists: 'no',
@@ -53,6 +57,12 @@ export default {
   },
 
   methods: {
+    ToggleVeganOn() {
+      this.veganOnly = true
+    },
+    ToggleVeganOff() {
+      this.veganOnly = false
+    },
      ShowHome() {
       this.HomeExists =  'yes',
       this.LocationExists = 'no'
