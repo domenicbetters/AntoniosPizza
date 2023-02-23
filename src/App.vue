@@ -10,7 +10,7 @@
       /></div>
     <div class="main" v-show="HomeExists === 'yes'"><MainPage/></div>
     <div class="main" v-show="LocationExists === 'yes'"><LocationPage/></div>
-    <div class="main" v-show="MenuExists === 'yes'"><MenuPage/></div>
+    <div class="main" v-show="MenuExists === 'yes'"><MenuPage :veganOnly="veganOnly"/></div>
     <div class="main" v-show="VeganExists === 'yes'"><VeganPage/></div>
     <div class="main" v-show="AboutExists === 'yes'"><AboutPage/></div>
     <div class="main" v-show="ContactExists === 'yes'"><ContactPage/></div>
@@ -42,6 +42,7 @@ export default {
   },
   data(){
     return {
+      veganOnly: true,
       HomeExists: 'yes',
       LocationExists: 'no',
       VeganExists: 'no',
@@ -50,6 +51,7 @@ export default {
       MenuExists: 'no',
     }
   },
+
   methods: {
      ShowHome() {
       this.HomeExists =  'yes',

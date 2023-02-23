@@ -21,16 +21,16 @@
         </b-navbar>
       </div>
       <div class = "section-view">
-        <div v-show="PizzaExists === 'yes'"><PizzaPage/></div>
-        <div v-show="SpecialExists === 'yes'"><SpecialPizza/></div>
-        <div v-show="SandwichExists === 'yes'"><SandwichPage/></div>
-        <div v-show="SaladExists === 'yes'"><SaladPage/></div>
-        <div v-show="AppExists === 'yes'"><AppPage/></div>
-        <div v-show="WingsExists === 'yes'"><WingsPage/></div>
-        <div v-show="FriesExists === 'yes'"><FriesPage/></div>
-        <div v-show="PastaExists === 'yes'"><PastaPage/></div>
-        <div v-show="DessertExists === 'yes'"><DessertPage/></div>
-        <div v-show="DrinksExists === 'yes'"><DrinksPage/></div>
+        <div v-show="PizzaExists === 'yes'"><PizzaPage :veganOnly="veganOnly"/></div>
+        <div v-show="SpecialExists === 'yes'"><SpecialPizza :veganOnly="veganOnly"/></div>
+        <div v-show="SandwichExists === 'yes'"><SandwichPage :veganOnly="veganOnly"/></div>
+        <div v-show="SaladExists === 'yes'"><SaladPage :veganOnly="veganOnly"/></div>
+        <div v-show="AppExists === 'yes'"><AppPage :veganOnly="veganOnly" /></div>
+        <div v-show="WingsExists === 'yes'"><WingsPage :veganOnly="veganOnly"/></div>
+        <div v-show="FriesExists === 'yes'"><FriesPage :veganOnly="veganOnly"/></div>
+        <div v-show="PastaExists === 'yes'"><PastaPage :veganOnly="veganOnly"/></div>
+        <div v-show="DessertExists === 'yes'"><DessertPage :veganOnly="veganOnly"/></div>
+        <div v-show="DrinksExists === 'yes'"><DrinksPage :veganOnly="veganOnly"/></div>
       </div>
     </div>
   </div>
@@ -65,6 +65,7 @@ export default {
   },
   data(){
     return {
+
       PizzaExists: 'yes',
       PizzaisActive: true,
 
@@ -343,6 +344,8 @@ export default {
   },
   props: {
     msg: String,
+    veganOnly: Boolean,
+
   }
 }
 </script>

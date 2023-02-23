@@ -6,7 +6,7 @@
     <div class = "right-side ">
       <div class = "food-box">
       <FoodItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
-      <FoodItem class="food-list" v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
+      <FoodItem class="food-list"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
       </div>
    
     
@@ -30,7 +30,6 @@ export default {
   },
   data() {
   return {
-    veganOnly: false,
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
@@ -75,6 +74,7 @@ export default {
 },
   props: {
     msg: String,
+    veganOnly: Boolean,
   },
   methods: {
   GetLengthOfLongestElement(arr) {
@@ -131,9 +131,6 @@ li {
   width: 100%;
 }
 
-.isvegan {
-  display: none;
-}
 .style-box {
   border: 3px double white;
   height: 1000px;

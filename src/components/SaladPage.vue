@@ -7,7 +7,8 @@
     </div>
     <div class = "right-side ">
       <div class = "food-box">
-      <SaladItem class="food-list" :key="item.name" v-for="(item) in items" :item="item" />
+      <SaladItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
+      <SaladItem class="food-list"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
       </div>
    
     
@@ -35,7 +36,7 @@ export default {
     foodColumnWidth: '',
     items: [
       { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', desc: 'this one has feta', price: '15.00' },
+      { name: 'Calzone', desc: 'this one has feta', price: '15.00', vegan: 'yes' },
       { name: 'Stromboli', price: '15.00' },
      
     ]
@@ -43,6 +44,7 @@ export default {
 },
   props: {
     msg: String,
+    veganOnly: Boolean,
   },
   methods: {
   GetLengthOfLongestElement(arr) {

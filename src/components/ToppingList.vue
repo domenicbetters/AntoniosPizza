@@ -1,5 +1,7 @@
 <template>
+  <div>
   <p>{{ topping.name }}</p>
+</div>
  </template>
 
 

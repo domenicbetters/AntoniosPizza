@@ -14,7 +14,8 @@
         <div>
           <h2>Flavors</h2>
           <div class ="topping-list">
-            <ToppingList class="topping-item" :key="item.name" v-for="(item) in items" :topping="item" />
+            <ToppingList class="topping-item" v-show="topping.vegan === 'yes' && veganOnly === true"  :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
+            <ToppingList class="topping-item" v-show="veganOnly === false"  :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
           </div>
         </div>
         <div>
@@ -47,35 +48,15 @@ export default {
   return {
     sizeColumnWidth: '',
     foodColumnWidth: '',
-    items: [
+    toppings: [
       { name: 'Hand Tossed Pizza', desc: 'Top however you would like.  Additional Charge per Topping' },
-      { name: 'Calzone', desc: 'Cheese, sauce Ricotta' },
+      { name: 'Calzone', desc: 'Cheese, sauce Ricotta', vegan: 'yes' },
       { name: 'Stromboli', desc: 'Sauce cheese and ham and bacon' },
     ],
     toppingPrices: [
       { name: '18"', price: '2.75' },
       { name: '16"', price: '2.50' },
       { name: '14"', price: '2.25' },
-    ],
-    toppings: [
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
     ],
     sizes: [
       { name: 'Checooole', price: '15.00' },
@@ -86,6 +67,7 @@ export default {
 },
   props: {
     msg: String,
+    veganOnly: Boolean,
   },
   methods: {
   GetLengthOfLongestElement(arr) {

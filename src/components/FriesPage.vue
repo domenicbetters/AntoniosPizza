@@ -14,7 +14,8 @@
         <div>
           <h2>Flavors</h2>
           <div class ="topping-list">
-            <ToppingList class="topping-item" :key="item.name" v-for="(item) in items" :topping="item" />
+            <ToppingList class="topping-item" v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :topping="item" />
+            <ToppingList class="topping-item" v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :topping="item" />
           </div>
         </div>
         <div>
@@ -48,7 +49,7 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-      { name: 'Hand Tossed Pizza', desc: 'Top however you would like.  Additional Charge per Topping' },
+      { name: 'Hand Tossed Pizza', desc: 'Top however you would like.  Additional Charge per Topping', vegan: 'yes' },
       { name: 'Calzone', desc: 'Cheese, sauce Ricotta' },
       { name: 'Stromboli', desc: 'Sauce cheese and ham and bacon' },
     ],
@@ -86,6 +87,7 @@ export default {
 },
   props: {
     msg: String,
+    veganOnly: Boolean,
   },
   methods: {
   GetLengthOfLongestElement(arr) {
