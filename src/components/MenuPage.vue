@@ -11,11 +11,11 @@
               <b-nav-item @click="ShowSandwich()" v-bind:class="{active: SandwichisActive}" href="#">Sandwiches</b-nav-item>
               <b-nav-item @click="ShowSalad()" v-bind:class="{active: SaladisActive}" href="#">Salads</b-nav-item>
               <b-nav-item @click="ShowApp()" v-bind:class="{active: AppisActive}" href="#">Appetizers</b-nav-item>
-              <b-nav-item href="#">Wings</b-nav-item>
-              <b-nav-item href="#">Fries</b-nav-item>
-              <b-nav-item href="#">Pasta</b-nav-item>
-              <b-nav-item href="#">Deserts</b-nav-item>
-              <b-nav-item href="#">Drinks</b-nav-item>
+              <b-nav-item @click="ShowWings()" v-bind:class="{active: WingsisActive}" href="#">Wings</b-nav-item>
+              <b-nav-item @click="ShowFries()" v-bind:class="{active: FriesisActive}" href="#">Fries</b-nav-item>
+              <b-nav-item @click="ShowPasta()" v-bind:class="{active: PastaisActive}" href="#">Pasta</b-nav-item>
+              <b-nav-item @click="ShowDessert()" v-bind:class="{active: DessertisActive}" href="#">Desserts</b-nav-item>
+              <b-nav-item @click="ShowDrinks()" v-bind:class="{active: DrinksisActive}"  href="#">Drinks</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -26,6 +26,11 @@
         <div v-show="SandwichExists === 'yes'"><SandwichPage/></div>
         <div v-show="SaladExists === 'yes'"><SaladPage/></div>
         <div v-show="AppExists === 'yes'"><AppPage/></div>
+        <div v-show="WingsExists === 'yes'"><WingsPage/></div>
+        <div v-show="FriesExists === 'yes'"><FriesPage/></div>
+        <div v-show="PastaExists === 'yes'"><PastaPage/></div>
+        <div v-show="DessertExists === 'yes'"><DessertPage/></div>
+        <div v-show="DrinksExists === 'yes'"><DrinksPage/></div>
       </div>
     </div>
   </div>
@@ -37,6 +42,11 @@ import SpecialPizza from './SpecialPizza.vue'
 import SandwichPage from './SandwichPage.vue'
 import AppPage from './AppPage.vue'
 import SaladPage from './SaladPage.vue'
+import WingsPage from './WingsPage.vue'
+import FriesPage from './FriesPage.vue'
+import PastaPage from './PastaPage.vue'
+import DessertPage from './DessertPage.vue'
+import DrinksPage from './DrinksPage.vue'
 
 export default {
   name: 'MenuPage',
@@ -47,6 +57,11 @@ export default {
     SandwichPage,
     AppPage,
     SaladPage,
+    WingsPage,
+    FriesPage,
+    PastaPage,
+    DessertPage,
+    DrinksPage,
   },
   data(){
     return {
@@ -64,6 +79,21 @@ export default {
 
       SaladExists: 'no',
       SaladisActive: false,
+      
+      WingsExists: 'no',
+      WingsisActive: false,
+
+      FriesExists: 'no',
+      FriesisActive: false,
+
+      PastaExists: 'no',
+      PastaisActive: false,
+
+      DessertExists: 'no',
+      DessertisActive: false,
+
+      DrinksExists: 'no',
+      DrinksisActive: false,
     
       
     }
@@ -75,12 +105,22 @@ export default {
       this.SandwichExists = 'no',
       this.AppExists = 'no',
       this.SaladExists = 'no',
+      this.WingsExists = 'no',
+      this.FriesExists = 'no',
+      this.PastaExists = 'no',
+      this.DessertExists = 'no',
+      this.DrinksExists = 'no',
 
       this.PizzaisActive = true,
       this.SpecialisActive = false
       this.SandwichisActive = false
       this.AppisActive = false
       this.SaladisActive = false
+      this.WingsisActive = false
+      this.FriesisActive = false
+      this.PastaisActive = false
+      this.DessertisActive = false
+      this.DrinksisActive = false
 
      },
 
@@ -90,12 +130,22 @@ export default {
       this.SandwichExists = 'no',
       this.AppExists = 'no',
       this.SaladExists = 'no',
+      this.WingsExists = 'no',
+      this.FriesExists = 'no',
+      this.PastaExists = 'no',
+      this.DessertExists = 'no',
+      this.DrinksExists = 'no',
 
       this.PizzaisActive = false,
       this.SpecialisActive = true
       this.SandwichisActive = false
       this.AppisActive = false
       this.SaladisActive = false
+      this.WingsisActive = false
+      this.FriesisActive = false
+      this.PastaisActive = false
+      this.DessertisActive = false
+      this.DrinksisActive = false
 
      },
 
@@ -105,12 +155,22 @@ export default {
       this.SandwichExists = 'yes',
       this.AppExists = 'no',
       this.SaladExists = 'no',
+      this.WingsExists = 'no',
+      this.FriesExists = 'no',
+      this.PastaExists = 'no',
+      this.DessertExists = 'no',
+      this.DrinksExists = 'no',
 
       this.PizzaisActive = false,
       this.SpecialisActive = false
       this.SandwichisActive = true
       this.AppisActive = false
       this.SaladisActive = false
+      this.WingsisActive = false
+      this.FriesisActive = false
+      this.PastaisActive = false
+      this.DessertisActive = false
+      this.DrinksisActive = false
      },
      ShowApp() {
       this.PizzaExists =  'no',
@@ -118,12 +178,22 @@ export default {
       this.SandwichExists = 'no',
       this.AppExists = 'yes',
       this.SaladExists = 'no',
+      this.WingsExists = 'no',
+      this.FriesExists = 'no',
+      this.PastaExists = 'no',
+      this.DessertExists = 'no',
+      this.DrinksExists = 'no',
 
       this.PizzaisActive = false,
       this.SpecialisActive = false
       this.SandwichisActive = false
       this.AppisActive = true
       this.SaladisActive = false
+      this.WingsisActive = false
+      this.FriesisActive = false
+      this.PastaisActive = false
+      this.DessertisActive = false
+      this.DrinksisActive = false
      },
 
      ShowSalad() {
@@ -132,17 +202,147 @@ export default {
       this.SandwichExists = 'no',
       this.AppExists = 'no',
       this.SaladExists = 'yes',
+      this.WingsExists = 'no',
+      this.FriesExists = 'no',
+      this.PastaExists = 'no',
+      this.DessertExists = 'no',
+      this.DrinksExists = 'no',
 
       this.PizzaisActive = false,
       this.SpecialisActive = false
       this.SandwichisActive = false
       this.AppisActive = false
       this.SaladisActive = true
+      this.WingsisActive = false
+      this.FriesisActive = false
+      this.PastaisActive = false
+      this.DessertisActive = false
+      this.DrinksisActive = false
+     },
+
+     ShowWings() {
+      this.PizzaExists =  'no',
+      this.SpecialExists = 'no',
+      this.SandwichExists = 'no',
+      this.AppExists = 'no',
+      this.SaladExists = 'no',
+      this.WingsExists = 'yes',
+      this.FriesExists = 'no',
+      this.PastaExists = 'no',
+      this.DessertExists = 'no',
+      this.DrinksExists = 'no',
+
+      this.PizzaisActive = false,
+      this.SpecialisActive = false
+      this.SandwichisActive = false
+      this.AppisActive = false
+      this.SaladisActive = false
+      this.WingsisActive = true
+      this.FriesisActive = false
+      this.PastaisActive = false
+      this.DessertisActive = false
+      this.DrinksisActive = false
+     },
+     
+     ShowFries() {
+      this.PizzaExists =  'no',
+      this.SpecialExists = 'no',
+      this.SandwichExists = 'no',
+      this.AppExists = 'no',
+      this.SaladExists = 'no',
+      this.WingsExists = 'no',
+      this.FriesExists = 'yes',
+      this.PastaExists = 'no',
+      this.DessertExists = 'no',
+      this.DrinksExists = 'no',
+
+      this.PizzaisActive = false,
+      this.SpecialisActive = false
+      this.SandwichisActive = false
+      this.AppisActive = false
+      this.SaladisActive = false
+      this.WingsisActive = false
+      this.FriesisActive = true
+      this.PastaisActive = false
+      this.DessertisActive = false
+      this.DrinksisActive = false
+     },
+
+     ShowPasta() {
+      this.PizzaExists =  'no',
+      this.SpecialExists = 'no',
+      this.SandwichExists = 'no',
+      this.AppExists = 'no',
+      this.SaladExists = 'no',
+      this.WingsExists = 'no',
+      this.FriesExists = 'no',
+      this.PastaExists = 'yes',
+      this.DessertExists = 'no',
+      this.DrinksExists = 'no',
+
+      this.PizzaisActive = false,
+      this.SpecialisActive = false
+      this.SandwichisActive = false
+      this.AppisActive = false
+      this.SaladisActive = false
+      this.WingsisActive = false
+      this.FriesisActive = false
+      this.PastaisActive = true
+      this.DessertisActive = false
+      this.DrinksisActive = false
+     },
+
+     ShowDessert() {
+      this.PizzaExists =  'no',
+      this.SpecialExists = 'no',
+      this.SandwichExists = 'no',
+      this.AppExists = 'no',
+      this.SaladExists = 'no',
+      this.WingsExists = 'no',
+      this.FriesExists = 'no',
+      this.PastaExists = 'no',
+      this.DessertExists = 'yes',
+      this.DrinksExists = 'no',
+
+      this.PizzaisActive = false,
+      this.SpecialisActive = false
+      this.SandwichisActive = false
+      this.AppisActive = false
+      this.SaladisActive = false
+      this.WingsisActive = false
+      this.FriesisActive = false
+      this.PastaisActive = false
+      this.DessertisActive = true
+      this.DrinksisActive = false
+     },
+
+     ShowDrinks() {
+      this.PizzaExists =  'no',
+      this.SpecialExists = 'no',
+      this.SandwichExists = 'no',
+      this.AppExists = 'no',
+      this.SaladExists = 'no',
+      this.WingsExists = 'no',
+      this.FriesExists = 'no',
+      this.PastaExists = 'no',
+      this.DessertExists = 'no',
+      this.DrinksExists = 'yes',
+
+      this.PizzaisActive = false,
+      this.SpecialisActive = false
+      this.SandwichisActive = false
+      this.AppisActive = false
+      this.SaladisActive = false
+      this.WingsisActive = false
+      this.FriesisActive = false
+      this.PastaisActive = false
+      this.DessertisActive = false
+      this.DrinksisActive = true
      },
 
   },
   props: {
-    msg: String
+    msg: String,
   }
 }
 </script>
@@ -178,6 +378,10 @@ a {
 
 .section-view {
   width:100%;
+}
+
+.navvy {
+  z-index: 1000;
 }
 
 @media (max-width: 991.5px) {

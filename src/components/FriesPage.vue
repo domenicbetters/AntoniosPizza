@@ -1,29 +1,28 @@
 <template>
   <div class = "menu-section">
     <div class ="left-side">
-      <h1>Pizzas, Calzones, Strombolis, and More</h1>
+      <h1>Fries</h1>
       <div class="mobile-styles">
         <div class="style-box">
           <h2>Sizes and Styles</h2>
-        <SizePrice  class = "size-list" :key="size.name" v-for="(size) in sizes" :size="size"/>
-        </div>
-        <div class="style-box">
-          <h2>Topping Prices</h2>
-        <SizePrice  class = "size-list" :key="toppingPrice.name" v-for="(toppingPrice) in toppingPrices" :size="toppingPrice"/>
-        </div>
+            <SizePrice  class = "size-list" :key="size.name" v-for="(size) in sizes" :size="size"/>
+          </div>
       </div>
     </div>
     <div class = "right-side ">
       <div class = "food-box">
-        <h2>Pizzas and Everything Else</h2>
-      <PizzaItem class="food-list" :key="item.name" v-for="(item) in items" :item="item" />
-      </div>
-      <div class = "food-box">
-        <h2>Toppings</h2>
-        <div class="topping-list">
-          <ToppingList class="topping-item" :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
+        <div>
+          <h2>Flavors</h2>
+          <div class ="topping-list">
+            <ToppingList class="topping-item" :key="item.name" v-for="(item) in items" :topping="item" />
+          </div>
+        </div>
+        <div>
+          <h2>Add ons</h2>
+          <p>Celery, Ranch, BBQ</p>
         </div>
       </div>
+   
     
     <div class = "picture-box">
       <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
@@ -36,14 +35,12 @@
 <script>
 import RosterCard from './RosterCard.vue'
 import ToppingList from './ToppingList.vue'
-import PizzaItem from './PizzaItem.vue'
 import SizePrice from './SizePrice.vue'
 export default {
-  name: 'PizzaPage',
+  name: 'FriesPage',
   components: {
-    PizzaItem,
-    SizePrice,
     ToppingList,
+    SizePrice,
     RosterCard,
   },
   data() {
@@ -154,7 +151,7 @@ li {
 }
 .style-box {
   border: 3px double white;
-  height: 460px;
+  height: 1000px;
   border-radius: 10px;
   width: fit-content;
   margin-bottom:5px;
@@ -202,13 +199,14 @@ li {
 
 .food-box {
   width: 100%;
-  height: 432px;
+  height: 860px;
   border: 3px double white;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-wrap: nowrap;
   overflow-y: scroll;
 }
@@ -247,11 +245,15 @@ li {
 
 
 @media (max-width: 991.5px) {
+  h2 {
+    margin-bottom: 10px;
+  }
   .menu-section {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
   .left-side {
-    width: 100%;
+    width: 30%;
     margin: 5px;
     margin-top: 60px;
   }
@@ -274,6 +276,13 @@ li {
   .picture-box {
     justify-content: center;
   }
+  }
+
+  @media (max-width: 400.5px) {
+    .menu-section {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
 
