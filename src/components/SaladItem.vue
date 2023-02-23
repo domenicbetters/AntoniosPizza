@@ -1,7 +1,8 @@
 <template>
-<div>
+<div class="food-list" >
   <div class = "food-name"><h4>{{ item.name }}</h4></div>
-  <div class = "food-desc"><p>{{item.price}}</p></div>
+  <div class = "food-desc"><p><span>{{item.desc}}</span></p></div>
+  <div class = "food-price"><p>{{item.price}}</p></div>
 </div>
  </template>
 
@@ -9,7 +10,7 @@
 <script>
 
 export default {
-  name: 'FoodItem',
+  name: 'SaladItem',
   
   components: {
   },
@@ -42,9 +43,19 @@ a {
 }
 .food-desc {
   grid-column-start: 2;
+  text-align: center;
+  font-style: italic;
+}
+
+.food-price {
+  grid-column-start: 3;
   text-align: right;
   font-weight: bolder;
   font-size: .75em;
+}
+
+span {
+  font-size: .8em;
 }
 
 </style>

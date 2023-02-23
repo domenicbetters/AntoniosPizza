@@ -9,7 +9,7 @@
               <b-nav-item  @click="ShowPizza()" v-bind:class="{active: PizzaisActive}" href="#">Pizza</b-nav-item>
               <b-nav-item @click="ShowSpecial()" v-bind:class="{active: SpecialisActive}" href="#">Specialty Pizza</b-nav-item>
               <b-nav-item @click="ShowSandwich()" v-bind:class="{active: SandwichisActive}" href="#">Sandwiches</b-nav-item>
-              <b-nav-item href="#">Salads</b-nav-item>
+              <b-nav-item @click="ShowSalad()" v-bind:class="{active: SaladisActive}" href="#">Salads</b-nav-item>
               <b-nav-item @click="ShowApp()" v-bind:class="{active: AppisActive}" href="#">Appetizers</b-nav-item>
               <b-nav-item href="#">Wings</b-nav-item>
               <b-nav-item href="#">Fries</b-nav-item>
@@ -24,6 +24,7 @@
         <div v-show="PizzaExists === 'yes'"><PizzaPage/></div>
         <div v-show="SpecialExists === 'yes'"><SpecialPizza/></div>
         <div v-show="SandwichExists === 'yes'"><SandwichPage/></div>
+        <div v-show="SaladExists === 'yes'"><SaladPage/></div>
         <div v-show="AppExists === 'yes'"><AppPage/></div>
       </div>
     </div>
@@ -35,6 +36,7 @@ import PizzaPage from './PizzaPage.vue'
 import SpecialPizza from './SpecialPizza.vue'
 import SandwichPage from './SandwichPage.vue'
 import AppPage from './AppPage.vue'
+import SaladPage from './SaladPage.vue'
 
 export default {
   name: 'MenuPage',
@@ -44,6 +46,7 @@ export default {
     SpecialPizza,
     SandwichPage,
     AppPage,
+    SaladPage,
   },
   data(){
     return {
@@ -58,6 +61,9 @@ export default {
 
       AppExists: 'no',
       AppisActive: false,
+
+      SaladExists: 'no',
+      SaladisActive: false,
     
       
     }
@@ -68,11 +74,13 @@ export default {
       this.SpecialExists = 'no',
       this.SandwichExists = 'no',
       this.AppExists = 'no',
+      this.SaladExists = 'no',
 
       this.PizzaisActive = true,
       this.SpecialisActive = false
       this.SandwichisActive = false
       this.AppisActive = false
+      this.SaladisActive = false
 
      },
 
@@ -81,11 +89,13 @@ export default {
       this.SpecialExists = 'yes',
       this.SandwichExists = 'no',
       this.AppExists = 'no',
+      this.SaladExists = 'no',
 
       this.PizzaisActive = false,
       this.SpecialisActive = true
       this.SandwichisActive = false
       this.AppisActive = false
+      this.SaladisActive = false
 
      },
 
@@ -94,25 +104,42 @@ export default {
       this.SpecialExists = 'no',
       this.SandwichExists = 'yes',
       this.AppExists = 'no',
+      this.SaladExists = 'no',
 
       this.PizzaisActive = false,
       this.SpecialisActive = false
       this.SandwichisActive = true
       this.AppisActive = false
-
+      this.SaladisActive = false
      },
      ShowApp() {
       this.PizzaExists =  'no',
       this.SpecialExists = 'no',
       this.SandwichExists = 'no',
       this.AppExists = 'yes',
+      this.SaladExists = 'no',
 
       this.PizzaisActive = false,
       this.SpecialisActive = false
       this.SandwichisActive = false
       this.AppisActive = true
-
+      this.SaladisActive = false
      },
+
+     ShowSalad() {
+      this.PizzaExists =  'no',
+      this.SpecialExists = 'no',
+      this.SandwichExists = 'no',
+      this.AppExists = 'no',
+      this.SaladExists = 'yes',
+
+      this.PizzaisActive = false,
+      this.SpecialisActive = false
+      this.SandwichisActive = false
+      this.AppisActive = false
+      this.SaladisActive = true
+     },
+
   },
   props: {
     msg: String

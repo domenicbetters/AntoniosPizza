@@ -1,12 +1,13 @@
 <template>
   <div class = "menu-section">
     <div>
-      <h1>Appetizers</h1>
+      <h1>Salads</h1>
+      <h2>All salads include tomato, onion, cucumber, green pepper, banana pepper, black olives, mozzarella cheese, and croutons</h2>
+      <h4>Except where otherwise noted.</h4>
     </div>
     <div class = "right-side ">
       <div class = "food-box">
-      <FoodItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
-      <FoodItem class="food-list" v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
+      <SaladItem class="food-list" :key="item.name" v-for="(item) in items" :item="item" />
       </div>
    
     
@@ -21,55 +22,22 @@
 
 <script>
 import RosterCard from './RosterCard.vue'
-import FoodItem from './FoodItem.vue'
+import SaladItem from './SaladItem.vue'
 export default {
-  name: 'AppPage',
+  name: 'SaladPage',
   components: {
-    FoodItem,
+    SaladItem,
     RosterCard,
   },
   data() {
   return {
-    veganOnly: false,
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-      { name: 'Vegan Tossed Pizza', price: '15.00', vegan: 'yes' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
       { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
+      { name: 'Calzone', desc: 'this one has feta', price: '15.00' },
       { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
+     
     ]
   }
 },
@@ -111,9 +79,6 @@ img {
 h1 {
   color:#FFFAA1;
 }
-h2 {
-  text-decoration: underline;
-}
 ul {
   display: block;
   padding: 0;
@@ -130,10 +95,6 @@ li {
   justify-content: center;
   width: 100%;
 }
-
-.isvegan {
-  display: none;
-}
 .style-box {
   border: 3px double white;
   height: 1000px;
@@ -142,15 +103,16 @@ li {
   margin-bottom:5px;
 }
 
+
 .food-list {
   display: grid;
-  width: 40%;
+  width: 80%;
   min-width: fit-content;
   align-items: end;
   border-bottom:1px dashed white;
   margin: 0;
   padding: 0;
-  grid-template-columns: v-bind('sizeColumnWidth');
+  grid-template-columns: v-bind('sizeColumnWidth') inherit;
 }
 
 
@@ -164,7 +126,7 @@ li {
 
 .food-box {
   width: 95%;
-  height: 860px;
+  height: fit-content;
   border: 3px double white;
   border-radius: 10px;
   padding: 20px;
@@ -244,7 +206,10 @@ li {
     justify-content: center;
   }
   .food-list {
-    grid-template-columns: v-bind('sizeColumnWidth') max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .style-box {
     margin-right: 4px;
@@ -259,7 +224,7 @@ li {
   .picture-box {
     justify-content: center;
     flex-direction: column;
-  }
+   }
   }
 
   @media (max-width: 400.5px) {
