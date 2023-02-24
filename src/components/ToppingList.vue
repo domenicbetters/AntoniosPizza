@@ -1,6 +1,6 @@
 <template>
   <div>
-  <p>{{ topping.name }}</p>
+  <p>{{ topping.name }}, </p>
 </div>
  </template>
 
@@ -22,7 +22,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 p {
-  font-size: .65em;
+  font-size: .75em;
 }
 ul {
   display: block;
