@@ -280,7 +280,7 @@ li {
   }
   }
 
-  @media (max-width: 400.5px) {
+  @media (max-width: 490.5px) {
     .menu-section {
       flex-direction: column;
       align-items: center;
