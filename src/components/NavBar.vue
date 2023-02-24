@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a @click="ShowHome()" v-bind:class="{active: HomeisActive}" class="nav-link " aria-current="page" href="#">Home</a>
+            <a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowHome()" v-bind:class="{active: HomeisActive}" class="nav-link " aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a @click="ShowLocation()" v-bind:class="{active: LocationisActive}" class="nav-link" aria-current="page" href="#" >Location and Hours</a>
+            <a  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowLocation()" v-bind:class="{active: LocationisActive}" class="nav-link" aria-current="page" href="#" >Location and Hours</a>
           </li>
           <li class="nav-item">
             <a  class="nav-link " aria-current="page" href="https://antoniospizzeria.hungerrush.com/" >Order Online</a>
@@ -21,18 +21,18 @@
               Menus
             </a>
             <ul class="dropdown-menu" >
-              <li><a @click="ShowMenu()" v-bind:class="{active: MenuisActive}" class="dropdown-item" href="#">Full Menu</a></li>
-              <li><a @click="ToggleVegan()" v-bind:class="{active: VeganMenuisActive}" class="dropdown-item" href="#">Vegan Menu</a></li>
+              <li><a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowMenu()" v-bind:class="{active: MenuisActive}" class="dropdown-item" href="#">Full Menu</a></li>
+              <li><a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ToggleVegan()" v-bind:class="{active: VeganMenuisActive}" class="dropdown-item" href="#">Vegan Menu</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link " @click="ShowVegan()" v-bind:class="{active: VeganisActive}" aria-current="page" href="#">Vegan Love</a>
+            <a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowVegan()" v-bind:class="{active: VeganisActive}" aria-current="page" href="#">Vegan Love</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " @click="ShowAbout()" v-bind:class="{active: AboutisActive}" aria-current="page" href="#">About Us</a>
+            <a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowAbout()" v-bind:class="{active: AboutisActive}" aria-current="page" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " @click="ShowContact()" v-bind:class="{active: ContactisActive}" aria-current="page" href="#">Contact</a>
+            <a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowContact()" v-bind:class="{active: ContactisActive}" aria-current="page" href="#">Contact</a>
           </li>
         </ul> 
       </div>
