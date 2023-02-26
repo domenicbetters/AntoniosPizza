@@ -11,7 +11,6 @@
     </div>
     <div class = "right-side ">
       <div class = "food-box">
-        <h2>Pizzas and Everything Else</h2>
       <PizzaItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
       <PizzaItem class="food-list"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
       </div>
@@ -20,6 +19,7 @@
     <div class = "picture-box">
       <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
       <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
+      
     </div>
   </div>
   </div>
@@ -41,39 +41,28 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-      { name: 'Hand Tossed Pizza', desc: 'Top however you would like.  Additional Charge per Topping', vegan: 'yes'},
-      { name: 'Calzone', desc: 'Cheese, sauce Ricotta' },
-      { name: 'Stromboli', desc: 'Sauce cheese and ham and bacon' },
-    ],
-    toppingPrices: [
-      { name: '18"', price: '2.75' },
-      { name: '16"', price: '2.50' },
-      { name: '14"', price: '2.25' },
-    ],
-    toppings: [
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-    ],
+    { name: 'BBQ Chicken Pizza', desc: 'Grilled Chicken, Bacon, Pineapples, Onions, Mozzarella, BBQ', vegan: 'yes' },
+    { name: 'Broccoli Chicken Pizza', desc: 'Mozzarella, Broccoli, Cheddar, Grilled Chicken, Roasted Garlic White', vegan: 'yes' },
+    { name: 'Buffalo Chicken Pizza', desc: 'Mozzarella, Grilled Chicken, Ranch, Buffalo Sauce', vegan: 'yes' },
+    { name: 'General Tsos Pizza', desc: 'General Tsos Sauce, Fried Chicken, Broccoli, Mozzarella, Green Onions', vegan: 'yes' },
+    { name: 'Hawaiian Pizza', desc: 'Ham, Traditional, Bacon, Pineapples, Mozzarella', vegan: 'yes' },
+    { name: 'Meat Lovers Pizza', desc: 'Mozzarella, Pepperoni, Italian Sausage, Bacon, Capicola, Salami, Traditional', vegan: 'yes' },
+    { name: 'Philly Steak Pizza', desc: 'Steak, Mushrooms, Onions, Green Peppers, Tomatoes, Roasted Garlic White, Mozzarella' },
+    { name: 'Pierogie Pizza', desc: 'Garlic Mashed Potatoes, Cheddar, Mozzarella, Onions, Bacon', vegan: 'yes' },
+    { name: 'Ranch Chicken Pizza', desc: 'Ranch, Grilled Chicken, Bacon, Tomatoes, Cheddar, Mozzarella', vegan: 'yes' },
+    { name: 'Reuben Pizza', desc: '1000 Island, Swiss, Corned Beef' },
+    { name: 'Spinach Feta Pizza', desc: 'Spinach, Tomatoes, Feta, Onions, Roasted Garlic White, Mozzarella', vegan: 'yes' },
+    { name: 'Supreme Pizza', desc: 'Pepperoni, Italian Sausage, Mushrooms, Banana Peppers, Black Olives, Mozzarella, Traditional', vegan: 'yes' },
+    { name: 'Veggie Pizza', desc: 'Mushrooms, Green Peppers, Onions, Black Olives, Banana Peppers, Tomatoes, Roasted Garlic White, Mozzarella', vegan: 'yes' },
+        ],
+ 
     sizes: [
-      { name: 'Checooole', price: '15.00' },
-      { name: 'Cheese', price: '15.00' },
-      { name: 'Pep', price: '25.00' },
+    { name: '10in', price: '$15.00'},
+    { name: '12in', price: '$17.00'},
+    { name: '14in', price: '$20.00'},
+    { name: '16in', price: '$22.00'},
+    { name: '18in', price: '$24.00'},
+    { name: 'GF 12in', price: '$15.00'},
     ]
   }
 },
@@ -145,7 +134,7 @@ li {
 }
 .style-box {
   border: 3px double white;
-  height: 1000px;
+  height: fit-content;
   border-radius: 10px;
   width: fit-content;
   margin-bottom:5px;

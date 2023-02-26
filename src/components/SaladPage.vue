@@ -10,6 +10,13 @@
       <SaladItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
       <SaladItem class="food-list"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
       </div>
+      <div class = "food-box topping-box">
+        <h2>Dressings</h2>
+        <div class="topping-list">
+          <ToppingList class="topping-item"  v-show="topping.vegan === 'yes' && veganOnly === true" :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
+          <ToppingList class="topping-item"  v-show="veganOnly === false" :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
+        </div>
+      </div>
    
     
     <div class = "picture-box">
@@ -24,21 +31,43 @@
 <script>
 import RosterCard from './RosterCard.vue'
 import SaladItem from './SaladItem.vue'
+import ToppingList from './ToppingList.vue'
 export default {
   name: 'SaladPage',
   components: {
     SaladItem,
     RosterCard,
+    ToppingList,
   },
   data() {
   return {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', desc: 'this one has feta', price: '15.00', vegan: 'yes' },
-      { name: 'Stromboli', price: '15.00' },
-     
+    { name: 'Small garden Salad', price: '$5.00', vegan: 'yes'},
+    { name: 'Large Garden Salad', price: '$7.00', vegan: 'yes'},
+    { name: 'Antipasto Salad', price: '$12.00', vegan: 'yes'},
+    { name: 'Buffalo Chicken Salad', price: '$12.00'},
+    { name: 'Buffalo Grilled Chicken Salad', price: '$12.00'},
+    { name: 'Buffalo Seitan Chicken Salad', price: '$12.00', vegan: 'yes'},
+    { name: 'Fried Chicken Salad', price: '$12.00'},
+    { name: 'Greek Salad', desc: 'Greek dressing and Feta instead of Mozzarella', price: '$9.00', vegan: 'yes'},
+    { name: 'Grilled Chicken Salad', price: '$12.00'},
+    { name: 'Seitan Chicken Salad', price: '$12.00', vegan: 'yes'},
+    { name: 'Steak Salad', price: '$12.00'},
+        
+    ],
+
+    toppings : [
+    { name: 'Vegan Ranch', vegan: 'yes' },
+    { name: 'Balsamic Vinaigrette', vegan: 'yes' },
+    { name: '1000 Island'},
+    { name: 'Blue Cheese'},
+    { name: 'French', vegan: 'yes' },
+    { name: 'Greek', vegan: 'yes' },
+    { name: 'Honey Mustard', vegan: 'yes' },
+    { name: 'Italian', vegan: 'yes' },
+    { name: 'Ranch'},
     ]
   }
 },
@@ -138,6 +167,20 @@ li {
   align-items: center;
   flex-wrap: wrap;
   overflow-y: scroll;
+}
+
+.topping-list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.topping-item {
+  margin-right: 4px;
 }
 
 @media (max-width: 1499.5px) {

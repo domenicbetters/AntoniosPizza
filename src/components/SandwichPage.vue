@@ -11,7 +11,6 @@
     </div>
     <div class = "right-side ">
       <div class = "food-box">
-        <h2>Pizzas and Everything Else</h2>
       <PizzaItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
       <PizzaItem class="food-list"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
       </div>
@@ -41,39 +40,27 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-      { name: 'Hand Tossed Pizza', desc: 'Top however you would like.  Additional Charge per Topping' },
-      { name: 'Calzone', desc: 'Cheese, sauce Ricotta', vegan: 'yes' },
-      { name: 'Stromboli', desc: 'Sauce cheese and ham and bacon' },
-    ],
-    toppingPrices: [
-      { name: '18"', price: '2.75' },
-      { name: '16"', price: '2.50' },
-      { name: '14"', price: '2.25' },
-    ],
-    toppings: [
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-    ],
+    { name: 'Cheeseburger', desc: 'American Cheese, Tomatoes, Lettuce, Onions, Pickles, Ketchup, Mustard' },
+    { name: 'Chicken Breast', desc: 'Cheese, Lettuce, Tomatoes, Onions, Italian Dressing', vegan: 'yes' },
+    { name: 'Chicken Parmesan', desc: 'Cheese, Marinara', vegan: 'yes' },
+    { name: 'Fried Buffalo Chicken', desc: 'Cheese, Lettuce, Tomatoes, Onions, Ranch', vegan: 'yes' },
+    { name: 'Fried Fish', desc: 'American Cheese, Lettuce, Tomatoes, Onions, Tartar Sauce', vegan: 'yes' },
+    { name: 'Grilled Buffalo Chicken', desc: 'Cheese, Lettuce, Tomatoes, Onions, Ranch', vegan: 'yes' },
+    { name: 'Hot Sausage Parmesan', desc: 'Cheese, Onions, Marinara, Green Peppers' , vegan: 'yes' },
+    { name: 'Italian', desc: 'Ham, Capicola, Salami, Mozzarella, Lettuce, Tomatoes, Onions, Italian Dressing, Pepperoni', vegan: 'yes' },
+    { name: 'Meatball Parmesan', desc: 'Marinara, Cheese' },
+    { name: 'Reuben', desc: 'Swiss Cheese, Sauerkraut, 1000 Island' },
+    { name: 'Steak', desc: 'Italian Dressing, Lettuce, Tomatoes, Onions, Cheese' },
+    { name: 'Turkey Club', desc: 'Bacon, American Cheese, Lettuce, Tomatoes, Onions, Mayo' },
+    { name: 'Veggie', desc: 'Italian Dressing, Mushrooms, Green Peppers, Onions, Banana Peppers, Black Olives', vegan: 'yes' },
+      ],
+
     sizes: [
-      { name: 'Checooole', price: '15.00' },
-      { name: 'Cheese', price: '15.00' },
-      { name: 'Pep', price: '25.00' },
+    { name: 'Half', price: '$7.00'},
+    { name: 'Whole', price: '$12.00'},
+    { name: 'Wedgie', price: '$15.00'},
+    { name: 'GF Half', price: '$9.00'},
+    { name: 'GF whole', price: '$14.00'},
     ]
   }
 },
@@ -149,6 +136,7 @@ li {
   border-radius: 10px;
   width: fit-content;
   margin-bottom:5px;
+  height: fit-content;
 }
 
 
