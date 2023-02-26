@@ -149,7 +149,7 @@ li {
 
 .food-box {
   width: 95%;
-  height: 860px;
+  height: 820px;
   border: 3px double white;
   border-radius: 10px;
   padding: 20px;
@@ -161,11 +161,7 @@ li {
   overflow-y: scroll;
 }
 
-@media (max-width: 1499.5px) {
-.food-box {
-  flex-wrap: nowrap;
-}
-}
+
 
 
 .picture-box {
@@ -229,7 +225,7 @@ li {
     justify-content: center;
   }
   .food-list {
-    grid-template-columns: v-bind('sizeColumnWidth') max-content;
+    grid-template-columns: v-bind('sizeColumnWidth') ;
   }
   .style-box {
     margin-right: 4px;
@@ -245,7 +241,14 @@ li {
     justify-content: center;
     flex-direction: column;
   }
+
+  .food-box {
+  flex-wrap: nowrap;
+}
   }
+
+
+
 
   @media (max-width: 400.5px) {
     .menu-section {
