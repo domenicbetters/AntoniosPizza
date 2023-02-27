@@ -5,10 +5,9 @@
         v-model="slide"
         :interval="8000"
         controls
-        background="black"
+        background-color="rgba(0,0,0,0.65)"
         img-width="960"
-        img-height="480"
-        style="text-shadow: 1px 1px 2px #333;"
+        style="text-shadow: 1px 1px 2px #333; "
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
@@ -19,9 +18,8 @@
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: cover;"
+              style="object-fit: cover; height: 65vh; "
               width="960"
-              height="780"
               src="../assets/images/fishfry.jpg"
               alt="image slot"
             >
@@ -33,7 +31,7 @@
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: contain;"
+              style="object-fit: contain; height: 65vh;"
               width="960"
               height="780"
               src="../assets/images/chih.jpg"
@@ -48,7 +46,7 @@
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: contain;"
+              style="object-fit: contain; height: 65vh;"
               width="960"
               height="780"
               src="../assets/images/feb specials.jpg"
@@ -65,7 +63,7 @@
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: cover;"
+              style="object-fit: cover; height: 65vh;"
               width="960"
               height="780"
               src="../assets/images/supreme pizza.jpg"
@@ -137,7 +135,7 @@ img {
   object-fit: contain;
 }
 .fishfry {
-  font-size: 8em;
+  font-size: 4em;
   font-family: juice;
   font-weight: bolder;
 }

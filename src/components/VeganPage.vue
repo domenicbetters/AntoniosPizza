@@ -28,7 +28,7 @@
         <img class = "card-image" src="../assets/images/vegan2.jpg" alt = 'vegan image' />
         <h2>Plenty of Vegan events to find us at</h2>
        <p>We don't just keep ourselves confined to the shop.  We are always out and about in the community, selling our goods where our goods are desired.  It's worth noteing that a lot of times we bring special menus with items exclusive to that event that you won't be able to find in our shop. </p>
-        <CTAButton  @show-main="showMain" :clicky="'show-main'" text="See what's coming up"/>
+        <CTAButton  @show-main="showMain" :clicky="'show-main'" text="What's coming up?"/>
       </div>
     </div>
 </div>
