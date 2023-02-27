@@ -59,6 +59,23 @@ body {
     background-repeat: no-repeat;
 }
 
+.modalimage {
+    display: flex;
+    width: fit-content;
+    background: #FFFAA1
+}
+.modalbody {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.headerclass {
+    padding:2px;
+    border: none;
+    margin: 0;
+}
+
 .location-right {
     display: flex;
     flex-wrap: wrap;
@@ -154,12 +171,13 @@ body {
 }
 
 @media (max-width: 991.5px) {
-
-  
-
-    .mobile-no {
-        display: none;
+    .modalimg {
+        width: 100%;
+        object-fit:scale-down !important;
     }
+
+   
+
     .location-body {
         flex-direction: column;
         align-items: center;

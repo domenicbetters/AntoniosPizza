@@ -33,9 +33,12 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-      { name: 'Hand Tossed Pizza', price: '15.00', vegan: 'yes' },
-      { name: 'Calzone', desc: 'this one has feta', price: '15.00' },
-      { name: 'Stromboli', price: '15.00' },
+    { name: 'Cinnastix', price:'$6.00', vegan: 'yes' },
+    { name: 'Apple Pie rolls', price:'$6.00', vegan: 'yes' },
+    { name: 'Vegan Cheesecake', price:'$6.00' , vegan: 'yes'},
+    { name: 'Cheesecake', price:'$5.00' },
+    { name: 'Tiramisu', price:'$6.00' },
+    { name: 'Oreo Cheesecake', price:'$6.00' },
      
     ]
   }

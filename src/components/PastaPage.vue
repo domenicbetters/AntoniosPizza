@@ -2,7 +2,7 @@
   <div class = "menu-section">
     <div>
       <h1>Pasta</h1>
-      <h2>All Pasta comes with side of garlic breads</h2>
+      <h2>All Pasta comes with side of garlic bread</h2>
     </div>
     <div class = "right-side ">
       <div class = "food-box">
@@ -34,10 +34,11 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-      { name: 'Hand Tossed Pizza', price: '15.00' },
-      { name: 'Calzone', desc: 'this one has feta', price: '15.00', vegan: 'yes' },
-      { name: 'Stromboli', price: '15.00' },
-     
+    { name: 'Penne Pasta',desc: 'Your choice of Marinara, Alfredo, or Aglio Olio.  Alfredo is not vegan.', price:'$10.00', vegan: 'yes' },
+    { name: 'Baked Penne',desc: 'Penne baked with mozzarella and marinara ', price:'$11.00', vegan: 'yes' },
+    { name: 'Chicken Alfredo',desc: 'Grilled Chicken with Alfredo Sauce', price:'$14.00' },
+    { name: 'Chicken Parm Pasta',desc: 'Breaded Chicken with Mozzarella, Mozzarella, and Parmesan', price:'$14.00', vegan: 'yes' },
+    { name: 'Stuffed Shells',desc: 'Baked with Marinara and Mozzarella Cheese', price:'$11.00' },
     ]
   }
 },
@@ -183,6 +184,14 @@ li {
   border: 3px solid #FFFAA1;
 }
 
+@media (max-width: 1277.5px) {
+  .food-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 @media (max-width: 991.5px) {
   h1 {

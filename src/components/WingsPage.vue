@@ -1,11 +1,13 @@
 <template>
+  <div>
   <div class = "menu-section">
     <div class ="left-side">
       <h1>Wings</h1>
       <div class="mobile-styles">
         <div class="style-box">
           <h2>Sizes and Styles</h2>
-            <SizePrice  class = "size-list" :key="size.name" v-for="(size) in sizes" :size="size"/>
+            <SizePrice  class = "size-list" v-show="size.vegan === 'yes' && veganOnly === true" :key="size.name" v-for="(size) in sizes" :size="size"/>
+            <SizePrice  class = "size-list" v-show="veganOnly === false" :key="size.name" v-for="(size) in sizes" :size="size"/>
           </div>
       </div>
     </div>
@@ -20,16 +22,19 @@
         </div>
         <div>
           <h2>Add ons</h2>
-          <p>Celery, Ranch, BBQ</p>
+          <p>Celery, Ranch, Blue cheese</p>
         </div>
       </div>
    
     
-    <div class = "picture-box">
+  
+  </div>
+  </div>
+  <div class = "picture-box">
       <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
       <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
+      <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
     </div>
-  </div>
   </div>
 </template>
 
@@ -49,19 +54,32 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     toppings: [
-      { name: 'Hand Tossed Pizza', desc: 'Top however you would like.  Additional Charge per Topping' },
-      { name: 'Calzone', desc: 'Cheese, sauce Ricotta', vegan: 'yes' },
-      { name: 'Stromboli', desc: 'Sauce cheese and ham and bacon' },
+    { name: 'BBQ',vegan: 'yes'},
+    { name: 'Beer Can Chicken',vegan: 'yes'},
+    { name: 'Buffalo',vegan: 'yes'},
+    { name: 'Cajun',vegan: 'yes'},
+    { name: 'Cajun Garlic',vegan: 'yes'},
+    { name: 'Garlic Parmesan',vegan: 'yes'},
+    { name: 'General Tso',vegan: 'yes'},
+    { name: 'Honey Mustard',vegan: 'yes'},
+    { name: 'Mango Habanero',vegan: 'yes'},
+    { name: 'Old Bay',vegan: 'yes'},
+    { name: 'Plain',vegan: 'yes'},
+    { name: 'Ranch'},
+    { name: 'Roasted Garlic',vegan: 'yes'},
+    { name: 'Salt n Vinegar',vegan: 'yes'},
+    { name: 'Spicy BBQ',vegan: 'yes'},
+    { name: 'Spicy Garlic',vegan: 'yes'},
+    { name: 'Wing Dust',vegan: 'yes'},
     ],
-    toppingPrices: [
-      { name: '18"', price: '2.75' },
-      { name: '16"', price: '2.50' },
-      { name: '14"', price: '2.25' },
-    ],
+   
     sizes: [
-      { name: 'Checooole', price: '15.00' },
-      { name: 'Cheese', price: '15.00' },
-      { name: 'Pep', price: '25.00' },
+    { name: '6pc Wings', price: '$10.00'},
+    { name: '12pc Wings', price: '$18.00'},
+    { name: '24pc Wings', price: '$32.00'},
+    { name: '6pc Seitan Wings', price: '$7.00', vegan: 'yes'},
+    { name: '12pc Seitan Wings', price: '$12.00', vegan: 'yes'},
+    { name: '24pc Seitan Wings', price: '$22.00', vegan: 'yes'},
     ]
   }
 },
@@ -94,6 +112,7 @@ this.findlength()
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 img {
   height: 250px;
   width: 25%;
@@ -137,6 +156,7 @@ li {
   border-radius: 10px;
   width: fit-content;
   margin-bottom:5px;
+  height: fit-content;
 }
 
 
@@ -166,6 +186,7 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
 }
 
@@ -181,7 +202,7 @@ li {
 
 .food-box {
   width: 100%;
-  height: 860px;
+  height: fit-content;
   border: 3px double white;
   border-radius: 10px;
   padding: 20px;
@@ -199,7 +220,7 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -224,6 +245,13 @@ li {
   border-radius: 20px;
   border: 3px solid #FFFAA1;
 }
+
+@media (max-width: 1431.5px) {
+    .menu-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
 
 @media (max-width: 991.5px) {
@@ -260,7 +288,9 @@ li {
   }
   }
 
-  @media (max-width: 490.5px) {
+
+
+  @media (max-width: 733.5px) {
     .menu-section {
       flex-direction: column;
       align-items: center;

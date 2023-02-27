@@ -1,33 +1,33 @@
 <template>
   <div class = "menu-section">
-    <div class ="left-side">
+    <div>
       <h1>Fries</h1>
-      <div class="mobile-styles">
-        <div class="style-box">
-          <h2>Sizes and Styles</h2>
-            <SizePrice  class = "size-list" :key="size.name" v-for="(size) in sizes" :size="size"/>
-          </div>
-      </div>
     </div>
     <div class = "right-side ">
       <div class = "food-box">
-        <div>
-          <h2>Flavors</h2>
-          <div class ="topping-list">
-            <ToppingList class="topping-item" v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :topping="item" />
-            <ToppingList class="topping-item" v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :topping="item" />
-          </div>
+      <SaladItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
+      <SaladItem class="food-list"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
+      </div>
+      <div class = "food-box topping-box">
+        <h2>Flavors</h2>
+        <div class="topping-list">
+          <ToppingList class="topping-item"  v-show="topping.vegan === 'yes' && veganOnly === true" :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
+          <ToppingList class="topping-item"  v-show="veganOnly === false" :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
         </div>
-        <div>
-          <h2>Add ons</h2>
-          <p>Celery, Ranch, BBQ</p>
+      </div>
+      <div class = "food-box topping-box">
+        <h2>Add Ons</h2>
+        <div class="topping-list">
+          <ToppingList class="topping-item"  v-show="mod.vegan === 'yes' && veganOnly === true" :key="mod.name" v-for="(mod) in mods" :topping="mod" />
+          <ToppingList class="topping-item"  v-show="veganOnly === false" :key="mod.name" v-for="(mod) in mods" :topping="mod" />
         </div>
       </div>
    
     
     <div class = "picture-box">
-      <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
-      <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
+      <RosterCard class="rostercard" :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
+      <RosterCard class="rostercard" :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
+      <RosterCard class="rostercard" :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
     </div>
   </div>
   </div>
@@ -35,54 +35,53 @@
 
 <script>
 import RosterCard from './RosterCard.vue'
+import SaladItem from './SaladItem.vue'
 import ToppingList from './ToppingList.vue'
-import SizePrice from './SizePrice.vue'
 export default {
   name: 'FriesPage',
   components: {
-    ToppingList,
-    SizePrice,
+    SaladItem,
     RosterCard,
+    ToppingList,
   },
   data() {
   return {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-      { name: 'Hand Tossed Pizza', desc: 'Top however you would like.  Additional Charge per Topping', vegan: 'yes' },
-      { name: 'Calzone', desc: 'Cheese, sauce Ricotta' },
-      { name: 'Stromboli', desc: 'Sauce cheese and ham and bacon' },
+    { name: 'Hand Cut Fries', price: '$5.00', vegan: 'yes'},
+    { name: 'Waffle Fries', price: '$6.00', vegan: 'yes'},
+    
+        
     ],
-    toppingPrices: [
-      { name: '18"', price: '2.75' },
-      { name: '16"', price: '2.50' },
-      { name: '14"', price: '2.25' },
+
+    toppings : [
+    { name: 'BBQ',vegan: 'yes'},
+    { name: 'Beer Can Chicken',vegan: 'yes'},
+    { name: 'Buffalo',vegan: 'yes'},
+    { name: 'Cajun',vegan: 'yes'},
+    { name: 'Cajun Garlic',vegan: 'yes'},
+    { name: 'Garlic Parmesan',vegan: 'yes'},
+    { name: 'General Tso',vegan: 'yes'},
+    { name: 'Honey Mustard',vegan: 'yes'},
+    { name: 'Mango Habanero',vegan: 'yes'},
+    { name: 'Old Bay',vegan: 'yes'},
+    { name: 'Plain',vegan: 'yes'},
+    { name: 'Ranch'},
+    { name: 'Roasted Garlic',vegan: 'yes'},
+    { name: 'Salt n Vinegar',vegan: 'yes'},
+    { name: 'Spicy BBQ',vegan: 'yes'},
+    { name: 'Spicy Garlic',vegan: 'yes'},
+    { name: 'Wing Dust',vegan: 'yes'},
     ],
-    toppings: [
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
-      { name: 'Pepperoni'},
-      { name: 'Sausage'},
-      { name: 'Veggies'},
+
+    mods: [
+      {name: 'Chili', vegan: 'yes'},
+      {name: 'Shredded Cheese', vegan: 'yes'},
+      {name: 'Nacho Cheese',},
+      {name: 'Bacon', vegan: 'yes'},
     ],
-    sizes: [
-      { name: 'Checooole', price: '15.00' },
-      { name: 'Cheese', price: '15.00' },
-      { name: 'Pep', price: '25.00' },
-    ]
+
   }
 },
   props: {
@@ -102,7 +101,7 @@ export default {
   return biggestNum;
 },
 findlength() {
-    this.sizeColumnWidth = this.GetLengthOfLongestElement(this.sizes)+'ch'
+    this.sizeColumnWidth = this.GetLengthOfLongestElement(this.items)+'ch'
 },
 
   },
@@ -124,9 +123,6 @@ img {
 h1 {
   color:#FFFAA1;
 }
-h2 {
-  text-decoration: underline;
-}
 ul {
   display: block;
   padding: 0;
@@ -135,21 +131,13 @@ li {
   display: inline;
   margin: 0 5px;
 }
-
-.left-side {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width:20%;
-}
-
 .right-side {
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:100%;
+  justify-content: center;
+  width: 100%;
 }
 .style-box {
   border: 3px double white;
@@ -160,23 +148,38 @@ li {
 }
 
 
-.size-list {
-  display: grid;
-  width: 100%;
-  column-gap:30px;
-  text-align: left;
-  margin:2px;
-  grid-template-columns: v-bind('sizeColumnWidth') max-content;
-}
-
 .food-list {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  display: grid;
+  width: 80%;
+  min-width: fit-content;
+  align-items: end;
   border-bottom:1px dashed white;
   margin: 0;
   padding: 0;
+  grid-template-columns: v-bind('sizeColumnWidth') inherit;
+}
+
+
+
+.menu-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-box {
+  width: 95%;
+  height: fit-content;
+  border: 3px double white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
 }
 
 .topping-list {
@@ -193,34 +196,26 @@ li {
   margin-right: 4px;
 }
 
-.menu-section {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
+@media (max-width: 1499.5px) {
 .food-box {
-  width: 100%;
-  height: 860px;
-  border: 3px double white;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   flex-wrap: nowrap;
-  overflow-y: scroll;
+}
 }
 
 
 .picture-box {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media (max-width: 2056.5px) {
+  .picture-box{
+    flex-wrap: nowrap;
+  }
 }
 
 
@@ -247,11 +242,14 @@ li {
 
 
 @media (max-width: 991.5px) {
+  h1 {
+    margin-top: 55px;
+  }
   h2 {
     margin-bottom: 10px;
   }
   .menu-section {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
   }
   .left-side {
@@ -265,6 +263,12 @@ li {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .food-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .style-box {
     margin-right: 4px;
     height: fit-content;
@@ -277,10 +281,11 @@ li {
   }
   .picture-box {
     justify-content: center;
-  }
+    flex-direction: column;
+   }
   }
 
-  @media (max-width: 490.5px) {
+  @media (max-width: 400.5px) {
     .menu-section {
       flex-direction: column;
       align-items: center;

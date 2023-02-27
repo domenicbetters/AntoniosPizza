@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class = "menu-section">
     <div class ="left-side">
       <h1>Specialty Pizzas</h1>
@@ -16,13 +17,16 @@
       </div>
    
     
-    <div class = "picture-box">
+    
+  </div>
+  </div>
+  <div class = "picture-box">
       <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
+      <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
       <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
       
     </div>
-  </div>
-  </div>
+</div>
 </template>
 
 <script>
@@ -198,7 +202,7 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 

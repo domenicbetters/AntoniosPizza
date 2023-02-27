@@ -15,49 +15,48 @@
       >
         <!-- Text slides with image -->
         <b-carousel-slide>
+          <div class = "fishfry">Fish Fry is Back!</div>
+          <CTAbutton text='See the Menu' v-b-modal.modal-center />
           <template #img>
             <img
-              class="d-block img-fluid w-100"
+              class="d-block w-100"
+              style="object-fit: cover;"
               width="960"
-              height="480"
-              src="https://picsum.photos/1024/480/?image=55"
+              height="780"
+              src="../assets/images/fishfry.jpg"
               alt="image slot"
             >
           </template>
         </b-carousel-slide>
 
-        <b-carousel-slide>
-          <template #img>
-            <img
-              class="d-block img-fluid w-100"
-              width="960"
-              height="480"
-              src="https://picsum.photos/1024/480/?image=55"
-              alt="image slot"
-            >
-          </template>
-        </b-carousel-slide>
 
-        <b-carousel-slide>
-          <template #img>
-            <img
-              class="d-block img-fluid w-100"
-              width="960"
-              height="480"
-              src="https://picsum.photos/1024/480/?image=55"
-              alt="image slot"
-            >
-          </template>
-        </b-carousel-slide>
 
       </b-carousel>
+
+      <div>
+
+  <b-modal id="modal-center"
+  hide-footer=true
+  content-class="modalimage"
+  header-class="headerclass"
+  modal-class="modalbody"
+  header="no">
+    <img class="modalimg" src="../assets/images/fishmenu.jpg" />
+  </b-modal>
+</div>
   </div>
 </template>
 
 
 
 <script>
+import CTAbutton from "./CTAbutton.vue"
   export default {
+    name: 'MainPage',
+    components: {
+    CTAbutton,
+  },
+
     data() {
       return {
         slide: 0,
@@ -76,12 +75,21 @@
 </script>
 
 <style scoped>
+img {
+  object-fit: contain;
+}
 
 @media (max-width: 991.5px) {
   img {
     object-fit: cover;
     height: 55vh;
   }
+}
+
+.fishfry {
+  font-size: 9em;
+  font-family: juice;
+  font-weight: bolder;
 }
 
 
