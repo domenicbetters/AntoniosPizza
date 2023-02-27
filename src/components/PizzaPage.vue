@@ -30,8 +30,8 @@
       </div>
     
     <div class = "picture-box">
-      <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
-      <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
+      <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Calzone'" name = "Calzone" />
+      <RosterCard :imagelink="require('../assets/images/deepdish.jpg')" :altname="'Deep Dish'" name = "Deep Dish" />
     </div>
   </div>
   </div>

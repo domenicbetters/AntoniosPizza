@@ -3,31 +3,32 @@
     <div>
       <div class = "vegan-intro-box">
         <div>
-          <h1>Vegans are so cool</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus ipsum sit amet sollicitudin sagittis. Duis quis dui enim. Vivamus luctus ante eget nisi lacinia, vehicula lacinia enim ultrices. Nunc pretium, dolor id suscipit aliquam, tellus felis aliquam leo, ut egestas augue nibh eu augue. Mauris posuere sit amet ex a fringilla. In non pulvinar diam. Etiam at elementum metus. Nam vel pellentesque erat. Ut cursus lacus sit amet enim ornare malesuada. Donec consequat eros aliquam augue congue, id pellentesque ex bibendum. Suspendisse volutpat tellus id dolor lacinia, eu tristique nisl convallis. Fusce accumsan, dui a vestibulum rhoncus, metus metus dictum ex, id consectetur lorem lectus in purus. Maecenas faucibus ex dictum fermentum placerat. Donec ac tortor non sapien ullamcorper tempus sed eu ligula.</p>
+          <h1>Vegans need good pizza too!</h1>
+          <p>We don't just want to offer some dairy free cheese.  We want to make sure we are the Pittsburgh destination for stellar pizza shop fair that doesn't throw any roadblocks in the way of your vegan lifestyle.</p>
+           <p>Almost every vegan item is made in house from recipes developed over the last several years of tinkering and fine tuning.  We do our best to make sure that everything tastes as fantastic and authentic as it can, so you never get a case of FOMO.  </p>
         </div>
-        <img class = "vegan-intro-image" src="../assets/images/shopfrontt1.png" alt = 'vegan image' />
-        <img class = "vegan-intro-image-mobile" src="../assets/images/shopfront.jpg" alt = 'vegan image' />
+        <img class = "vegan-intro-image" src="../assets/images/vegan 1.jpg" alt = 'vegan image' />
+        <img class = "vegan-intro-image-mobile" src="../assets/images/vegan 1.jpg" alt = 'vegan image' />
       </div>
     </div>
     <div class="vegan-intro-box no-shadow">
       <div class = "vegan-box">
-        <img class = "card-image" src="../assets/images/vegan.jpg" alt = 'vegan image' />
-        <h2>Vegans are so cool</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus ipsum sit amet sollicitudin sagittis. Duis quis dui enim. Vivamus luctus ante eget nisi lacinia, vehicula lacinia enim ultrices. Nunc pretium, dolor id suscipit aliquam, tellus felis aliquam leo, ut egestas augue nibh eu augue. Mauris posuere sit amet ex a fringilla. In non pulvinar diam. Etiam at elementum metus. Nam vel pellentesque erat. Ut cursus lacus sit amet enim ornare malesuada. Donec consequat eros aliquam augue congue, id pellentesque ex bibendum. Suspendisse volutpat tellus id dolor lacinia, eu tristique nisl convallis. Fusce accumsan, dui a vestibulum rhoncus, metus metus dictum ex, id consectetur lorem lectus in purus. Maecenas faucibus ex dictum fermentum placerat. Donec ac tortor non sapien ullamcorper tempus sed eu ligula.</p>
-        <CTAButton text="Call to Action"/>
+        <img class = "card-image" src="../assets/images/vegan 2.jpg" alt = 'vegan image' />
+        <h2>We don't just make pizza</h2>
+        <p>You need some pepperoni rolls for your next gathering?  Do you crave a hoagie full of fresh veggies and Italian meats that aren't really meats?  Just wish you could have ranch dressing again?  We got you covered for every craving and need you have.</p>
+        <CTAButton text="Order now" :link="'https://antoniospizzeria.hungerrush.com/'"/>
       </div>
       <div class = "vegan-box">
-        <img class = "card-image" src="../assets/images/vegan.jpg" alt = 'vegan image' />
-        <h2>Vegans are so cool</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus ipsum sit amet sollicitudin sagittis. Duis quis dui enim. Vivamus luctus ante eget nisi lacinia, vehicula lacinia enim ultrices. Nunc pretium, dolor id suscipit aliquam, tellus felis aliquam leo, ut egestas augue nibh eu augue. Mauris posuere sit amet ex a fringilla. In non pulvinar diam. Etiam at elementum metus. Nam vel pellentesque erat. Ut cursus lacus sit amet enim ornare malesuada. Donec consequat eros aliquam augue congue, id pellentesque ex bibendum. Suspendisse volutpat tellus id dolor lacinia, eu tristique nisl convallis. Fusce accumsan, dui a vestibulum rhoncus, metus metus dictum ex, id consectetur lorem lectus in purus. Maecenas faucibus ex dictum fermentum placerat. Donec ac tortor non sapien ullamcorper tempus sed eu ligula.</p>
-        <CTAButton text="Call to Action"/>
+        <img class = "card-image" src="../assets/images/vegan 3.jpg" alt = 'vegan image' />
+        <h2>Why stop at plain pizza?</h2>
+        <p> Like we said, we don't just offer the bair minimum.  If we come up with a new crazy pizza recipe for the masses, we make sure you are part of those masses.  Almost every specialty pizza and off the wall idea will have a vegan counterpart.</p> 
+        <CTAButton @show-menus="showMenus" :clicky="'show-menus'" text="See what specialty pizzas may tempt you"/>
       </div>
       <div class = "vegan-box">
-        <img class = "card-image" src="../assets/images/vegan.jpg" alt = 'vegan image' />
-        <h2>Vegans are so cool</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus ipsum sit amet sollicitudin sagittis. Duis quis dui enim. Vivamus luctus ante eget nisi lacinia, vehicula lacinia enim ultrices. Nunc pretium, dolor id suscipit aliquam, tellus felis aliquam leo, ut egestas augue nibh eu augue. Mauris posuere sit amet ex a fringilla. In non pulvinar diam. Etiam at elementum metus. Nam vel pellentesque erat. Ut cursus lacus sit amet enim ornare malesuada. Donec consequat eros aliquam augue congue, id pellentesque ex bibendum. Suspendisse volutpat tellus id dolor lacinia, eu tristique nisl convallis. Fusce accumsan, dui a vestibulum rhoncus, metus metus dictum ex, id consectetur lorem lectus in purus. Maecenas faucibus ex dictum fermentum placerat. Donec ac tortor non sapien ullamcorper tempus sed eu ligula.</p>
-        <CTAButton text="Call to Action"/>
+        <img class = "card-image" src="../assets/images/vegan2.jpg" alt = 'vegan image' />
+        <h2>Plenty of Vegan events to find us at</h2>
+       <p>We don't just keep ourselves confined to the shop.  We are always out and about in the community, selling our goods where our goods are desired.  It's worth noteing that a lot of times we bring special menus with items exclusive to that event that you won't be able to find in our shop. </p>
+        <CTAButton  @show-main="showMain" :clicky="'show-main'" text="See what's coming up"/>
       </div>
     </div>
 </div>
@@ -43,6 +44,16 @@ export default {
   },
   props: {
     msg: String
+  }, 
+  methods: {
+    showMenus() {
+        this.$emit('show-menu')
+        this.$emit('toggle-vegan-on')
+      },
+
+      showMain() {
+        this.$emit('show-home')
+      }
   }
 }
 </script>

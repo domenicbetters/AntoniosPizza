@@ -6,7 +6,7 @@
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-              <b-nav-item  @click="ShowPizza()" v-bind:class="{active: PizzaisActive}" href="#">Pizza</b-nav-item>
+              <b-nav-item  @click="ShowPizza()" v-bind:class="{active: PizzaisActive}" href="#">Pizzas</b-nav-item>
               <b-nav-item @click="ShowSpecial()" v-bind:class="{active: SpecialisActive}" href="#">Specialty Pizza</b-nav-item>
               <b-nav-item @click="ShowSandwich()" v-bind:class="{active: SandwichisActive}" href="#">Sandwiches</b-nav-item>
               <b-nav-item @click="ShowSalad()" v-bind:class="{active: SaladisActive}" href="#">Salads</b-nav-item>

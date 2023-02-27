@@ -31,9 +31,8 @@
   </div>
   </div>
   <div class = "picture-box">
-      <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
-      <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
-      <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
+      <RosterCard :imagelink="require('../assets/images/cajun.jpg')" :altname="'cajun'" name = "Cajun Wings" />
+      <RosterCard :imagelink="require('../assets/images/garlicparmwings.jpg')" :altname="'garlicparm'" name = "Garlic Parm Wings" />
     </div>
   </div>
 </template>

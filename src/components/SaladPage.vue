@@ -20,10 +20,8 @@
    
     
     <div class = "picture-box">
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
-    </div>
+      <RosterCard class="rostercard" :imagelink="require('../assets/images/salad.jpg')" :altname="'salad'" name = "House Salad" />
+     </div>
   </div>
   </div>
 </template>

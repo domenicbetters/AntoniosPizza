@@ -21,9 +21,9 @@
   </div>
   </div>
   <div class = "picture-box">
-      <RosterCard :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
-      <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
-      <RosterCard :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
+      <RosterCard :imagelink="require('../assets/images/cranrangoon.jpg')" :altname="'Crab Rangoon Pizza'" name = "Crab Rangoon Pizza" />
+      <RosterCard :imagelink="require('../assets/images/meatlovers.jpg')" :altname="'Meat Lovers'" name = "Meat Lovers" />
+      <RosterCard :imagelink="require('../assets/images/spinfeta.jpg')" :altname="'Spinach Feta'" name = "Spinach Feta" />
       
     </div>
 </div>

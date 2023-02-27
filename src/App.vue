@@ -15,7 +15,7 @@
     <div class="main" v-show="HomeExists === 'yes'"><MainPage @show-menu="ShowMenu"/></div>
     <div class="main" v-show="LocationExists === 'yes'"><LocationPage/></div>
     <div class="main" v-show="MenuExists === 'yes'"><MenuPage :veganOnly="veganOnly"/></div>
-    <div class="main" v-show="VeganExists === 'yes'"><VeganPage/></div>
+    <div class="main" v-show="VeganExists === 'yes'"><VeganPage @show-home="ShowHome" @toggle-vegan-on="ToggleVeganOn" @show-menu="ShowMenu" /></div>
     <div class="main" v-show="AboutExists === 'yes'"><AboutPage/></div>
     <div class="main" v-show="ContactExists === 'yes'"><ContactPage/></div>
     <div><FooterBar/></div>

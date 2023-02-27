@@ -4,8 +4,7 @@
     <div class = "vegan-intro-box">
       <div>
         <h1>Our Mission Statement</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus ipsum sit amet sollicitudin sagittis. Duis quis dui enim. Vivamus luctus ante eget nisi lacinia, vehicula lacinia enim ultrices. Nunc pretium, dolor id suscipit aliquam, tellus felis aliquam leo, ut egestas augue nibh eu augue. Mauris posuere sit amet ex a fringilla. In non pulvinar diam. Etiam at elementum metus. Nam vel pellentesque erat. Ut cursus lacus sit amet enim ornare malesuada. Donec consequat eros aliquam augue congue, id pellentesque ex bibendum. Suspendisse volutpat tellus id dolor lacinia, eu tristique nisl convallis. Fusce accumsan, dui a vestibulum rhoncus, metus metus dictum ex, id consectetur lorem lectus in purus. Maecenas faucibus ex dictum fermentum placerat. Donec ac tortor non sapien ullamcorper tempus sed eu ligula.</p>
-      </div>
+       <p>To make great pizza, satisfy the dietary needs of those pizza deprived demographics, and be a positive influence on the community</p></div>
         <img class = "vegan-intro-image" src="../assets/images/buddy.jpg" alt = 'vegan image' />
         <img class = "vegan-intro-image-mobile" src="../assets/images/buddy.jpg" alt = 'vegan image' />
     </div>

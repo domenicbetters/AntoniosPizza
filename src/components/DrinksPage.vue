@@ -18,9 +18,9 @@
    
     
     <div class = "picture-box">
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
+      <RosterCard class="rostercard" :imagelink="require('../assets/images/kickstart.png')" :altname="'kickstart'" name = "Kick Start" />
+      <RosterCard class="rostercard" :imagelink="require('../assets/images/pepsi 1.jpg')" :altname="'Pepsi'" name = "Pepsi" />
+      <RosterCard class="rostercard" :imagelink="require('../assets/images/starry.png')" :altname="'Starry'" name = "Starry" />
     </div>
   </div>
   </div>

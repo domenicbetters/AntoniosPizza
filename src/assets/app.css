@@ -62,12 +62,18 @@ body {
 .modalimage {
     display: flex;
     width: fit-content;
-    background: #FFFAA1
+    background: #FFFAA1;
+    justify-self: center;
 }
+.dogimg {
+    width: 100%;
+    object-fit:scale-down !important;
+}
+
 .modalbody {
     display: flex !important;
     justify-content: center !important;
-    align-items: center;
+    align-items: center ;
 }
 
 .headerclass {

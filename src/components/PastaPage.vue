@@ -11,23 +11,17 @@
       </div>
    
     
-    <div class = "picture-box">
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/calzone.jpg')" :altname="'Tina'" name = "Deep Dish" />
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/pizza1.jpg')" :altname="'Tina'" name = "Pizza" />
-    </div>
+  
   </div>
   </div>
 </template>
 
 <script>
-import RosterCard from './RosterCard.vue'
 import SaladItem from './SaladItem.vue'
 export default {
   name: 'PastaPage',
   components: {
     SaladItem,
-    RosterCard,
   },
   data() {
   return {
