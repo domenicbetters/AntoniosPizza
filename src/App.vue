@@ -12,7 +12,7 @@
       /></div>
       <h1 v-show="MenuExists==='yes' && veganOnly === false">Full Menu</h1>
       <h1 v-show="MenuExists==='yes' && veganOnly === true">Vegan Menu</h1>
-    <div class="main" v-show="HomeExists === 'yes'"><MainPage/></div>
+    <div class="main" v-show="HomeExists === 'yes'"><MainPage @show-menu="ShowMenu"/></div>
     <div class="main" v-show="LocationExists === 'yes'"><LocationPage/></div>
     <div class="main" v-show="MenuExists === 'yes'"><MenuPage :veganOnly="veganOnly"/></div>
     <div class="main" v-show="VeganExists === 'yes'"><VeganPage/></div>

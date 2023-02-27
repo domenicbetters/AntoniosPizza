@@ -6,7 +6,7 @@
         :interval="8000"
         controls
         indicators
-        background="#ababab"
+        background="black"
         img-width="960"
         img-height="480"
         style="text-shadow: 1px 1px 2px #333;"
@@ -17,6 +17,36 @@
         <b-carousel-slide>
           <div class = "fishfry">Fish Fry is Back!</div>
           <CTAbutton text='See the Menu' v-b-modal.modal-center />
+          <template #img>
+            <img
+              class="d-block w-100"
+              style="object-fit: cover;"
+              width="960"
+              height="780"
+              src="../assets/images/fishfry.jpg"
+              alt="image slot"
+            >
+          </template>
+        </b-carousel-slide>
+
+        <b-carousel-slide>
+          <template #img>
+            <img
+              class="d-block w-100"
+              style="object-fit: contain;"
+              width="960"
+              height="780"
+              src="../assets/images/feb specials.jpg"
+              alt="image slot"
+            >
+            <CTAbutton text="Order Now" :link="'https://antoniospizzeria.hungerrush.com/'" />
+          </template>
+          
+        </b-carousel-slide>
+
+        <b-carousel-slide>
+          <div class = "fishfry">Tons of options for every taste</div>
+       <CTAbutton @show-menus="showMenus" :clicky="'show-menus'" text='See what we got'/>
           <template #img>
             <img
               class="d-block w-100"
@@ -69,6 +99,10 @@ import CTAbutton from "./CTAbutton.vue"
       },
       onSlideEnd() {
         this.sliding = false
+      },
+      showMenus() {
+        this.$emit('show-menu')
+        console.log('isitworking?')
       }
     }
   }
@@ -78,19 +112,24 @@ import CTAbutton from "./CTAbutton.vue"
 img {
   object-fit: contain;
 }
+.fishfry {
+  font-size: 8em;
+  font-family: juice;
+  font-weight: bolder;
+}
 
 @media (max-width: 991.5px) {
   img {
     object-fit: cover;
     height: 55vh;
   }
+
+  .fishfry{
+    font-size: 3em;
+  }
 }
 
-.fishfry {
-  font-size: 9em;
-  font-family: juice;
-  font-weight: bolder;
-}
+
 
 
 
