@@ -54,9 +54,20 @@ a:hover {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
-  object-fit: contain;
+  width: 95%;
+  object-fit: cover !important;
+  margin: 10px;
+}
+.main-body {
+  flex-direction:row ;
 }
 
-
+@media (max-width: 991.5px) {
+  .main-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+}
 </style>

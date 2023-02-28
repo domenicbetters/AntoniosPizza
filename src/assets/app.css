@@ -189,6 +189,7 @@ body {
     justify-content: space-around;
     margin:10px;
     padding: 15px;
+    width: 100%;
 }
 .contact-body {
     flex-direction: row;
