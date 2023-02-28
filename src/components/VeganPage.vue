@@ -1,4 +1,5 @@
 <template>
+  <div class = "all-page">
   <div class = "main-body">
     <div>
       <div class = "vegan-intro-box">
@@ -11,6 +12,8 @@
         <img class = "vegan-intro-image-mobile" src="../assets/images/vegan 1.jpg" alt = 'vegan image' />
       </div>
     </div>
+  </div>
+  <div class = "main-body bottom-box">
     <div class="vegan-intro-box no-shadow">
       <div class = "vegan-box">
         <img class = "card-image" src="../assets/images/vegan 2.jpg" alt = 'vegan image' />
@@ -31,6 +34,7 @@
         <CTAButton  @show-main="showMain" :clicky="'show-main'" text="What's coming up?"/>
       </div>
     </div>
+</div>
 </div>
 </template>
 
@@ -73,5 +77,10 @@ li {
 }
 a {
   color: #42b983;
+}
+@media (max-width: 1150.5px) {
+  .main-body {
+    height:fit-content;
+  }
 }
 </style>

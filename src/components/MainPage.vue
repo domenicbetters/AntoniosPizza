@@ -7,18 +7,18 @@
         controls
         background-color="rgba(0,0,0,0.65)"
         img-width="960"
-        style="text-shadow: 1px 1px 2px #333; "
+        style="text-shadow: 1px 1px 2px #333; height:65vh;"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
         <!-- Text slides with image -->
         <b-carousel-slide>
           <div class = "fishfry">Fish Fry is Back!</div>
-          <CTAbutton text='See the Menu' v-b-modal.modal-center />
+          <CTAbutton class="slide-button" text='See the Menu' v-b-modal.modal-center />
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: cover; height: 65vh; "
+              style="object-fit: cover; height:65vh;" 
               width="960"
               src="../assets/images/fishfry.jpg"
               alt="image slot"
@@ -27,17 +27,15 @@
         </b-carousel-slide>
 
         <b-carousel-slide>
-          <div class = "fishfry"></div>
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: contain; height: 65vh;"
+              style="object-fit: contain; height: 45vh;"
               width="960"
-              height="780"
               src="../assets/images/chih.jpg"
               alt="image slot"
             >
-            <CTAbutton  text='What are we bringing?'  v-b-modal.modal/>
+            <CTAbutton class="slide-button"  text='What are we bringing?'  v-b-modal.modal/>
           </template>
           
         </b-carousel-slide>
@@ -46,20 +44,19 @@
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: contain; height: 65vh;"
+              style="object-fit: contain; height: 45vh;"
               width="960"
-              height="780"
               src="../assets/images/feb specials.jpg"
               alt="image slot"
             >
-            <CTAbutton text="Order Now" :link="'https://antoniospizzeria.hungerrush.com/'" />
+            <CTAbutton  class="slide-button" text="Order Now" :link="'https://antoniospizzeria.hungerrush.com/'" />
           </template>
           
         </b-carousel-slide>
 
         <b-carousel-slide>
           <div class = "fishfry">Tons of options for every taste</div>
-       <CTAbutton @show-menus="showMenus" :clicky="'show-menus'" text='See what we got'/>
+       <CTAbutton class="slide-button" @show-menus="showMenus" :clicky="'show-menus'" text='See what we got'/>
           <template #img>
             <img
               class="d-block w-100"
@@ -147,9 +144,13 @@ img {
   }
 
   .fishfry{
-    font-size: 3em;
+    font-size: 2em;
   }
+.slide-button {
+font-size:.5em;
 }
+}
+
 
 
 

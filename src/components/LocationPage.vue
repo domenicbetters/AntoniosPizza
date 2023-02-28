@@ -1,31 +1,34 @@
 <template>
- <div class ="main-body location-body">
-  <div class = "location-left">
-  </div>
-  <div class ="location-right">
-    <div class = "hours-location-box">
-      <h2>Shop Hours</h2>
-      <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
-      <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
-      <p>Sunday: 12:00 PM - 10:00 PM</p>
-      <CTAButton text="Place Your Order Now" :link="'https://antoniospizzeria.hungerrush.com/'"/>
+<div class = "all-page">
+  <div class ="main-body location-body">
+    <div class = "location-left">
     </div>
-    <div class = "hours-location-box">
-      <h2>Our Address</h2>
-      <p>758 Brookline Blvd.</p>
-      <p>Pittsburgh, PA 15226</p>
-      <p>Home of the Cheesey Breadsticks!</p>
-      <CTAButton text="Get Directions" :link="'https://goo.gl/maps/NSE8EaTPEAsYvR4y5'"/>
-    </div>
-    <div class="hours-location-box mobile-no"><h4>We deliver anywhere with in a 2 mile radius of our location.</h4>
-      <CTAButton text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
+    <div class ="location-right">
+      <div class = "hours-location-box">
+        <h2>Shop Hours</h2>
+        <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+        <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+        <p>Sunday: 12:00 PM - 10:00 PM</p>
+        <CTAButton text="Place Your Order Now" :link="'https://antoniospizzeria.hungerrush.com/'"/>
+      </div>
+      
     </div>
   </div>
-  <div class = "location-left-mobile">
-    <div><img class = "mobile-shop-image" src = "../assets/images/shopfront.jpg" /></div>
-    <div class="hours-location-box no-border"><h4>We deliver anywhere with in a 2 mile radius of our location.</h4>
-      <CTAButton text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
+  <div class = "main-body bottom-box">
+    <div class = "hours-location-box">
+        <h2>Our Address</h2>
+        <p>758 Brookline Blvd.</p>
+        <p>Pittsburgh, PA 15226</p>
+        <p>Home of the Cheesey Breadsticks!</p>
+        <CTAButton text="Get Directions" :link="'https://goo.gl/maps/NSE8EaTPEAsYvR4y5'"/>
+      </div>
+      <div class="hours-location-box mobile-no"><h4>We deliver anywhere with in a 2 mile radius of our location.</h4>
+        <CTAButton text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
+      </div>
     </div>
+    <div class = "location-left-mobile">
+      <div><img class = "mobile-shop-image" src = "../assets/images/shopfront.jpg" /></div>
+      
   </div>
 </div>
 </template>
@@ -59,5 +62,17 @@ li {
 }
 a {
   color: #42b983;
+}
+
+@media (max-width: 991.5px) {
+ .main-body {
+  background: none;
+  box-shadow: none;
+  align-items: center;
+  justify-content: center;
+ }
+ .location-right {
+ justify-content: center;
+ }
 }
 </style>
