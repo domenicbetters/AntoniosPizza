@@ -5,7 +5,7 @@
       <div class = "vegan-intro-box">
         <div>
           <h1>Vegans need good pizza too!</h1>
-          <p>We don't just want to offer some dairy free cheese.  We want to make sure we are the Pittsburgh destination for stellar pizza shop fair that doesn't throw any roadblocks in the way of your vegan lifestyle.</p>
+          <p>We don't just want to offer some dairy free cheese.  We want to make sure we are the Pittsburgh destination for stellar pizza shop fair that doesn<a class="hidden" href="https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fdoom.jsdos?anonymous=1')">'</a>t throw any roadblocks in the way of your vegan lifestyle.</p>
            <p>Almost every vegan item is made in house from recipes developed over the last several years of tinkering and fine tuning.  We do our best to make sure that everything tastes as fantastic and authentic as it can, so you never get a case of FOMO.  </p>
         </div>
         <img class = "vegan-intro-image" src="../assets/images/vegan 1.jpg" alt = 'vegan image' />
@@ -64,6 +64,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.hidden {
+  color: var(--text);
+  font-weight: normal;
+  transition: none;
+  cursor:text;
+  text-decoration: none;
+}
+
+.hidden:hover {
+  text-shadow: none;
+  cursor:text;
+}
 h3 {
   margin: 40px 0 0;
 }
