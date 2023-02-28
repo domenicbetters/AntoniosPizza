@@ -5,7 +5,7 @@
     <div class = "vegan-intro-box">
       <div>
         <h1>Our Mission Statement</h1>
-       <p>To make great pizza, satisfy the dietary needs of those pizza deprived demographics, and be a positive influence on the community</p></div>
+       <p>To make great pizza, satisfy the dietary needs of those pizza deprived demographics, and be a positive influence on the community.</p></div>
         <img class = "vegan-intro-image" src="../assets/images/buddy.jpg" alt = 'vegan image' />
         <img class = "vegan-intro-image-mobile" src="../assets/images/buddy.jpg" alt = 'vegan image' />
     </div>
