@@ -149,7 +149,7 @@ export default {
     { name: 'GF 12in', price: '$11.00', vegan: 'yes' },
     { name: 'Slice', price: '$2.50', vegan: 'yes' },
     { name: 'Deep Dish', price: '$15.00' },
-    { name: 'Keto', price: '$15.00', vegan: 'yes' },
+    { name: 'Keto', price: '$15.00'},
     { name: 'Pizza Boat', price: '$10.00', vegan: 'yes' },
     { name: 'Stromboli', price: '$15.00', vegan: 'yes' },
     { name: 'Calzone', price: '$15.00', vegan: 'yes' },
