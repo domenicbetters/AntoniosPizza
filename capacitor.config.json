@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "AntoniosPizzeria",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

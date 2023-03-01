@@ -1,5 +1,7 @@
 {
   "name": "AntoniosPizzeria",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "vue"
 }
