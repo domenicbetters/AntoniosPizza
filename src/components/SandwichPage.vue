@@ -120,7 +120,7 @@ li {
 }
 
 .left-side {
-  margin: 20px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,6 +151,7 @@ li {
   text-align: left;
   margin:2px;
   grid-template-columns: v-bind('sizeColumnWidth') max-content;
+  font-size: .75em;
 }
 
 .food-list {

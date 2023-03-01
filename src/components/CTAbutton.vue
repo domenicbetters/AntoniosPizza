@@ -30,8 +30,8 @@
         margin: 10px;
         background: #FFFAA1;
         border: 4px outset #e0dc8e;
-        font-weight: bold;
-        font-family: 'juice', sans-serif;
+        font-weight: bolder;
+        font-family: 'amatic sc', cursive;
         font-size: 2em;
     }
 

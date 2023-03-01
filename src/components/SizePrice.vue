@@ -1,7 +1,7 @@
 <template>
 <div>
-  <div class = "size-name"><h4>{{ size.name }}</h4></div>
-  <div class = "size-price"><h4>{{size.price}}</h4></div>
+  <div class = "size-name">{{ size.name }}</div>
+  <div class = "size-price">{{size.price}}</div>
 </div>
  </template>
 
@@ -24,6 +24,7 @@ export default {
 h3 {
   margin: 10px;
 }
+
 ul {
   display: block;
   padding: 0;

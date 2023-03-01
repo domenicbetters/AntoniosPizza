@@ -1,80 +1,66 @@
 <template>
   <div class = "menu-section">
-    <div>
-      <h1>Fries</h1>
+    <div class = "buffer">
+      <h1>Limited Time Specials</h1>
     </div>
     <div class = "right-side ">
       <div class = "food-box">
-      <SaladItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
-      <SaladItem class="food-list"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
-      </div>
-      <div class = "food-box topping-box">
-        <h2>Flavors</h2>
-        <div class="topping-list">
-          <ToppingList class="topping-item"  v-show="topping.vegan === 'yes' && veganOnly === true" :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
-          <ToppingList class="topping-item"  v-show="veganOnly === false" :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
+        <div class = "inner-food-box">
+          <LimitedItem class="limited-box"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
+          <LimitedItem class="limited-box"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
         </div>
-      </div>
-      <div class = "food-box topping-box">
-        <h2>Add Ons</h2>
-        <div class="topping-list">
-          <ToppingList class="topping-item"  v-show="mod.vegan === 'yes' && veganOnly === true" :key="mod.name" v-for="(mod) in mods" :topping="mod" />
-          <ToppingList class="topping-item"  v-show="veganOnly === false" :key="mod.name" v-for="(mod) in mods" :topping="mod" />
+     </div>
+     <div>
+      <h1>Daily Coupons</h1>
+    </div>
+    <div class = "right-side ">
+      <div class = "food-box">
+        <div class = "inner-food-box">
+          <LimitedItem class="limited-box coupon"  v-show="coupon.vegan === 'yes' && veganOnly === true" :key="coupon.name" v-for="(coupon) in coupons" :item="coupon" />
+          <LimitedItem class="limited-box coupon"  v-show="veganOnly === false" :key="coupon.name" v-for="(coupon) in coupons" :item="coupon" />
         </div>
-      </div>
-   
-    
+     </div>
+    </div>
   </div>
   </div>
 </template>
 
 <script>
-import SaladItem from './SaladItem.vue'
-import ToppingList from './ToppingList.vue'
+import LimitedItem from './LimitedItem.vue'
 export default {
-  name: 'FriesPage',
+  name: 'LimitedPage',
   components: {
-    SaladItem,
-    ToppingList,
+    LimitedItem,
   },
   data() {
   return {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-    { name: 'Hand Cut Fries', price: '$5.00', vegan: 'yes'},
-    { name: 'Waffle Fries', price: '$6.00', vegan: 'yes'},
+    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
+    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
+    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
+    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
+    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
+    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
     
         
     ],
 
-    toppings : [
-    { name: 'BBQ',vegan: 'yes'},
-    { name: 'Beer Can Chicken',vegan: 'yes'},
-    { name: 'Buffalo',vegan: 'yes'},
-    { name: 'Cajun',vegan: 'yes'},
-    { name: 'Cajun Garlic',vegan: 'yes'},
-    { name: 'Garlic Parmesan',vegan: 'yes'},
-    { name: 'General Tso',vegan: 'yes'},
-    { name: 'Honey Mustard',vegan: 'yes'},
-    { name: 'Mango Habanero',vegan: 'yes'},
-    { name: 'Old Bay',vegan: 'yes'},
-    { name: 'Plain',vegan: 'yes'},
-    { name: 'Ranch'},
-    { name: 'Roasted Garlic',vegan: 'yes'},
-    { name: 'Salt n Vinegar',vegan: 'yes'},
-    { name: 'Spicy BBQ',vegan: 'yes'},
-    { name: 'Spicy Garlic',vegan: 'yes'},
-    { name: 'Wing Dust',vegan: 'yes'},
+    coupons: [
+    { name: 'pizza for free',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
+    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
+    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
+    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
+    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
+    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
+    
+        
     ],
 
-    mods: [
-      {name: 'Chili', vegan: 'yes'},
-      {name: 'Shredded Cheese', vegan: 'yes'},
-      {name: 'Nacho Cheese',},
-      {name: 'Bacon', vegan: 'yes'},
-    ],
+   
 
+    
   }
 },
   props: {
@@ -106,6 +92,11 @@ this.findlength()
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.buffer{
+  margin-top:10px;
+}
+
 img {
   height: 250px;
   width: 25%;
@@ -113,9 +104,7 @@ img {
   margin: 10px;
   border: 2px solid #FFFAA1;
 }
-h1 {
-  color:#FFFAA1;
-}
+
 ul {
   display: block;
   padding: 0;
@@ -141,15 +130,20 @@ li {
 }
 
 
-.food-list {
-  display: grid;
-  width: 80%;
-  min-width: fit-content;
-  align-items: end;
-  border-bottom:1px dashed white;
-  margin: 0;
-  padding: 0;
-  grid-template-columns: v-bind('sizeColumnWidth') inherit;
+.limited-box {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid #FFFAA1
+}
+
+.coupon {
+  border: 6px dashed white
 }
 
 
@@ -159,6 +153,7 @@ li {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .food-box {
@@ -172,7 +167,13 @@ li {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  overflow-y: scroll;
+}
+
+.inner-food-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .topping-list {
@@ -256,12 +257,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .food-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
   .style-box {
     margin-right: 4px;
     height: fit-content;
@@ -276,7 +272,12 @@ li {
     justify-content: center;
     flex-direction: column;
    }
+
+   .food-box {
+    border: none;
+   }
   }
+  
 
   @media (max-width: 400.5px) {
     .menu-section {

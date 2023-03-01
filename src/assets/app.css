@@ -167,6 +167,7 @@ body {
     margin:15px;
     border: 2px solid #FFFAA1;
     background: rgba(0, 0, 0, 0.479);
+    font-size: .75em;
 }
 
 .card-image {

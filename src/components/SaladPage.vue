@@ -6,7 +6,7 @@
       <h4>Except where otherwise noted.</h4>
     </div>
     <div class = "right-side ">
-      <div class = "food-box">
+      <div class = "food-box salad-box">
       <SaladItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
       <SaladItem class="food-list"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
       </div>
@@ -28,7 +28,7 @@
 
 <script>
 import RosterCard from './RosterCard.vue'
-import SaladItem from './SaladItem.vue'
+import SaladItem from './LimitedItem.vue'
 import ToppingList from './ToppingList.vue'
 export default {
   name: 'SaladPage',
@@ -151,6 +151,7 @@ li {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .food-box {
@@ -163,8 +164,12 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   overflow-y: scroll;
+}
+
+.salad-box {
+  height: 600px;
 }
 
 .topping-list {

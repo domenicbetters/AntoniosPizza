@@ -145,6 +145,7 @@ li {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .food-box {
@@ -171,6 +172,11 @@ li {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 1215.5px){
+  .food-box{
+    flex-wrap: nowrap;
+  }
 }
 
 @media (max-width: 2056.5px) {

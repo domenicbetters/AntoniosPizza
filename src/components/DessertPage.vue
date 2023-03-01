@@ -20,7 +20,7 @@
 
 <script>
 import RosterCard from './RosterCard.vue'
-import SaladItem from './SaladItem.vue'
+import SaladItem from './LimitedItem.vue'
 export default {
   name: 'DessertPage',
   components: {
@@ -124,6 +124,7 @@ li {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .food-box {

@@ -2,7 +2,7 @@
   <div>
   <div class = "menu-section">
     <div class ="left-side">
-      <h1>Wings</h1>
+      <h1>Wings & Fries</h1>
       <div class="mobile-styles">
         <div class="style-box">
           <h2>Sizes and Styles</h2>
@@ -21,8 +21,15 @@
           </div>
         </div>
         <div>
-          <h2>Add ons</h2>
+          <h2>Wing add ons</h2>
           <p>Celery, Ranch, Blue cheese</p>
+        </div>
+        <div>
+          <h2>Fry add ons</h2>
+        <div class="topping-list">
+          <ToppingList class="topping-item"  v-show="mod.vegan === 'yes' && veganOnly === true" :key="mod.name" v-for="(mod) in mods" :topping="mod" />
+          <ToppingList class="topping-item"  v-show="veganOnly === false" :key="mod.name" v-for="(mod) in mods" :topping="mod" />
+        </div>
         </div>
       </div>
    
@@ -76,10 +83,21 @@ export default {
     { name: '6pc Wings', price: '$10.00'},
     { name: '12pc Wings', price: '$18.00'},
     { name: '24pc Wings', price: '$32.00'},
+    { name: '', price: ''},
     { name: '6pc Seitan Wings', price: '$7.00', vegan: 'yes'},
     { name: '12pc Seitan Wings', price: '$12.00', vegan: 'yes'},
     { name: '24pc Seitan Wings', price: '$22.00', vegan: 'yes'},
-    ]
+    { name: '', price: '', vegan: 'yes'},
+    { name: 'Hand Cut Fries', price: '$5.00', vegan: 'yes'},
+    { name: 'Waffle Fries', price: '$6.00', vegan: 'yes'},
+
+    ],
+    mods: [
+      {name: 'Chili', vegan: 'yes'},
+      {name: 'Shredded Cheese', vegan: 'yes'},
+      {name: 'Nacho Cheese',},
+      {name: 'Bacon', vegan: 'yes'},
+    ],
   }
 },
   props: {
@@ -135,7 +153,7 @@ li {
 }
 
 .left-side {
-  margin: 20px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,6 +184,7 @@ li {
   text-align: left;
   margin:2px;
   grid-template-columns: v-bind('sizeColumnWidth') max-content;
+  font-size: .75em;
 }
 
 .food-list {
@@ -245,7 +264,7 @@ li {
   border: 3px solid #FFFAA1;
 }
 
-@media (max-width: 1431.5px) {
+@media (max-width: 1490.5px) {
     .menu-section {
       flex-direction: column;
       align-items: center;
@@ -258,8 +277,8 @@ li {
     margin-bottom: 10px;
   }
   .menu-section {
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+      align-items: center;
   }
   .left-side {
     width: 30%;
@@ -285,15 +304,6 @@ li {
   .picture-box {
     justify-content: center;
   }
-  }
-
-
-
-  @media (max-width: 733.5px) {
-    .menu-section {
-      flex-direction: column;
-      align-items: center;
-    }
   }
 
 

@@ -28,7 +28,7 @@
 
 <script>
 import RosterCard from './RosterCard.vue'
-import SaladItem from './SaladItem.vue'
+import SaladItem from './LimitedItem.vue'
 import ToppingList from './ToppingList.vue'
 export default {
   name: 'DrinksPage',
@@ -158,6 +158,7 @@ li {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .food-box {

@@ -10,8 +10,8 @@
       @toggle-vegan-on="ToggleVeganOn"
       @toggle-vegan-off="ToggleVeganOff"
       /></div>
-      <h1 v-show="MenuExists==='yes' && veganOnly === false">Full Menu</h1>
-      <h1 v-show="MenuExists==='yes' && veganOnly === true">Vegan Menu</h1>
+      <h1 class="juice" v-show="MenuExists==='yes' && veganOnly === false">Full Menu</h1>
+      <h1 class="juice"  v-show="MenuExists==='yes' && veganOnly === true">Vegan Menu</h1>
     <div class="main" v-show="HomeExists === 'yes'"><MainPage @show-menu="ShowMenu"/></div>
     <div class="main" v-show="LocationExists === 'yes'"><LocationPage/></div>
     <div class="main" v-show="MenuExists === 'yes'"><MenuPage :veganOnly="veganOnly"/></div>
@@ -136,10 +136,10 @@ export default {
   }
   }
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald&display=swap');
 
 #app {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -152,5 +152,11 @@ export default {
 .main {
   display: flex;
   justify-content: center;
+}
+
+.juice {
+  font-family: juice;
+  font-size: 2em;
+  color: #FFFAA1;
 }
 </style>

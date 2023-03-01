@@ -1,0 +1,237 @@
+[33mcommit 7c70387b1b5d242527275854fcebbdeb84a156b2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 20:03:15 2023 -0500
+
+    further tests
+
+[33mcommit 1720852855b1f4bbbde19770b3c330a195431c63[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 19:55:31 2023 -0500
+
+    ionic test
+
+[33mcommit 72b92e4653361a37b449c4bc8cbf4ebc049eaa0e[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 13:55:26 2023 -0500
+
+    added doom
+
+[33mcommit 197bcd4dc258053032ee3eaf9586008398eed4b6[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 13:05:29 2023 -0500
+
+    removed keto from non vegan menu
+
+[33mcommit 0b861f8327f5e34dde7b48f2409a7abab3209aea[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 13:03:01 2023 -0500
+
+    removed keto from non vegan menu
+
+[33mcommit 23dc1df813c2196577cda18fafb858642210033b[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 12:52:54 2023 -0500
+
+    wording change test
+
+[33mcommit 53becd8ecb733b179aab3d527734c9e605e7a969[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 12:46:11 2023 -0500
+
+    dist?
+
+[33mcommit 769ded2b9e27670a9694fa47bfcb8b9391bed045[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 12:29:08 2023 -0500
+
+    idk
+
+[33mcommit 76cadee03051a6eed7a9bff8575aae26b3e2bd95[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 12:25:13 2023 -0500
+
+    maybe
+
+[33mcommit 0d4d6094501ecca141462dbb547af3f79ed1cce7[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 10:54:50 2023 -0500
+
+    proper formatting
+
+[33mcommit 2b717ce4e704e2ced3d2ecd07d205bd99f4aab89[m
+Merge: aef99fb 11b811f
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 10:41:57 2023 -0500
+
+    Merge branch 'main' of https://github.com/domenicbetters/AntoniosPizza
+
+[33mcommit aef99fb07a6a97c79b087d8182f9450b220019ce[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 10:27:49 2023 -0500
+
+    added dist
+
+[33mcommit 11b811fd5d505a018ae9f9499ff7e32f062a732c[m
+Author: Domenic Betters <108141041+domenicbetters@users.noreply.github.com>
+Date:   Tue Feb 28 10:25:01 2023 -0500
+
+    Update vue.config.js
+
+[33mcommit 1507df6e12efd8eb0c4941915b4360e9f96f9ed7[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 00:28:10 2023 -0500
+
+    formatting
+
+[33mcommit aa6369e257c21fe218c76e742f65acecd5ff6972[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Tue Feb 28 00:09:07 2023 -0500
+
+    formatting
+
+[33mcommit c3911b9add9b70b178f9b4eca8dbfc8bcf226530[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Mon Feb 27 16:54:23 2023 -0500
+
+    background in place.  still want some animations but also retooled front page to fit window height
+
+[33mcommit 15512f1d232240ac57b17db12e54dc193a42c42a[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Mon Feb 27 16:22:56 2023 -0500
+
+    finished first draft.  want to add more animation and possible background image
+
+[33mcommit d775d70c9f8912e5de8335bd44d86354ba9bdff7[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Mon Feb 27 14:21:48 2023 -0500
+
+    added click function to cta button so i can use it to go to a dif part of site if needed  main page done
+
+[33mcommit 5678b4c982a1ca6ae61658c694c7d2444b4abc4c[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Mon Feb 27 13:10:42 2023 -0500
+
+    bunch of stuff.  finished menu pop, started back on main page.  proper slide with a cta button and formatting to go with it. added a modal to main page.
+
+[33mcommit bee2fd74b65e1eae789385df2df113da48dd97ab[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Sun Feb 26 16:17:40 2023 -0500
+
+    fixed formatting on app page
+
+[33mcommit f34debec57eb5079844bfb1ad27a3555edbdbe2f[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Sun Feb 26 15:10:41 2023 -0500
+
+    nbout half way done with sql queries and menuy population
+
+[33mcommit 0d1181ea8a9ad1280f209a63b892ac0cd28c831f[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Fri Feb 24 16:33:59 2023 -0500
+
+    wrote sql scripts for pizza page and populated data
+
+[33mcommit 927caa8e69dd6ab156a26de6e8eee88bf7d94841[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Fri Feb 24 10:24:38 2023 -0500
+
+    fixed navbar toggle for mobile
+
+[33mcommit 6ef21044b233a42dbdf17c11e045e9e6e1f242b8[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Fri Feb 24 09:58:29 2023 -0500
+
+    spacing issue with mobile main
+
+[33mcommit c9929a8bb86f3d556e9fe06ade7ad7e8d46d7a9a[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Fri Feb 24 05:08:20 2023 -0500
+
+    fixed some clipping mobile issue
+
+[33mcommit 677f7e0bd099da4b1bae8b6efc815e77b9a6620f[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Thu Feb 23 15:41:17 2023 -0500
+
+    finsihed basic functions of the site.  vegan meny switch in place.  next step is to begin working on backened elements.  starting with makinga  query to pull table data
+
+[33mcommit de554af8ebf0c11c06a70941bc4ba77e5cb8adaf[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Thu Feb 23 15:22:48 2023 -0500
+
+    finished veganifying the menu
+
+[33mcommit 7d938fda51aa91368fb8ae96bfc3578ceada8734[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Thu Feb 23 13:14:53 2023 -0500
+
+    menu is finished
+
+[33mcommit c35f356512121453942b392f9c6e5d50e4734f02[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Thu Feb 23 10:17:06 2023 -0500
+
+    added function to filter by vegan only for the vegan only menu.  implimented in the app page with fooditem component.  will need to spread across all menu pages when done and link to navbar at top
+
+[33mcommit 89ecdf5cfb966ff6481e31ddd490e1b8fde44996[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Wed Feb 22 12:15:22 2023 -0500
+
+    Finished formatting for app menu
+
+[33mcommit 7dd8586cae4eca3853e85896a407ba5cfb2aae9d[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Mon Feb 20 20:03:07 2023 -0500
+
+    fixed mobile formatting for both pizzas
+
+[33mcommit b9b51329770082b13e44412ebed193fa448f5f27[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Mon Feb 20 19:33:05 2023 -0500
+
+    Specialty pizza in place mobile looks jank tho
+
+[33mcommit a597c6de6262100fbbf3bc5154b30e7bc13f25f9[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Mon Feb 20 08:54:45 2023 -0500
+
+    tweaks to formatting before i begin next page
+
+[33mcommit 6a5438998da6769c133494b2784513a70c904885[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Sun Feb 19 21:32:24 2023 -0500
+
+    formatted all of pizza page.  going to try to port this over to speciLTY NEXT.  sorry for yelling.  also redid the width on the roster cards to be a little more responsive and useable elsewhere
+
+[33mcommit 9486267a3fd629e2609ac0ca3cf73c550de91777[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Sat Feb 18 08:29:00 2023 -0500
+
+    stuff
+
+[33mcommit 75d82a53dad4c9db6e90953dc2ebf8896f6c91ca[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Fri Feb 17 20:02:45 2023 -0500
+
+    changed font color for title of menyu sextion
+
+[33mcommit 41fa987a0daee4eafae59c7349c00cacc0cf7390[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Fri Feb 17 20:01:17 2023 -0500
+
+    pizza page is finished.  will see how well my components transfer to specialty pizza next
+
+[33mcommit c92ea804bdbcbee86ec42a1a39282b2942d658a8[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Fri Feb 17 15:58:01 2023 -0500
+
+    formatting in place for menu page.  still need to add toppings price and toppings list to the pizza menu page.
+
+[33mcommit 95e892dd3779fef942863bcc55d86ac341c6bf68[m
+Author: Domenic Betters <domenicbetters@yahoo.com>
+Date:   Thu Feb 16 15:51:02 2023 -0500
+
+    began work on menu page.  First menu section has been created and basic formating has begun
+
+[33mcommit b766bddeb0a2febc454060e0a9543b1f8fe90f7b[m
+Author: 

@@ -1,10 +1,10 @@
 <template>
   <div class = "main-body contact-body">
-    <div>
-      <h1>Need to get a hold of us?  Here's how...</h1>
-      <a href="tel:4123881000"><h2><i class="fa-sharp fa-solid fa-phone"></i>: 412-388-1000</h2></a>
+    <div class="fontsize">
+      <h2>Need to get a hold of us?  Here's how...</h2>
+      <a href="tel:4123881000"><h4><i class="fa-sharp fa-solid fa-phone"></i>: 412-388-1000</h4></a>
       <P>Call During Regular Business Hours</P>
-      <a href="mailto:antoniospizzeriabrookline@gmail.com"><h2><i class="fa-sharp fa-solid fa-envelope"></i>: antoniospizzeriabrookline@gmail.com</h2></a>
+      <a href="mailto:antoniospizzeriabrookline@gmail.com"><h4><i class="fa-sharp fa-solid fa-envelope"></i>: antoniospizzeriabrookline@gmail.com</h4></a>
       <P>Email Us During Any Hours</P>
     </div>
     <div>
@@ -55,11 +55,16 @@ a:hover {
 }
 img {
   width: 95%;
+  height: 95%;
   object-fit: cover !important;
   margin: 10px;
 }
 .main-body {
   flex-direction:row ;
+}
+
+.fontsize {
+  width: 65%;
 }
 
 @media (max-width: 991.5px) {
