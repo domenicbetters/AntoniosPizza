@@ -149,6 +149,12 @@ export default {
   display:flex;
   flex-direction: column;
 }
+
+@media only screen {
+  #app {
+    font-size: 1.15em;
+ }
+}
 .main {
   display: flex;
   justify-content: center;

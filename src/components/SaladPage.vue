@@ -2,8 +2,8 @@
   <div class = "menu-section">
     <div>
       <h1>Salads</h1>
-      <h2>All salads include tomato, onion, cucumber, green pepper, banana pepper, black olives, mozzarella cheese, and croutons</h2>
-      <h4>Except where otherwise noted.</h4>
+      <h4>All salads include tomato, onion, cucumber, green pepper, banana pepper, black olives, mozzarella cheese, and croutons</h4>
+      <p>Except where otherwise noted.</p>
     </div>
     <div class = "right-side ">
       <div class = "food-box salad-box">

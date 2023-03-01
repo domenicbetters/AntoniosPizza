@@ -2,7 +2,7 @@
   <div class = "menu-section">
     <div>
       <h1>Pasta</h1>
-      <h2>All Pasta comes with side of garlic bread</h2>
+      <h4>All Pasta comes with side of garlic bread</h4>
     </div>
     <div class = "right-side ">
       <div class = "food-box">
