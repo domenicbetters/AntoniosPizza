@@ -1,6 +1,6 @@
 <template>
   <div class="all-page">
-<div class = "main-body">
+<div class = "main-body shadow-drop-2-center">
   <div>
     <div class = "vegan-intro-box">
       <div>

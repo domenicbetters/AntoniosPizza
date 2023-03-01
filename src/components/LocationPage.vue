@@ -1,6 +1,6 @@
 <template>
 <div class = "all-page">
-  <div class ="main-body location-body">
+  <div class ="main-body shadow-drop-2-center location-body">
     <div class = "location-left">
       <div class = "hours-location-box" >
         <h4>We deliver anywhere with in a two mile radius of our location.</h4>

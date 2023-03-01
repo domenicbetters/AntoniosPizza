@@ -1,5 +1,5 @@
 <template>
-  <div class="main-body">
+  <div class="main-body shadow-drop-2-center">
     <div class ="menu-body">
       <div class="navvy">
         <b-navbar toggleable="lg" type="dark" variant="info">

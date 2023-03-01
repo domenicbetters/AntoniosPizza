@@ -1,5 +1,5 @@
 <template>
-  <div class = "main-body">
+  <div class = "main-body shadow-drop-2-center">
       <b-carousel
         id="carousel-1"
         v-model="slide"

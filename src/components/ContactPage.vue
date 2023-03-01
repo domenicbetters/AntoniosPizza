@@ -1,5 +1,5 @@
 <template>
-  <div class = "main-body contact-body">
+  <div class = "main-body shadow-drop-2-center contact-body">
     <div class="fontsize">
       <h2>Need to get a hold of us?  Here's how...</h2>
       <a href="tel:4123881000"><h4><i class="fa-sharp fa-solid fa-phone"></i>: 412-388-1000</h4></a>
