@@ -72,6 +72,9 @@ body {
     display: none  !important;
 }
 
+.buffer{
+    margin-top:10px;
+  }
 .location-body {
     display: flex;
     flex-direction: row;

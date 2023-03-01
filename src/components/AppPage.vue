@@ -1,6 +1,6 @@
 <template>
   <div class = "menu-section">
-    <div>
+    <div class = "buffer">
       <h1>Appetizers</h1>
     </div>
     <div class = "right-side ">
@@ -96,9 +96,7 @@ img {
   margin: 10px;
   border: 2px solid #FFFAA1;
 }
-h1 {
-  color:#FFFAA1;
-}
+
 h2 {
   text-decoration: underline;
 }

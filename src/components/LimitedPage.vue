@@ -93,9 +93,7 @@ this.findlength()
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.buffer{
-  margin-top:10px;
-}
+
 
 img {
   height: 250px;

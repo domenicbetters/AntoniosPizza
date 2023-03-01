@@ -104,11 +104,10 @@ img {
   margin: 10px;
   border: 2px solid #FFFAA1;
 }
-h1 {
-  color:#FFFAA1;
-}
+
 h2 {
   text-decoration: underline;
+  color:#FFFAA1;
 }
 ul {
   display: block;

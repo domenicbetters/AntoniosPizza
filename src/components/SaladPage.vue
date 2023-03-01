@@ -1,6 +1,6 @@
 <template>
   <div class = "menu-section">
-    <div>
+    <div class = "buffer">
       <h1>Salads</h1>
       <h4>All salads include tomato, onion, cucumber, green pepper, banana pepper, black olives, mozzarella cheese, and croutons</h4>
       <p>Except where otherwise noted.</p>
@@ -105,9 +105,7 @@ img {
   margin: 10px;
   border: 2px solid #FFFAA1;
 }
-h1 {
-  color:#FFFAA1;
-}
+
 ul {
   display: block;
   padding: 0;
