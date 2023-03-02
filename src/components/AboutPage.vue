@@ -4,15 +4,15 @@
   <div>
     <div class = "vegan-intro-box">
       <div>
-        <h1>Our Mission Statement</h1>
-       <p>To make great pizza, satisfy the dietary needs of those pizza deprived demographics, and be a positive influence on the community.</p></div>
-        <img class = "vegan-intro-image" src="../assets/images/buddy.jpg" alt = 'vegan image' />
-        <img class = "vegan-intro-image-mobile" src="../assets/images/buddy.jpg" alt = 'vegan image' />
+        <h1 class="slide-left">Our Mission Statement</h1>
+       <p class="slide-left">To make great pizza, satisfy the dietary needs of those pizza deprived demographics, and be a positive influence on the community.</p></div>
+        <img class = "vegan-intro-image slide-right " src="../assets/images/buddy.jpg" alt = 'vegan image' />
+        <img class = "vegan-intro-image-mobile slide-right " src="../assets/images/buddy.jpg" alt = 'vegan image' />
     </div>
   </div>
   </div>
   <div class = "main-body bottom-box">
-  <div class="about-roster-box">
+  <div class="about-roster-box fade-in">
     <RosterCard :imagelink="require('../assets/images/tina.jpg')" :altname="'Tina'" name = "Tina" stats1="Hottest Wife Ever" stats2="Does pretty much everything all the time" />
     <RosterCard :imagelink="require('../assets/images/dom.jpg')" :altname="'dom'" name = "Dom" stats1="Gave up and ran away" stats2="Still lurks in the rafters to perform some IT work on occasion" /> 
     <RosterCard :imagelink="require('../assets/images/grant.jpg')" :altname="'grant'" name = "Grant" stats1="Manager with a karaoke complex" stats2="Shoof" /> 

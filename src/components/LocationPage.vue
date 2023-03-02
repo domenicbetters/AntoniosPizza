@@ -1,13 +1,13 @@
 <template>
 <div class = "all-page">
   <div class ="main-body shadow-drop-2-center location-body">
-    <div class = "location-left">
+    <div class = "location-left slide-left ">
       <div class = "hours-location-box" >
         <h4>We deliver anywhere with in a two mile radius of our location.</h4>
         <CTAButton class="CTAbutton" text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
       </div>
     </div>
-    <div  class ="location-right">
+    <div  class ="location-right slide-right">
       <div  class = "hours-location-box hlr-box">
       <div>
         <h2>Shop Hours</h2>
@@ -27,7 +27,7 @@
     </div>
   </div>
     <div class = "location-left-mobile location-body">
-      <div class = "hours-location-box" >
+      <div class = "hours-location-box slide-left " >
         <h4>We deliver anywhere with in a 2 mile radius of our location.</h4>
         <CTAButton class="CTAbutton" text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
       </div>

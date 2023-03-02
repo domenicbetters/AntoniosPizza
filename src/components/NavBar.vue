@@ -1,12 +1,12 @@
 <template>
-  <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary bg-dark">
+  <nav class="navbar  navbar-dark navbar-expand-lg bg-body-tertiary bg-dark">
     <div class="container-fluid">
-      <a @click="ShowHome()" class="navbar-brand" href="#"><img id="header-logo" src="../assets/images/antlogo.gif" alt="Logo" /></a>
+      <a @click="ShowHome()" class="navbar-brand  slide-bottom-delay" href="#"><img id="header-logo" src="../assets/images/antlogo.gif" alt="Logo" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse slide-bottom navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowHome()" v-bind:class="{active: HomeisActive}" class="nav-link " aria-current="page" href="#">Home</a>
           </li>
@@ -36,7 +36,7 @@
           </li>
         </ul> 
       </div>
-      <a class="nav-link nav-address" aria-current="page" href="#">758 Brookline Blvd. | 412-388-1000 <br>Mon-Thurs 11 - 10 | Sat 11-11 | Sun 12-10</a>
+      <a class="nav-link nav-address  slide-bottom-delay" aria-current="page" href="#">758 Brookline Blvd. | 412-388-1000 <br>Mon-Thurs 11 - 10 | Sat 11-11 | Sun 12-10</a>
     </div>
   </nav>
 </template>

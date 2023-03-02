@@ -1,6 +1,7 @@
 <template>
-  <div class = "main-body shadow-drop-2-center">
+  <div class = "main-body  shadow-drop-2-center  ">
       <b-carousel
+        class = "fade-in"
         id="carousel-1"
         v-model="slide"
         :interval="8000"
@@ -14,7 +15,7 @@
         <!-- Text slides with image -->
         <b-carousel-slide>
           <div class = "fishfry">Fish Fry is Back!</div>
-          <CTAbutton class="slide-button" text='See the Menu' v-b-modal.modal-center />
+          <CTAbutton class="slide-button " text='See the Menu' v-b-modal.modal-center />
           <template #img>
             <img
               class="d-block w-100"

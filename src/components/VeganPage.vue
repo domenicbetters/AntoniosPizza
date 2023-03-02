@@ -3,17 +3,17 @@
   <div class = "main-body shadow-drop-2-center">
     <div>
       <div class = "vegan-intro-box">
-        <div>
+        <div class = "slide-left">
           <h1>Vegans need good pizza too!</h1>
           <p>We don't just want to offer some dairy free cheese.  We want to make sure we are the Pittsburgh destination for stellar pizza shop fair that doesn<a class="hidden" href="https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fdoom.jsdos?anonymous=1')">'</a>t throw any roadblocks in the way of your vegan lifestyle.</p>
            <p>Almost every vegan item is made in house from recipes developed over the last several years of tinkering and fine tuning.  We do our best to make sure that everything tastes as fantastic and authentic as it can, so you never get a case of FOMO.  </p>
         </div>
-        <img class = "vegan-intro-image" src="../assets/images/vegan 1.jpg" alt = 'vegan image' />
-        <img class = "vegan-intro-image-mobile" src="../assets/images/vegan 1.jpg" alt = 'vegan image' />
+        <img class = "vegan-intro-image slide-right" src="../assets/images/vegan 1.jpg" alt = 'vegan image' />
+        <img class = "vegan-intro-image-mobile slide-right" src="../assets/images/vegan 1.jpg" alt = 'vegan image' />
       </div>
     </div>
   </div>
-  <div class = "main-body bottom-box">
+  <div class = "main-body slide-top bottom-box">
     <div class="vegan-intro-box no-shadow">
       <div class = "vegan-box">
         <img class = "card-image" src="../assets/images/vegan 2.jpg" alt = 'vegan image' />

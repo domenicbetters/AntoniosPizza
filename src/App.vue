@@ -18,7 +18,7 @@
     <div class="main" v-show="VeganExists === 'yes'"><VeganPage @show-home="ShowHome" @toggle-vegan-on="ToggleVeganOn" @show-menu="ShowMenu" /></div>
     <div class="main" v-show="AboutExists === 'yes'"><AboutPage/></div>
     <div class="main" v-show="ContactExists === 'yes'"><ContactPage/></div>
-    <div><FooterBar/></div>
+    <div ><FooterBar/></div>
 </div>
 </template>
 

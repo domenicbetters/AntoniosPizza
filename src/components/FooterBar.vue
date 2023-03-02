@@ -3,7 +3,7 @@
 <div>
   <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary bg-dark">
     <div class="container-fluid">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav slide-top me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link " aria-current="page" href="https://www.facebook.com/antoniospizzeriapgh"><i class="fa-brands fa-square-facebook"></i></a>
           </li>

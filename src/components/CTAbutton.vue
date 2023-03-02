@@ -31,7 +31,6 @@
         background: #FFFAA1;
         border: 4px outset #e0dc8e;
         font-weight: bolder;
-        font-family: 'amatic sc', cursive;
         font-size: 2em;
     }
 

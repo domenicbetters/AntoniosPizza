@@ -1,13 +1,13 @@
 <template>
   <div class="main-body shadow-drop-2-center">
-    <div class ="menu-body">
+    <div class ="menu-body fade-in">
       <div class="navvy">
         <b-navbar toggleable="lg" type="dark" variant="info">
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
               <b-nav-item @click="ShowLimited()" v-bind:class="{active: LimitedisActive}" href="#">Specials</b-nav-item>
-              <b-nav-item  @click="ShowPizza()" v-bind:class="{active: PizzaisActive}" href="#">Pizzas</b-nav-item>
+              <b-nav-item @click="ShowPizza()" v-bind:class="{active: PizzaisActive}" href="#">Pizzas</b-nav-item>
               <b-nav-item @click="ShowSpecial()" v-bind:class="{active: SpecialisActive}" href="#">Specialty Pizza</b-nav-item>
               <b-nav-item @click="ShowSandwich()" v-bind:class="{active: SandwichisActive}" href="#">Sandwiches</b-nav-item>
               <b-nav-item @click="ShowSalad()" v-bind:class="{active: SaladisActive}" href="#">Salads</b-nav-item>
@@ -21,16 +21,16 @@
         </b-navbar>
       </div>
       <div class = "section-view">
-        <div v-show="PizzaExists === 'yes'"><PizzaPage  :veganOnly="veganOnly"/></div>
-        <div v-show="SpecialExists === 'yes'"><SpecialPizza :veganOnly="veganOnly"/></div>
-        <div v-show="SandwichExists === 'yes'"><SandwichPage :veganOnly="veganOnly"/></div>
-        <div v-show="SaladExists === 'yes'"><SaladPage :veganOnly="veganOnly"/></div>
-        <div v-show="AppExists === 'yes'"><AppPage :veganOnly="veganOnly" /></div>
-        <div v-show="WingsExists === 'yes'"><WingsPage :veganOnly="veganOnly"/></div>
-        <div v-show="LimitedExists === 'yes'"><LimitedPage :veganOnly="veganOnly"/></div>
-        <div v-show="PastaExists === 'yes'"><PastaPage :veganOnly="veganOnly"/></div>
-        <div v-show="DessertExists === 'yes'"><DessertPage :veganOnly="veganOnly"/></div>
-        <div v-show="DrinksExists === 'yes'"><DrinksPage :veganOnly="veganOnly"/></div>
+        <div class="fade-in-quick" v-show="PizzaExists === 'yes'"><PizzaPage  :veganOnly="veganOnly"/></div>
+        <div class="fade-in-quick" v-show="SpecialExists === 'yes'"><SpecialPizza :veganOnly="veganOnly"/></div>
+        <div class="fade-in-quick" v-show="SandwichExists === 'yes'"><SandwichPage :veganOnly="veganOnly"/></div>
+        <div class="fade-in-quick" v-show="SaladExists === 'yes'"><SaladPage :veganOnly="veganOnly"/></div>
+        <div class="fade-in-quick" v-show="AppExists === 'yes'"><AppPage :veganOnly="veganOnly" /></div>
+        <div class="fade-in-quick" v-show="WingsExists === 'yes'"><WingsPage :veganOnly="veganOnly"/></div>
+        <div class="fade-in-quick" v-show="LimitedExists === 'yes'"><LimitedPage :veganOnly="veganOnly"/></div>
+        <div class="fade-in-quick" v-show="PastaExists === 'yes'"><PastaPage :veganOnly="veganOnly"/></div>
+        <div class="fade-in-quick" v-show="DessertExists === 'yes'"><DessertPage :veganOnly="veganOnly"/></div>
+        <div class="fade-in-quick" v-show="DrinksExists === 'yes'"><DrinksPage :veganOnly="veganOnly"/></div>
       </div>
     </div>
   </div>
@@ -100,6 +100,7 @@ export default {
     }
   },
   methods: {
+
   ShowPizza() {
       this.PizzaExists =  'yes',
       this.SpecialExists = 'no',
@@ -122,6 +123,9 @@ export default {
       this.PastaisActive = false
       this.DessertisActive = false
       this.DrinksisActive = false
+
+
+ 
 
      },
 

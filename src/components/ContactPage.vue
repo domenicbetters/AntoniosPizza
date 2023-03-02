@@ -1,13 +1,13 @@
 <template>
   <div class = "main-body shadow-drop-2-center contact-body">
-    <div class="fontsize">
+    <div class="fontsize slide-left">
       <h2>Need to get a hold of us?  Here's how...</h2>
       <a href="tel:4123881000"><h4><i class="fa-sharp fa-solid fa-phone"></i>: 412-388-1000</h4></a>
       <P>Call During Regular Business Hours</P>
       <a href="mailto:antoniospizzeriabrookline@gmail.com"><h4><i class="fa-sharp fa-solid fa-envelope"></i>: antoniospizzeriabrookline@gmail.com</h4></a>
       <P>Email Us During Any Hours</P>
     </div>
-    <div>
+    <div class="slide-right">
       <img src="../assets/images/zombie.jpg"/>
     </div>
   </div>
@@ -46,8 +46,9 @@ ul {
   text-align: center;
 }
 
-a {
+h4 {
   color: #a9a4a3;
+
 }
 a:hover {
   color: #fffdd2;
@@ -73,6 +74,15 @@ img {
     justify-content: center;
     align-items: center;
     height: fit-content;
+    flex-wrap: nowrap;
   }
+
+}
+
+
+@media (max-width: 610.5px) {
+h4{
+  font-size: .75em;
+}
 }
 </style>
