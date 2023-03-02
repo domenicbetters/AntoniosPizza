@@ -10,12 +10,14 @@ body {
 .main-body {
     display: flex;
     background: rgba(0,0,0,0.65);
+    border-radius: 25px;
     flex-direction: column;
     min-width: 75%;
     max-width: 75%;
     height: 65vh;
     margin:10px;
     margin-top: 0;
+    overflow: hidden;
 }
 
 .all-page {
@@ -143,6 +145,7 @@ body {
 .hours-location-box {
     display:flex;
     flex-direction: column;
+    border-radius: 25px;
     align-items: center;
     margin: 15px;
     border: 2px solid #FFFAA1;
@@ -171,11 +174,13 @@ body {
     border: 2px solid #FFFAA1;
     background: rgba(0, 0, 0, 0.479);
     font-size: .75em;
+    border-radius: 25px;
 }
 
 .card-image {
     object-fit: cover;
     width:98%;
+    border-radius: 25px;
 }
 .vegan-intro-box {
     display: flex;
@@ -188,6 +193,7 @@ body {
     width: 50%;
     object-fit: contain;
     margin: 10px;
+    border-radius: 25px;
 }
 
 .no-shadow {
@@ -241,6 +247,7 @@ body {
     .location-left-mobile {
         display: flex;
         flex-direction: column;
+        border-radius: 25px;
         align-items: center;
         justify-content: end;
         border: 2px solid #FFFAA1;
@@ -298,6 +305,7 @@ body {
     .vegan-intro-image-mobile {
         width: 95%;
         object-fit: contain;
+        border-radius: 25px;
         margin: 10px;
     }
     .contact-body {

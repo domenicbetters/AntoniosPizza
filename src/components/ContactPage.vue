@@ -59,6 +59,7 @@ img {
   height: 95%;
   object-fit: cover !important;
   margin: 10px;
+  border-radius: 25px;
 }
 .main-body {
   flex-direction:row ;
