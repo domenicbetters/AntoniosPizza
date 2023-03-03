@@ -39,7 +39,7 @@ a {
 
 .food-name {
   
-  text-align: left;
+  text-align: center;
 }
 .food-desc {
   text-align: center;

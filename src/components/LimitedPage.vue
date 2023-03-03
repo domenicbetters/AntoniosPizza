@@ -37,23 +37,23 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
-    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
-    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
-    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
-    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
-    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
+    { name: 'Guinness Chocolate Cheese', price: '$6.00'},
+    { name: 'Irish Pizza', price: 'Specialty pizza prices'},
+    { name: 'Vegan Irish Pizza', price: 'Specialty pizza prices', vegan: 'yes'},
+    { name: 'Shepherds Pizza Pie', price: 'Specialty pizza prices'},
+    { name: 'Vegan Sheperds Pizza Pie', price: 'Specialty pizza prices', vegan: 'yes'},
+    { name: 'Crab Rangoon Pizza', price: 'Specialty pizza prices'},
+    { name: 'Vegan Potato Soup', price: '$5.50', vegan: 'yes'},
     
         
     ],
 
     coupons: [
-    { name: 'pizza for free',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
-    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
-    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
-    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
-    { name: 'Hand Cut Fries',desc: 'stuff on that', price: '$5.00', vegan: 'yes'},
-    { name: 'Waffle Fries',desc: 'stuff on that', price: '$6.00', vegan: 'yes'},
+    { name: 'Small Specialty Pizza and Half Hoagie', price: '$20.00', vegan: 'yes'},
+    { name: 'Large 1-Topping Pizza',desc: 'Additional toppings can be added for an extra charge', price: '$14.00', vegan: 'yes'},
+    { name: 'Two Whole Hoagies', price: '$18.00', vegan: 'yes'},
+    { name: 'Pizza Hoagie and Wings Combo',desc: 'Get a large plain pizza, whole hoagie, and a dozen wings', price: '$37.00'},
+    { name: 'Vegan Pizza Hoagie and Wings Combo',desc: 'Get a large plain pizza, whole hoagie, and a dozen seitan wings', price: '$31.00', vegan: 'yes'},
     
         
     ],
@@ -141,7 +141,7 @@ li {
 }
 
 .coupon {
-  border: 6px dashed white
+  border: 6px dashed white;
 }
 
 
