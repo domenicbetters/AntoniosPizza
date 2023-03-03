@@ -42,20 +42,6 @@
         </b-carousel-slide>
 
         <b-carousel-slide>
-          <template #img>
-            <img
-              class="d-block w-100"
-              style="object-fit: contain; height: 45vh;"
-              width="960"
-              src="../assets/images/feb specials.jpg"
-              alt="image slot"
-            >
-            <CTAbutton  class="slide-button" text="Order Now" :link="'https://antoniospizzeria.hungerrush.com/'" />
-          </template>
-          
-        </b-carousel-slide>
-
-        <b-carousel-slide>
           <div class = "fishfry">Tons of options for every taste</div>
        <CTAbutton class="slide-button" @show-menus="showMenus" :clicky="'show-menus'" text='See what we got'/>
           <template #img>
