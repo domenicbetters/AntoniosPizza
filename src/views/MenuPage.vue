@@ -37,16 +37,16 @@
 </template>
 
 <script>
-import PizzaPage from './PizzaPage.vue'
-import SpecialPizza from './SpecialPizza.vue'
-import SandwichPage from './SandwichPage.vue'
-import AppPage from './AppPage.vue'
-import SaladPage from './SaladPage.vue'
-import WingsPage from './WingsPage.vue'
-import LimitedPage from './LimitedPage.vue'
-import PastaPage from './PastaPage.vue'
-import DessertPage from './DessertPage.vue'
-import DrinksPage from './DrinksPage.vue'
+import PizzaPage from '../components/PizzaPage.vue'
+import SpecialPizza from '../components/SpecialPizza.vue'
+import SandwichPage from '../components/SandwichPage.vue'
+import AppPage from '../components/AppPage.vue'
+import SaladPage from '../components/SaladPage.vue'
+import WingsPage from '../components/WingsPage.vue'
+import LimitedPage from '../components/LimitedPage.vue'
+import PastaPage from '../components/PastaPage.vue'
+import DessertPage from '../components/DessertPage.vue'
+import DrinksPage from '../components/DrinksPage.vue'
 
 export default {
   name: 'MenuPage',

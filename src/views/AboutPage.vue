@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import RosterCard from './RosterCard.vue'
+import RosterCard from '../components/RosterCard.vue'
 export default {
   name: 'AboutPage',
   components: {

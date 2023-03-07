@@ -58,6 +58,8 @@ body {
     z-index: 999;
 }
 
+
+
 .nav-link {
     font-family: 'juice', sans-serif;
     font-size: 1.5em;
@@ -219,6 +221,9 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 15px;
+}
+a:hover {
+  text-decoration: none !important ;
 }
 
 @media (min-width: 991.5px) {

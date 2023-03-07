@@ -80,7 +80,7 @@
 
 
 <script>
-import CTAbutton from "./CTAbutton.vue"
+import CTAbutton from "../components/CTAbutton.vue"
   export default {
     name: 'MainPage',
     components: {

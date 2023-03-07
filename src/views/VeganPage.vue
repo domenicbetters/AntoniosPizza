@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import CTAButton from './CTAbutton.vue'
+import CTAButton from '../components/CTAbutton.vue'
 
 export default {
   name: 'VeganPage',

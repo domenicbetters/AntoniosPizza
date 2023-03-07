@@ -1,42 +1,42 @@
 <template>
   <nav class="navbar  navbar-dark navbar-expand-lg bg-body-tertiary bg-dark">
     <div class="container-fluid">
-      <a @click="ShowHome()" class="navbar-brand  slide-bottom-delay" href="#"><img id="header-logo" src="../assets/images/antlogo.gif" alt="Logo" /></a>
+      <router-link to="/"><p @click="ShowHome()" class="navbar-brand  slide-bottom-delay" href="#"><img id="header-logo" src="../assets/images/antlogo.gif" alt="Logo" /></p></router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse slide-bottom navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowHome()" v-bind:class="{active: HomeisActive}" class="nav-link " aria-current="page" href="#">Home</a>
+            <router-link to="/"> <p  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowHome()" v-bind:class="{active: HomeisActive}" class="nav-link " aria-current="page">Home</p></router-link>
           </li>
           <li class="nav-item">
-            <a  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowLocation()" v-bind:class="{active: LocationisActive}" class="nav-link" aria-current="page" href="#" >Location and Hours</a>
+            <router-link to="/location"><p  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowLocation()" v-bind:class="{active: LocationisActive}" class="nav-link" aria-current="page">Location and Hours</p></router-link>
           </li>
           <li class="nav-item">
             <a  class="nav-link " aria-current="page" href="https://antoniospizzeria.hungerrush.com/" >Order Online</a>
           </li>
           <li class="nav-item dropdown" >
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+            <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"  aria-expanded="false">
               Menus
             </a>
             <ul class="dropdown-menu" >
-              <li><a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowMenu()" v-bind:class="{active: MenuisActive}" class="dropdown-item" href="#">Full Menu</a></li>
-              <li><a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ToggleVegan()" v-bind:class="{active: VeganMenuisActive}" class="dropdown-item" href="#">Vegan Menu</a></li>
+              <li><router-link to="/menu/full"><p data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ShowMenu()" v-bind:class="{active: MenuisActive}" class="dropdown-item" >Full Menu</p></router-link></li>
+              <li><router-link to="/menu/vegan"><p data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" @click="ToggleVegan()" v-bind:class="{active: VeganMenuisActive}" class="dropdown-item" >Vegan Menu</p></router-link></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowVegan()" v-bind:class="{active: VeganisActive}" aria-current="page" href="#">Vegan Love</a>
+            <router-link to="/vegan"><p data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowVegan()" v-bind:class="{active: VeganisActive}" aria-current="page" >Vegan Love</p></router-link>
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowAbout()" v-bind:class="{active: AboutisActive}" aria-current="page" href="#">About Us</a>
+            <router-link to="/about"><p data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowAbout()" v-bind:class="{active: AboutisActive}" aria-current="page" >About Us</p></router-link>
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowContact()" v-bind:class="{active: ContactisActive}" aria-current="page" href="#">Contact</a>
+            <router-link to="/contact"><p data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowContact()" v-bind:class="{active: ContactisActive}" aria-current="page" >Contact</p></router-link>
           </li>
         </ul> 
       </div>
-      <a class="nav-link nav-address  slide-bottom-delay" aria-current="page" href="#">758 Brookline Blvd. | 412-388-1000 <br>Mon-Thurs 11 - 10 | Sat 11-11 | Sun 12-10</a>
+      <p class="nav-link nav-address  slide-bottom-delay" aria-current="page">758 Brookline Blvd. | 412-388-1000 <br>Mon-Thurs 11 - 10 | Sat 11-11 | Sun 12-10</p>
     </div>
   </nav>
 </template>
@@ -58,7 +58,6 @@ export default {
   methods: {
     ToggleVegan() {
       this.$emit('toggle-vegan-on')
-      this.$emit('show-menu')
       this.HomeisActive = false
       this.LocationisActive = false
       this.VeganisActive = false
@@ -68,7 +67,6 @@ export default {
       this.VeganMenuisActive= true
     },
     ShowHome() {
-      this.$emit('show-home')
       this.HomeisActive = true
       this.LocationisActive = false
       this.VeganisActive = false
@@ -78,7 +76,6 @@ export default {
       this.VeganMenuisActive= false
   },
     ShowLocation() {
-      this.$emit('show-location')
       this.HomeisActive = false
       this.LocationisActive = true
       this.VeganisActive = false
@@ -88,7 +85,6 @@ export default {
       this.VeganMenuisActive= false
     },
     ShowVegan() {
-      this.$emit('show-vegan')
       this.HomeisActive = false
       this.LocationisActive = false
       this.VeganisActive = true
@@ -98,7 +94,6 @@ export default {
       this.VeganMenuisActive= false
     },
     ShowAbout() {
-      this.$emit('show-about')
       this.HomeisActive = false
       this.LocationisActive = false
       this.VeganisActive = false
@@ -108,7 +103,6 @@ export default {
       this.VeganMenuisActive= false
     },
     ShowContact() {
-      this.$emit('show-contact')
       this.HomeisActive = false
       this.LocationisActive = false
       this.VeganisActive = false
@@ -118,7 +112,6 @@ export default {
       this.VeganMenuisActive= false
     },
     ShowMenu() {
-      this.$emit('show-menu')
       this.$emit('toggle-vegan-off')
       this.HomeisActive = false
       this.LocationisActive = false
