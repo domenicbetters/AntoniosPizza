@@ -36,14 +36,14 @@ export default {
       this.veganOnly = false
     },
     menuFull() {
-        if(this.$route.path == "" || this.$route.path == "/menu/full" ) {
+        if(this.$route.path == "" || this.$route.path == "/AntoniosPizza/menu/full" ) {
           return true
         } else {
           return false
         }
       },
       menuVegan() {
-        if(this.$route.path == "" || this.$route.path == "/menu/vegan" ) {
+        if(this.$route.path == "" || this.$route.path == "/AntoniosPizza/menu/vegan" ) {
           return true
         } else {
           return false
