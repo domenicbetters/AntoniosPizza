@@ -18,32 +18,32 @@ const routes = [
       component: MainPage
     },
     {
-        path: "/location",
+        path: "/AntoniosPizza/location",
         name: "Location",
         component: LocationPage
     },
     {
-        path: "/menu/full",
+        path: "/AntoniosPizza/menu/full",
         name: "Full Menu",
         component: MenuPage
     },
     {
-        path: "/menu/vegan",
+        path: "/AntoniosPizza/menu/vegan",
         name: "Vegan Menu",
         component: MenuPage
     },
     {
-        path: "/vegan",
+        path: "/AntoniosPizza/vegan",
         name: "Vegan",
         component: VeganPage
     },
     {
-        path: "/about",
+        path: "/AntoniosPizza/about",
         name: "About",
         component: AboutPage
     },
     {
-        path: "/contact",
+        path: "/AntoniosPizza/contact",
         name: "Contact",
         component: ContactPage
     },
