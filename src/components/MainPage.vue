@@ -27,20 +27,7 @@
           </template>
         </b-carousel-slide>
 
-        <b-carousel-slide>
-          
-          <CTAbutton class="slide-button"  text='What are we Bringing?'  v-b-modal.modal/>
-          <template #img>
-            <img
-              class="d-block w-100"
-              style="object-fit: cover; height: 65vh;"
-              width="960"
-              src="../assets/images/newdog.png"
-              alt="image slot"
-            >
-          </template>
-          
-        </b-carousel-slide>
+
 
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Guinness Cheese Cake is Here for St. Patrick's Day</div>
@@ -86,14 +73,6 @@
     <img class="modalimg" src="../assets/images/fishmenu.jpg" />
   </b-modal>
 
-  <b-modal id="modal"
-  hide-footer=true
-  content-class="modalimage"
-  header-class="headerclass"
-  modal-class="modalbody"
-  header="no">
-    <img class="modalimg dogimg" src="../assets/images/vegandogs.jpg" />
-  </b-modal>
 </div>
   </div>
 </template>
