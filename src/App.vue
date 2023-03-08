@@ -1,13 +1,10 @@
 <template> 
 <div id="app">
-    <div class ="header-menu"><NavBar 
-      @toggle-vegan-on="ToggleVeganOn"
-      @toggle-vegan-off="ToggleVeganOff"
-      /></div>
-      <h1 class="juice" v-if="menuFull()">Full Menu</h1>
-      <h1 class="juice"  v-if="menuVegan()">Vegan Menu</h1>
+    <div class ="header-menu"><NavBar/></div>
+      <h1 class="juice" v-if="this.$route.path == '/AntoniosPizza/menu/full'">Full Menu</h1>
+      <h1 class="juice"  v-if="this.$route.path == '/AntoniosPizza/menu/vegan'">Vegan Menu</h1>
     <!-- <div class="main" v-show="MenuExists === 'yes'"><MenuPage :veganOnly="veganOnly"/></div> -->
-       <div class="main"><router-view :veganOnly="veganOnly"/></div>
+       <div class="main"><router-view :veganOnly="VeganPath()"/></div>
     <div ><FooterBar/></div>
 </div>
 </template>
@@ -24,34 +21,19 @@ export default {
   },
   data(){
     return {
-      veganOnly: false,
       menu: false,
     }
   },
+
   methods: {
-    ToggleVeganOn() {
-      this.veganOnly = true
-    },
-    ToggleVeganOff() {
-      this.veganOnly = false
-    },
-    menuFull() {
-        if(this.$route.path == "" || this.$route.path == "/AntoniosPizza/menu/full" ) {
+    VeganPath() {
+        if(this.$route.path == '/AntoniosPizza/menu/vegan' ) {
           return true
         } else {
           return false
         }
-      },
-      menuVegan() {
-        if(this.$route.path == "" || this.$route.path == "/AntoniosPizza/menu/vegan" ) {
-          return true
-        } else {
-          return false
-        }
-      },
-     
+    },
   }
- 
 }
 </script>
 
