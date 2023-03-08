@@ -4,7 +4,7 @@
     <div class = "location-left slide-left ">
       <div class = "hours-location-box" >
         <h4>We deliver anywhere with in a two mile radius of our location.</h4>
-        <CTAButton class="CTAbutton" text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
+        <CTAButtonOutside class="CTAbutton" text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
       </div>
     </div>
     <div  class ="location-right slide-right">
@@ -14,14 +14,14 @@
         <p>Monday - Thursday:</p><p> 11:00 AM - 10:00 PM</p>
         <p>Friday - Saturday: </p><p>11:00 AM - 11:00 PM</p>
         <p>Sunday: 12:00 PM - 10:00 PM</p>
-        <CTAButton class="CTAbutton" text="Place Your Order Now" :link="'https://antoniospizzeria.hungerrush.com/'"/>
+        <CTAButtonOutside class="CTAbutton" text="Place Your Order Now" :link="'https://antoniospizzeria.hungerrush.com/'"/>
       </div>
       <div>
         <h2>Our Address</h2>
         <p>758 Brookline Blvd.</p>
         <p>Pittsburgh, PA 15226</p>
         <p>Home of the Cheesey Breadsticks!</p>
-        <CTAButton class="CTAbutton" text="Get Directions" :link="'https://goo.gl/maps/NSE8EaTPEAsYvR4y5'"/>
+        <CTAButtonOutside class="CTAbutton" text="Get Directions" :link="'https://goo.gl/maps/NSE8EaTPEAsYvR4y5'"/>
       </div>
     </div>
     </div>
@@ -29,7 +29,7 @@
     <div class = "location-left-mobile location-body">
       <div class = "hours-location-box slide-left " >
         <h4>We deliver anywhere with in a 2 mile radius of our location.</h4>
-        <CTAButton class="CTAbutton" text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
+        <CTAButtonOutside class="CTAbutton" text="See If You Are In Range" :link="'https://www.google.com/maps/d/u/0/edit?mid=1ThQJ2tuLOnyY2Ek00CnYAcVfPiQr4CY&ll=40.3907509343488%2C-79.99408847070312&z=14'"/>
       </div>
     </div>
   <div class = "main-body bottom-box">
@@ -46,12 +46,12 @@
 </template>
 
 <script>
-import CTAButton from '../components/CTAbutton.vue'
+import CTAButtonOutside from '../components/CTAbuttonOutside.vue'
 
 export default {
   name: 'LocationPage',
   components: {
-    CTAButton,
+    CTAButtonOutside,
   },
   props: {
     msg: String

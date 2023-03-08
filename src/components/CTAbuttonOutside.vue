@@ -1,5 +1,5 @@
 <template>
-   <router-link  :to="rlink"><button>{{text}}</button></router-link>
+   <a :href="link"><button>{{text}}</button></a>
 </template>
 
 <script>
@@ -7,7 +7,7 @@
         name: 'CTAButton',
         props: {
             text: String,
-            rlink: String,
+            link: String,
         }
     }
 </script>

@@ -15,7 +15,7 @@
         <!-- Text slides with image -->
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Fish Fry is Back!</div>
-          <CTAbutton class="slide-button " text='See the Menu' v-b-modal.modal-center />
+          <CTAbuttonOutside class="slide-button " text='See the Menu' v-b-modal.modal-center />
           <template #img>
             <img
               class="d-block w-100"
@@ -31,7 +31,7 @@
 
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Guinness Cheese Cake is Here for St. Patrick's Day</div>
-          <CTAbutton class="slide-button " text='Order Now' :link="'https://antoniospizzeria.hungerrush.com/'" />
+          <CTAbuttonOutside class="slide-button " text='Order Now'  :link="'https://antoniospizzeria.hungerrush.com/'" />
           <template #img>
             <img
               class="d-block w-100"
@@ -45,7 +45,7 @@
 
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Tons of options for every taste</div>
-       <CTAbutton class="slide-button"  text='See the Menu' :link="'/AntoniosPizza/menu/full'" />
+       <CTAbutton class="slide-button"  text='See the Menu' :rlink="'/AntoniosPizza/menu/full'" />
           <template #img>
             <img
               class="d-block w-100"
@@ -81,10 +81,12 @@
 
 <script>
 import CTAbutton from "../components/CTAbutton.vue"
+import CTAbuttonOutside from "../components/CTAbuttonOutside.vue"
   export default {
     name: 'MainPage',
     components: {
     CTAbutton,
+    CTAbuttonOutside,
   },
 
     data() {
