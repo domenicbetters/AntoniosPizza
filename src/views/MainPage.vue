@@ -45,7 +45,7 @@
 
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Tons of options for every taste</div>
-       <CTAbutton class="slide-button" @show-menus="showMenus" :clicky="'show-menus'" text='See the Menu'/>
+       <CTAbutton class="slide-button"  text='See the Menu' :link="'/AntoniosPizza/menu/full'" />
           <template #img>
             <img
               class="d-block w-100"
@@ -99,10 +99,6 @@ import CTAbutton from "../components/CTAbutton.vue"
       },
       onSlideEnd() {
         this.sliding = false
-      },
-      showMenus() {
-        this.$emit('show-menu')
-        console.log('isitworking?')
       }
     }
   }

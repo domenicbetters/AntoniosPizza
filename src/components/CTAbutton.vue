@@ -1,5 +1,5 @@
 <template>
-    <a :href="link"><button @click="RunFunc(clicky)">{{text}}</button></a>
+    <a :href="link"><button>{{text}}</button></a>
 </template>
 
 <script>
@@ -9,13 +9,7 @@
             text: String,
             link: String,
             clicky: String,
-        },
-        methods: {
-            RunFunc(clicky) {
-                this.$emit(clicky)
-            }
         }
-    
     }
 </script>
 
