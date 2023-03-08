@@ -13,6 +13,10 @@ Vue.use(VueRouter)
 
 const routes = [
     {
+        path: '/',
+        redirect: { name: 'Main' }
+      },
+    {
       path: "/AntoniosPizza",
       name: "Main",
       component: MainPage
