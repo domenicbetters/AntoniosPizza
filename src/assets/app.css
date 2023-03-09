@@ -453,8 +453,8 @@ a:hover {
   }
 
   .slide-bottom-delay {
-	-webkit-animation: slide-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	        animation: slide-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	-webkit-animation: slide-bottom-delay 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: slide-bottom-delay 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 
 /**
