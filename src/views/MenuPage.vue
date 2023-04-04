@@ -13,7 +13,7 @@
               <b-nav-item @click="ShowSalad()" v-bind:class="{active: SaladisActive}" href="#">Salads</b-nav-item>
               <b-nav-item @click="ShowApp()" v-bind:class="{active: AppisActive}" href="#">Appetizers</b-nav-item>
               <b-nav-item @click="ShowWings()" v-bind:class="{active: WingsisActive}" href="#">Wings and Fries</b-nav-item>
-              <b-nav-item @click="ShowPasta()" v-bind:class="{active: PastaisActive}" href="#">Pasta</b-nav-item>
+              <b-nav-item @click="ShowPasta()" v-bind:class="{active: PastaisActive}" href="#">Pasta & Gyros</b-nav-item>
               <b-nav-item @click="ShowDessert()" v-bind:class="{active: DessertisActive}" href="#">Desserts</b-nav-item>
               <b-nav-item @click="ShowDrinks()" v-bind:class="{active: DrinksisActive}"  href="#">Drinks</b-nav-item>
             </b-navbar-nav>

@@ -3,7 +3,6 @@
     <div class ="header-menu"><NavBar/></div>
       <h1 class="juice" v-if="this.$route.path == '/AntoniosPizza/menu/full'">Full Menu</h1>
       <h1 class="juice"  v-if="this.$route.path == '/AntoniosPizza/menu/vegan'">Vegan Menu</h1>
-    <!-- <div class="main" v-show="MenuExists === 'yes'"><MenuPage :veganOnly="veganOnly"/></div> -->
        <div class="main"><router-view :veganOnly="VeganPath()"/></div>
     <div ><FooterBar/></div>
 </div>

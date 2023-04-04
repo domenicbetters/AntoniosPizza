@@ -30,14 +30,28 @@
 
 
         <b-carousel-slide>
-          <div class = "fishfry tweaked-color">Guinness Cheese Cake is Here for St. Patrick's Day</div>
+          <div class = "fishfry tweaked-color">April Specials are here</div>
           <CTAbuttonOutside class="slide-button " text='Order Now'  :link="'https://antoniospizzeria.hungerrush.com/'" />
           <template #img>
             <img
               class="d-block w-100"
               style="object-fit: cover; height:65vh;" 
               width="960"
-              src="../assets/images/cheesecakeguin.jpg"
+              src="../assets/images/pickles.jpg"
+              alt="image slot"
+            >
+          </template>
+        </b-carousel-slide>
+
+        <b-carousel-slide>
+          <div class = "fishfry tweaked-color">It's Cannibis Awareness Month</div>
+          <CTAbuttonOutside class="slide-button " text='Special Menu' v-b-modal.modal-center2 />
+          <template #img>
+            <img
+              class="d-block w-100"
+              style="object-fit: cover; height:65vh;" 
+              width="960"
+              src="../assets/images/tacopizza.jpg"
               alt="image slot"
             >
           </template>
@@ -45,7 +59,7 @@
 
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Tons of options for every taste</div>
-       <CTAbutton class="slide-button"  text='See the Menu' :rlink="'/AntoniosPizza/menu/full'" />
+       <CTAbutton class="slide-button"  text='Check out our Menu' :rlink="'/AntoniosPizza/menu/full'" />
           <template #img>
             <img
               class="d-block w-100"
@@ -71,6 +85,15 @@
   modal-class="modalbody"
   header="no">
     <img class="modalimg" src="../assets/images/fishmenu.jpg" />
+  </b-modal>
+
+  <b-modal id="modal-center2"
+  hide-footer=true
+  content-class="modalimage"
+  header-class="headerclass"
+  modal-class="modalbody"
+  header="no">
+    <img class="modalimg" src="../assets/images/stonermenu.jpg" />
   </b-modal>
 
 </div>

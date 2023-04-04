@@ -1,18 +1,30 @@
 <template>
   <div class = "menu-section">
-    <div class = "buffer">
-      <h1>Pasta</h1>
-      <h4>All Pasta comes with side of garlic bread</h4>
-    </div>
-    <div class = "right-side ">
-      <div class = "food-box">
-      <SaladItem class="food-list" v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
-      <SaladItem class="food-list" v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
+    <div class="menu-side">
+        <div class = "buffer">
+          <h1>Pasta</h1>
+          <h4>All Pasta comes with side of garlic bread</h4>
+        </div>
+        <div class = "right-side ">
+          <div class = "food-box">
+          <SaladItem class="food-list" v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
+          <SaladItem class="food-list" v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
+          </div>
       </div>
-   
-    
-  
-  </div>
+    </div>
+    <div class="menu-side">
+      <div class = "buffer">
+          <h1>Gyros</h1>
+          <h4>All gyros served in a pita flat bread.</h4>
+          <p>Add Feta cheese for $1</p>
+        </div>
+        <div class = "right-side ">
+          <div class = "food-box">
+          <SaladItem class="food-list" v-show="gyro.vegan === 'yes' && veganOnly === true" :key="gyro.name" v-for="(gyro) in gyros" :item="gyro" />
+          <SaladItem class="food-list" v-show="veganOnly === false" :key="gyro.name" v-for="(gyro) in gyros" :item="gyro" />
+          </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -33,6 +45,11 @@ export default {
     { name: 'Chicken Alfredo',desc: 'Grilled Chicken with Alfredo Sauce', price:'$14.00' },
     { name: 'Chicken Parm Pasta',desc: 'Breaded Chicken with Mozzarella, Mozzarella, and Parmesan', price:'$14.00', vegan: 'yes' },
     { name: 'Stuffed Shells',desc: 'Baked with Marinara and Mozzarella Cheese', price:'$11.00' },
+    ],
+    gyros: [
+    { name: 'Traditional Lamb Gyro', desc: 'Topped with lettuce, tomato, onion, and tzaziki sauce.', price:'$7.00' },
+    { name: 'Chicken Gyro', desc: 'Topped with lettuce, tomato, onion, and tzaziki sauce.', price:'$7.00' },
+    { name: 'Seitan Gyro', desc: 'Topped with lettuce, tomato, and onion', price:'$7.00', vegan: 'yes' },
     ]
   }
 },
@@ -115,8 +132,13 @@ li {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+}
+
+.menu-side {
+  width: 48%;
+
 }
 
 .food-box {
@@ -196,6 +218,9 @@ li {
   .menu-section {
     flex-direction: column;
     flex-wrap: nowrap;
+  }
+  .menu-side {
+    width: 98%
   }
   .left-side {
     width: 30%;

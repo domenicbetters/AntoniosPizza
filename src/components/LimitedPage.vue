@@ -37,15 +37,16 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-    { name: 'Guinness Chocolate Cheese', price: '$6.00'},
-    { name: 'Irish Pizza', price: 'Specialty pizza prices'},
-    { name: 'Vegan Irish Pizza', price: 'Specialty pizza prices', vegan: 'yes'},
-    { name: 'Shepherds Pizza Pie', price: 'Specialty pizza prices'},
-    { name: 'Vegan Sheperds Pizza Pie', price: 'Specialty pizza prices', vegan: 'yes'},
-    { name: 'Crab Rangoon Pizza', price: 'Specialty pizza prices'},
-    { name: 'Vegan Potato Soup', price: '$5.50', vegan: 'yes'},
-    
-        
+    { name: 'Double Stack Pizza', desc: "A pizza on top of a pizza, topped however you like.", price: 'Specialty pizza prices', vegan: 'yes'},
+    { name: 'Walking Taco Pizza', desc: "Taco beef, taco sauce, lettuce, tomato, and doritos", price: 'Specialty pizza prices'},
+    { name: 'Vegan Walking Taco Pizza', desc: "Vegan Chili, taco sauce, lettuce, tomato, and fritos", price: 'Specialty pizza prices', vegan: 'yes'},
+    { name: 'Totally Fried Pizza', desc: "Ranch and deep fried goodies on a pizza", price: 'Specialty pizza prices'},
+    { name: 'Big Pick Energy Pizza', desc: "A Spicy Pickle Pizza", price: 'Specialty pizza prices', vegan: 'yes'},
+    { name: 'Pineapple Express Pizza', desc: "Pineapples, toasted coconut, chocolate, and pretzel.", price: 'Specialty pizza prices', vegan: 'yes'},
+    { name: 'Fried Potluck', desc: "Half pan of all kinds of fried appetizers.", price: '35.00', vegan: 'yes'},
+    { name: 'Buffalo Blunts', desc: "Buffalo chicken egg rolls served with ranch", price: '9.00'},
+    { name: 'Crunchy Bois', desc: "Crispy cheesey breadsticks topped with bacon.", price: '8.00', vegan: 'yes'},
+    { name: 'Mile High Funnel Cake', desc: "Funnel cake fries topped with frosting and fruity pebbles", price: '8.00'},
     ],
 
     coupons: [
