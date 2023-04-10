@@ -13,19 +13,6 @@
         @sliding-end="onSlideEnd"
       >
         <!-- Text slides with image -->
-        <b-carousel-slide>
-          <div class = "fishfry tweaked-color">Fish Fry is Back!</div>
-          <CTAbuttonOutside class="slide-button " text='See the Menu' v-b-modal.modal-center />
-          <template #img>
-            <img
-              class="d-block w-100"
-              style="object-fit: cover; height:65vh;" 
-              width="960"
-              src="../assets/images/fishfry.jpg"
-              alt="image slot"
-            >
-          </template>
-        </b-carousel-slide>
 
 
 
