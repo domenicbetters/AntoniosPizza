@@ -65,14 +65,7 @@
 
       <div>
 
-  <b-modal id="modal-center"
-  hide-footer=true
-  content-class="modalimage"
-  header-class="headerclass"
-  modal-class="modalbody"
-  header="no">
-    <img class="modalimg" src="../assets/images/fishmenu.jpg" />
-  </b-modal>
+
 
   <b-modal id="modal-center2"
   hide-footer=true
