@@ -22,7 +22,7 @@
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: cover; height:65vh;" 
+              style="object-fit: contain; height:65vh;" 
               width="960"
               src="../assets/images/pickles.jpg"
               alt="image slot"
@@ -36,7 +36,7 @@
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: cover; height:65vh;" 
+              style="object-fit: contain; height:65vh;" 
               width="960"
               src="../assets/images/tacopizza.jpg"
               alt="image slot"
