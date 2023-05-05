@@ -119,7 +119,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: end;
+    align-items: flex-end;
     text-align: left;
     width:50%;
 }
@@ -127,7 +127,7 @@ body {
 .location-left {
     display: flex;
     flex-wrap: nowrap;
-    align-items: end;
+    align-items: flex-end;
     justify-content: flex-start;
     width:50%;
     height: 100%;
@@ -261,7 +261,7 @@ a:hover {
         flex-direction: column;
         border-radius: 25px;
         align-items: center;
-        justify-content: end;
+        justify-content: flex-end;
         border: 2px solid #FFFAA1;
         padding: 10px;
         text-align: left;
