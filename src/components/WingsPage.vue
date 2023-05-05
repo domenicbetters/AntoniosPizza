@@ -48,6 +48,9 @@
 import RosterCard from './RosterCard.vue'
 import ToppingList from './ToppingList.vue'
 import SizePrice from './SizePrice.vue'
+import wingsize from '@/assets/MenuJSon/wingsize.json'
+import wingsauce from '@/assets/MenuJSon/wingsauce.json'
+
 export default {
   name: 'WingsPage',
   components: {
@@ -59,39 +62,9 @@ export default {
   return {
     sizeColumnWidth: '',
     foodColumnWidth: '',
-    toppings: [
-    { name: 'BBQ',vegan: 'yes'},
-    { name: 'Beer Can Chicken',vegan: 'yes'},
-    { name: 'Buffalo',vegan: 'yes'},
-    { name: 'Cajun',vegan: 'yes'},
-    { name: 'Cajun Garlic',vegan: 'yes'},
-    { name: 'Garlic Parmesan',vegan: 'yes'},
-    { name: 'General Tso',vegan: 'yes'},
-    { name: 'Honey Mustard',vegan: 'yes'},
-    { name: 'Mango Habanero',vegan: 'yes'},
-    { name: 'Old Bay',vegan: 'yes'},
-    { name: 'Plain',vegan: 'yes'},
-    { name: 'Ranch'},
-    { name: 'Roasted Garlic',vegan: 'yes'},
-    { name: 'Salt n Vinegar',vegan: 'yes'},
-    { name: 'Spicy BBQ',vegan: 'yes'},
-    { name: 'Spicy Garlic',vegan: 'yes'},
-    { name: 'Wing Dust',vegan: 'yes'},
-    ],
-   
-    sizes: [
-    { name: '6pc Wings', price: '$10.00'},
-    { name: '12pc Wings', price: '$18.00'},
-    { name: '24pc Wings', price: '$32.00'},
-    { name: '', price: ''},
-    { name: '6pc Seitan Wings', price: '$7.00', vegan: 'yes'},
-    { name: '12pc Seitan Wings', price: '$12.00', vegan: 'yes'},
-    { name: '24pc Seitan Wings', price: '$22.00', vegan: 'yes'},
-    { name: '', price: '', vegan: 'yes'},
-    { name: 'Hand Cut Fries', price: '$5.00', vegan: 'yes'},
-    { name: 'Waffle Fries', price: '$6.00', vegan: 'yes'},
+    toppings: wingsauce,
+    sizes: wingsize,
 
-    ],
     mods: [
       {name: 'Chili', vegan: 'yes'},
       {name: 'Shredded Cheese', vegan: 'yes'},

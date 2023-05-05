@@ -1,0 +1,16 @@
+
+
+[
+   
+    { "name": "6pc Wings", "price": "$10.00"},
+    { "name": "12pc Wings", "price": "$18.00"},
+    { "name": "24pc Wings", "price": "$32.00"},
+    { "name": "", "price": ""},
+    { "name": "6pc Seitan Wings", "price": "$7.00", "vegan": "yes"},
+    { "name": "12pc Seitan Wings", "price": "$12.00", "vegan": "yes"},
+    { "name": "24pc Seitan Wings", "price": "$22.00", "vegan": "yes"},
+    { "name": "", "price": "", "vegan": "yes"},
+    { "name": "Hand Cut Fries", "price": "$5.00", "vegan": "yes"},
+    { "name": "Waffle Fries", "price": "$6.00", "vegan": "yes"}
+
+]

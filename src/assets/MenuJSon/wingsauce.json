@@ -1,0 +1,19 @@
+[
+    { "name": "BBQ","vegan": "yes"},
+    { "name": "Beer Can Chicken","vegan": "yes"},
+    { "name": "Buffalo","vegan": "yes"},
+    { "name": "Cajun","vegan": "yes"},
+    { "name": "Cajun Garlic","vegan": "yes"},
+    { "name": "Garlic Parmesan","vegan": "yes"},
+    { "name": "General Tso","vegan": "yes"},
+    { "name": "Honey Mustard","vegan": "yes"},
+    { "name": "Mango Habanero","vegan": "yes"},
+    { "name": "Old Bay","vegan": "yes"},
+    { "name": "Plain","vegan": "yes"},
+    { "name": "Dry Ranch"},
+    { "name": "Roasted Garlic","vegan": "yes"},
+    { "name": "Salt n Vinegar","vegan": "yes"},
+    { "name": "Spicy BBQ","vegan": "yes"},
+    { "name": "Spicy Garlic","vegan": "yes"},
+    { "name": "Wing Dust","vegan": "yes"}
+]
