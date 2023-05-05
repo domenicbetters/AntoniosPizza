@@ -1,0 +1,20 @@
+[
+    { "name": "BBQ Chicken Pizza", "desc": "Grilled Chicken, Bacon, Pineapples, Onions, Mozzarella, BBQ", "vegan": "yes" },
+    { "name": "Broccoli Chicken Pizza", "desc": "Mozzarella, Broccoli, Cheddar, Grilled Chicken, Roasted Garlic White", "vegan": "yes" },
+    { "name": "Buffalo Chicken Pizza", "desc": "Mozzarella, Grilled Chicken, Ranch, Buffalo Sauce", "vegan": "yes" },
+    { "name": "Cheeseburger Pizza", "desc": "Mustard, American Cheese, Cheddar, Mozzarella, Ketchup, Pickles, Tomatoes, Onions" },
+    { "name": "General Tsos Pizza", "desc": "General Tsos Sauce, Fried Chicken, Broccoli, Mozzarella, Green Onions", "vegan": "yes" },
+    { "name": "Hawaiian Pizza", "desc": "Ham, Traditional, Bacon, Pineapples, Mozzarella", "vegan": "yes" },
+    { "name": "Meat Lovers Pizza", "desc": "Mozzarella, Pepperoni, Italian Sausage, Bacon, Capicola, Salami, Traditional", "vegan": "yes" },
+    { "name": "Philly Steak Pizza", "desc": "Steak, Mushrooms, Onions, Green Peppers, Tomatoes, Roasted Garlic White, Mozzarella" },
+    { "name": "Pierogie Pizza", "desc": "Garlic Mashed Potatoes, Cheddar, Mozzarella, Onions, Bacon", "vegan": "yes" },
+    { "name": "Ranch Chicken Pizza", "desc": "Ranch, Grilled Chicken, Bacon, Tomatoes, Cheddar, Mozzarella", "vegan": "yes" },
+    { "name": "Spinach Feta Pizza", "desc": "Spinach, Tomatoes, Feta, Onions, Roasted Garlic White, Mozzarella" , "vegan": "yes"},
+    { "name": "Supreme Pizza", "desc": "Pepperoni, Italian Sausage, Mushrooms, Banana Peppers, Black Olives, Mozzarella, Traditional" , "vegan": "yes"},
+    { "name": "Veggie Pizza", "desc": "Mushrooms, Green Peppers, Onions, Black Olives, Banana Peppers, Tomatoes, Roasted Garlic White, Mozzarella", "vegan": "yes" },
+    { "name": "Walking Taco Pizza", "desc": "Mozzarella, Cheddar, Doritos, Lettuce, Tomatoes, Taco Beef" },
+    { "name": "Vegan Walking Taco Pizza", "desc": "Mozzarella, Fritos, Lettuce, Tomatoes, Vegan Chili", "vegan": "yes" },
+    { "name": "Elote Pizza", "desc": "Mexican Street Corn Pizza", "vegan": "yes"}
+    
+]
+

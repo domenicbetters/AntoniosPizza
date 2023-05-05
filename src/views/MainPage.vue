@@ -14,24 +14,9 @@
       >
         <!-- Text slides with image -->
 
-
-
         <b-carousel-slide>
-          <div class = "fishfry tweaked-color">April Specials are here</div>
+          <div class = "fishfry tweaked-color">Check out our May Specials</div>
           <CTAbuttonOutside class="slide-button " text='Order Now'  :link="'https://antoniospizzeria.hungerrush.com/'" />
-          <template #img>
-            <img
-              class="d-block w-100"
-              style="object-fit: contain; height:65vh;" 
-              width="960"
-              src="../assets/images/pickles.jpg"
-              alt="image slot"
-            >
-          </template>
-        </b-carousel-slide>
-
-        <b-carousel-slide>
-          <div class = "fishfry tweaked-color">It's Cannibis Awareness Month</div>
           <CTAbuttonOutside class="slide-button " text='Special Menu' v-b-modal.modal-center2 />
           <template #img>
             <img

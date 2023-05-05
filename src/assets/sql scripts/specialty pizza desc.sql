@@ -5,9 +5,10 @@ create table #pizzas (itemname varchar(max))
 
 
 
-insert into #pizzas select distinct itemname
-from [dbo].[MenuItmPSMdXRef]
-where groupname = 'pizza' and SyncStatus = 1 and entid > 200  and itemname != 'cheese pizza'
+insert into #pizzas select distinct mn.itemname
+from [dbo].[MenuItmPSMdXRef] mn
+join [dbo].[MenuGrpItmXRef] io on io.ItemName = mn.ItemName
+where mn.groupname = 'pizza'  and mn.itemname != 'cheese pizza' and io.IsAvailableOnline=1
 
 declare pizzacursor cursor
 for
@@ -22,7 +23,7 @@ while @@fetch_status = 0
     begin
 			select @toppings = coalesce(@toppings + ', ', '') + ModName
 		from [dbo].[MenuItmPSMdXRef]
-		where groupname = 'pizza' and SyncStatus = 1 and entid > 200 and  ItemName = @pizzaname
+		where groupname = 'pizza' and ItemName = @pizzaname
 
 		print @pizzaname
 		print @toppings
@@ -42,7 +43,7 @@ while @@fetch_status = 0
 
 		--{ name: 'Calzone', desc: 'Cheese, sauce Ricotta' },
 
-select '{ name: '''+pizza+''', desc: '''+toppings+''' },'
+select '{ "name": "'+pizza+'", "desc": "'+toppings+'" },'
 from #toppings
 
 drop table #toppings

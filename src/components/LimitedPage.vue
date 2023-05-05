@@ -37,16 +37,16 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-    { name: 'Double Stack Pizza', desc: "A pizza on top of a pizza, topped however you like.", price: 'Specialty pizza prices', vegan: 'yes'},
     { name: 'Walking Taco Pizza', desc: "Taco beef, taco sauce, lettuce, tomato, and doritos", price: 'Specialty pizza prices'},
     { name: 'Vegan Walking Taco Pizza', desc: "Vegan Chili, taco sauce, lettuce, tomato, and fritos", price: 'Specialty pizza prices', vegan: 'yes'},
-    { name: 'Totally Fried Pizza', desc: "Ranch and deep fried goodies on a pizza", price: 'Specialty pizza prices'},
-    { name: 'Big Pick Energy Pizza', desc: "A Spicy Pickle Pizza", price: 'Specialty pizza prices', vegan: 'yes'},
-    { name: 'Pineapple Express Pizza', desc: "Pineapples, toasted coconut, chocolate, and pretzel.", price: 'Specialty pizza prices', vegan: 'yes'},
-    { name: 'Fried Potluck', desc: "Half pan of all kinds of fried appetizers.", price: '35.00', vegan: 'yes'},
+    { name: 'Elote Pizza', desc: "Mexican Street Corn Pizza", price: 'Specialty pizza prices', vegan: 'yes'},
     { name: 'Buffalo Blunts', desc: "Buffalo chicken egg rolls served with ranch", price: '9.00'},
+    { name: 'Nachos', desc: "Choose beef or vegan and celebrate Cinco de Mayo correctly", price: '8.00', vegan: 'yes'},
     { name: 'Crunchy Bois', desc: "Crispy cheesey breadsticks topped with bacon.", price: '8.00', vegan: 'yes'},
-    { name: 'Mile High Funnel Cake', desc: "Funnel cake fries topped with frosting and fruity pebbles", price: '8.00'},
+    { name: 'Churros', desc: "Apple or Strawberry Filled", price: '7.00'},
+    { name: 'Blueberry Cheesecake Pizza', desc: "All proceeds of the sale will be donated to HDSA western PA chapter.", price: 'Specialty pizza prices'},
+    { name: 'Blueberry Cheesecake', desc: "All proceeds of the sale will be donated to HDSA western PA chapter", price: '6.00', vegan: 'yes'},
+    { name: 'Strawberry Crunchcake', desc: "It tastes just likea a strawberry crunch ice cream bar, and it's vegan!", price: '5.00', vegan: 'yes'},
     ],
 
     coupons: [
