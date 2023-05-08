@@ -1,10 +1,10 @@
 <template>
    <div class="modalbody">
-    <button @click = "modalswitch()"><i class="fa-solid fa-x"></i></button>
+    <button @click = "modalswitchoff(modal.id)"><i class="fa-solid fa-x"></i></button>
     <div class = "modalimage">
    
-    <img class = "modalimg" :src="link" />
-    <div  @click = "modalswitch()" class = "modalback"></div>
+    <img class = "modalimg" :src="modal.link" />
+    <div  @click = "modalswitchoff(modal.id)" class = "modalback"></div>
     </div>
 
    </div>
@@ -14,13 +14,12 @@
      export default {
          name: 'ModalPop',
          methods: {
-            modalswitch() {
-                this.$emit('modal-switch')
+            modalswitchoff(modalid) {
+                this.$emit('modal-switch-off', modalid)
             }
          },
          props: {
-            link: String,
-            show: Boolean
+            modal: Object
          },
          emits: ['modal-switch'],
         

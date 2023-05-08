@@ -1,11 +1,11 @@
 <template> 
 <div id="app">
-  <ModalPop :link="require('@/assets/images/stonermenu.jpg')" v-show="modal" @modal-switch="modalswitch()" />
+  <ModalPop :key="modal.link" v-for="(modal) in modals" :link = "modal.link" v-show="modal.showing" @modal-switch-off="modalswitch" :modal="modal"/>
   <img class = "bean" src="@/assets/images/bean.png" />
     <div class ="header-menu"><NavBar/></div>
       <h1 class="juice" v-if="this.$route.path == '/AntoniosPizza/menu/full'">Full Menu</h1>
       <h1 class="juice"  v-if="this.$route.path == '/AntoniosPizza/menu/vegan'">Vegan Menu</h1>
-       <div class="main"><router-view   @modal-switch="modalswitch()" :veganOnly="VeganPath()"/></div>
+       <div class="main"><router-view   @modal-switch-on="modalswitch" :veganOnly="VeganPath()"/></div>
     <div ><FooterBar/></div>
 </div>
 </template>
@@ -25,7 +25,14 @@ export default {
   data(){
     return {
       menu: false,
-      modal: false,
+      modals: [
+        {link: require('@/assets/images/stonermenu.jpg'),
+         showing: false,
+         id: 1 },
+         {link: require('@/assets/images/dom.jpg'),
+         showing: false,
+        id: 2 },
+      ]
     }
   },
 
@@ -37,9 +44,18 @@ export default {
           return false
         }
     },
-    modalswitch() {
-       this.modal = !this.modal
-  }
+    modalswitch(modal) {
+      //  if (this.modal.id === modal) {
+      //   this.modal.showing = !this.modal.showing
+      //  }
+        for(let i = 0, len=this.modals.length; i<len; i++){ 
+         if(this.modals[i].id==modal) {
+          this.modals[i].showing = !this.modals[i].showing
+         }
+        
+      }
+     
+  },
 },
 }
 </script>

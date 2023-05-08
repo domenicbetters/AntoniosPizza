@@ -17,7 +17,7 @@
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Check out our May Specials</div>
           <div class = "buttonrow"><CTAbuttonOutside class="slide-button " text='Order Now'  :link="'https://antoniospizzeria.hungerrush.com/'" />
-          <div @click = "modalswitch()"><CTAbuttonOutside class="slide-button " text='Special Menu' /></div>
+          <div @click = "modalswitchon('1')"><CTAbuttonOutside class="slide-button " text='Special Menu' /></div>
           </div>
           <template #img>
             <img
@@ -109,8 +109,8 @@ import CTAbuttonOutside from "../components/CTAbuttonOutside.vue"
       onSlideEnd() {
         this.sliding = false
       },
-      modalswitch() {
-                this.$emit('modal-switch')
+      modalswitchon(modal) {
+                this.$emit('modal-switch-on', modal)
             }
          },
          emits: ['modal-switch'],
