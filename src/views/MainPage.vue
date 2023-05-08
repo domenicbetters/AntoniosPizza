@@ -16,8 +16,9 @@
 
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Check out our May Specials</div>
-          <CTAbuttonOutside class="slide-button " text='Order Now'  :link="'https://antoniospizzeria.hungerrush.com/'" />
-          <CTAbuttonOutside class="slide-button " text='Special Menu' v-b-modal.modal-center2 />
+          <div class = "buttonrow"><CTAbuttonOutside class="slide-button " text='Order Now'  :link="'https://antoniospizzeria.hungerrush.com/'" />
+          <div @click = "modalswitch()"><CTAbuttonOutside class="slide-button " text='Special Menu' /></div>
+          </div>
           <template #img>
             <img
               class="d-block w-100"
@@ -27,6 +28,29 @@
               alt="image slot"
             >
           </template>
+        </b-carousel-slide>
+
+        <b-carousel-slide >
+          <template #img>
+            <img
+              class="d-block w-100 desktopimg"
+              style="object-fit:cover; object-position: bottom; height:65vh;" 
+              width="960"
+              src="../assets/images/churro.jpg"
+              alt="image slot"
+            >
+
+            <img
+              class="d-block w-100 mobileimg"
+              style="object-fit:cover; object-position: bottom; height:65vh;" 
+              width="960"
+              src="../assets/images/churrom.jpg"
+              alt="image slot"
+            >
+          </template>
+          <div class = "fishfry taco  tweaked-color">Start your order with some Churros!</div>
+          <CTAbuttonOutside class="slide-button " text='Order Now'  :link="'https://antoniospizzeria.hungerrush.com/Order/Menu/1#desserts'" />
+         
         </b-carousel-slide>
 
         <b-carousel-slide>
@@ -50,16 +74,8 @@
 
       <div>
 
+   
 
-
-  <b-modal id="modal-center2"
-  hide-footer=true
-  content-class="modalimage"
-  header-class="headerclass"
-  modal-class="modalbody"
-  header="no">
-    <img class="modalimg" src="../assets/images/stonermenu.jpg" />
-  </b-modal>
 
 </div>
   </div>
@@ -76,6 +92,9 @@ import CTAbuttonOutside from "../components/CTAbuttonOutside.vue"
     CTAbutton,
     CTAbuttonOutside,
   },
+  props: {
+       stonermodal: String
+  },
 
     data() {
       return {
@@ -89,8 +108,12 @@ import CTAbuttonOutside from "../components/CTAbuttonOutside.vue"
       },
       onSlideEnd() {
         this.sliding = false
-      }
-    }
+      },
+      modalswitch() {
+                this.$emit('modal-switch')
+            }
+         },
+         emits: ['modal-switch'],
   }
 </script>
 
@@ -109,11 +132,28 @@ img {
   border-radius: 10px;
 }
 
+.buttonrow {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mobileimg {
+  display: none !important;
+}
+
 @media (max-width: 991.5px) {
   img {
     object-fit: cover;
     height: 55vh;
   }
+
+  .mobileimg {
+  display:initial !important;
+}
+ .desktopimg {
+  display: none !important;
+ }
 
   .fishfry{
     font-size: 2em;
@@ -125,8 +165,9 @@ font-size:.5em;
 
 
 
-
-
+.taco{
+  justify-self: baseline !important;
+}
 
 
 </style>

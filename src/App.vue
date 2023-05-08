@@ -1,9 +1,11 @@
 <template> 
 <div id="app">
+  <ModalPop :link="require('@/assets/images/stonermenu.jpg')" v-show="modal" @modal-switch="modalswitch()" />
+  <img class = "bean" src="@/assets/images/bean.png" />
     <div class ="header-menu"><NavBar/></div>
       <h1 class="juice" v-if="this.$route.path == '/AntoniosPizza/menu/full'">Full Menu</h1>
       <h1 class="juice"  v-if="this.$route.path == '/AntoniosPizza/menu/vegan'">Vegan Menu</h1>
-       <div class="main"><router-view :veganOnly="VeganPath()"/></div>
+       <div class="main"><router-view   @modal-switch="modalswitch()" :veganOnly="VeganPath()"/></div>
     <div ><FooterBar/></div>
 </div>
 </template>
@@ -11,16 +13,19 @@
 <script>
 import NavBar from './components/NavBar.vue'
 import FooterBar from './components/FooterBar.vue'
+import ModalPop from "./components/ModalPop.vue"
 
 export default {
   name: 'App',
   components: {
     NavBar,
     FooterBar,
+    ModalPop
   },
   data(){
     return {
       menu: false,
+      modal: false,
     }
   },
 
@@ -32,7 +37,10 @@ export default {
           return false
         }
     },
+    modalswitch() {
+       this.modal = !this.modal
   }
+},
 }
 </script>
 

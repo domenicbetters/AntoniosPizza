@@ -89,9 +89,20 @@ body {
 
 .modalimage {
     display: flex;
-    width: fit-content;
     background: #FFFAA1;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    max-width: 1000px;
+    border: 8px double #4e4c32;
+
+}
+.modalimg {
+  height: 98%;
+  width: 98%;
+  object-fit: contain;
+  box-sizing: border-box;
 }
 .dogimg {
     width: 100%;
@@ -99,9 +110,19 @@ body {
 }
 
 .modalbody {
-    display: flex !important;
-    justify-content: center !important;
+   position: absolute;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
     align-items: center ;
+    width:100vw;
+    height: 100vh;
+    box-sizing:border-box;
+    background-color: rgba(0, 0, 0, 0.732);
+    z-index: 1000;
+    top: 0;
 }
 
 .headerclass {
@@ -226,6 +247,19 @@ a:hover {
   text-decoration: none !important ;
 }
 
+
+.bean {
+  position: absolute;
+  z-index: 99;
+  height: 60vh;
+  top: 200px;
+  -webkit-animation: peekaboo 120s;
+  animation: peekaboo 120s;
+  animation-delay: 120s;
+  -webkit-animation-delay: 120s;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+}
 @media (min-width: 991.5px) {
     .vegan-intro-image-mobile {
         display: none;
@@ -624,6 +658,27 @@ a:hover {
       -webkit-transform: translatex(0);
               transform: translatex(0);
               opacity: 1;
+    }
+  }
+
+  @keyframes peekaboo {
+    0% {
+      transform: translateX(-80vw);
+      -webkit-transform: translateX(-80vw);
+    }
+    100% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes peekaboo {
+    0% {
+      transform: translateX(-80vw);
+      -webkit-transform: translateX(-80vw);
+    }
+    100% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
     }
   }
 
