@@ -249,7 +249,7 @@ a:hover {
 
 
 .bean {
-  position: absolute;
+  position:fixed;
   z-index: 99;
   height: 60vh;
   top: 200px;
