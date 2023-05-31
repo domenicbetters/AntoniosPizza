@@ -3,6 +3,7 @@ import MainPage from "@/views/MainPage.vue"
 import LocationPage from "@/views/LocationPage.vue"
 import MenuPage from "@/views/MenuPage.vue"
 import VeganPage from "@/views/VeganPage.vue"
+import CateringPage from "@/views/CateringPage.vue"
 import ContactPage from "@/views/ContactPage.vue"
 import AboutPage from "@/views/AboutPage.vue"
 import VueRouter from 'vue-router'
@@ -40,6 +41,11 @@ const routes = [
         path: "/AntoniosPizza/vegan",
         name: "Vegan",
         component: VeganPage
+    },
+    {
+        path: "/AntoniosPizza/catering",
+        name: "Catering",
+        component: CateringPage
     },
     {
         path: "/AntoniosPizza/about",

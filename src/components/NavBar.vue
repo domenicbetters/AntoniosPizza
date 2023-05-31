@@ -29,6 +29,9 @@
             <router-link to="/AntoniosPizza/vegan"><p data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowVegan()" v-bind:class="{active: VeganisActive}" aria-current="page" >Vegan Love</p></router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/AntoniosPizza/catering"><p data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowCatering()" v-bind:class="{active: CateringisActive}" aria-current="page" >Catering</p></router-link>
+          </li>
+          <li class="nav-item">
             <router-link to="/AntoniosPizza/about"><p data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="nav-link " @click="ShowAbout()" v-bind:class="{active: AboutisActive}" aria-current="page" >About Us</p></router-link>
           </li>
           <li class="nav-item">
@@ -49,6 +52,7 @@ export default {
       LocationisActive: false,
       VeganisActive: false,
       AboutisActive: false,
+      CateringisActive: false,
       ContactisActive: false,
       MenuisActive: false,
       VeganMenuisActive: false,
@@ -62,6 +66,7 @@ export default {
       this.LocationisActive = false
       this.VeganisActive = false
       this.AboutisActive = false
+      this.CateringisActive = false
       this.ContactisActive = false
       this.MenuisActive = false
       this.VeganMenuisActive= true
@@ -71,6 +76,7 @@ export default {
       this.LocationisActive = false
       this.VeganisActive = false
       this.AboutisActive = false
+      this.CateringisActive = false
       this.ContactisActive = false
       this.MenuisActive = false
       this.VeganMenuisActive= false
@@ -80,6 +86,7 @@ export default {
       this.LocationisActive = true
       this.VeganisActive = false
       this.AboutisActive = false
+      this.CateringisActive = false
       this.ContactisActive = false
       this.MenuisActive = false
       this.VeganMenuisActive= false
@@ -89,6 +96,7 @@ export default {
       this.LocationisActive = false
       this.VeganisActive = true
       this.AboutisActive = false
+      this.CateringisActive = false
       this.ContactisActive = false
       this.MenuisActive = false
       this.VeganMenuisActive= false
@@ -98,6 +106,7 @@ export default {
       this.LocationisActive = false
       this.VeganisActive = false
       this.AboutisActive = true
+      this.CateringisActive = false
       this.ContactisActive = false
       this.MenuisActive = false
       this.VeganMenuisActive= false
@@ -107,6 +116,7 @@ export default {
       this.LocationisActive = false
       this.VeganisActive = false
       this.AboutisActive = false
+      this.CateringisActive = false
       this.ContactisActive = true
       this.MenuisActive = false
       this.VeganMenuisActive= false
@@ -117,8 +127,19 @@ export default {
       this.LocationisActive = false
       this.VeganisActive = false
       this.AboutisActive = false
+      this.CateringisActive = false
       this.ContactisActive = false
       this.MenuisActive = true
+      this.VeganMenuisActive= false
+    },
+    ShowCatering() {
+      this.HomeisActive = false
+      this.LocationisActive = false
+      this.VeganisActive = false
+      this.AboutisActive = false
+      this.CateringisActive = true
+      this.ContactisActive = false
+      this.MenuisActive = false
       this.VeganMenuisActive= false
     },
 
