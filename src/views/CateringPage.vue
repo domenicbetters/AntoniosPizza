@@ -73,8 +73,20 @@
         <CTAButton text="Contact Us Now" :rlink="'/AntoniosPizza/contact'"/>
       </div>
     </div>
+  
 </div>
+<div class = "main-body slide-top bottom-box ">
+    <div class = "vegan-box">
+        <img class = "card-image" src="../assets/images/vegan2.jpg" alt = 'vegan image' />
+      </div>
+      <div class = "vegan-box">
+        <img class = "card-image" src="../assets/images/vegan2.jpg" alt = 'vegan image' />
+      </div>
+      <div class = "vegan-box">
+        <img class = "card-image" src="../assets/images/vegan2.jpg" alt = 'vegan image' />
 
+      </div>
+    </div>
 </div>
 </template>
 
@@ -119,6 +131,10 @@ export default {
       emailjs.sendForm('service_l1a8ckb', 'template_4uud7ba', this.$refs.form, 'K_W2U51ktMO-ljMJD')
         .then((result) => {
             alert("Thank you for the email.  We will get back to you as soon as we can!", result.text)
+            this.name = ''
+            this.address = ''
+            this.date =  ''
+            this.message =  ''
         }, (error) => {
            alert('FAILED...', error.text);
         });
