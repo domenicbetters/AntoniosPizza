@@ -15,22 +15,22 @@
         <!-- Text slides with image -->
 
         <b-carousel-slide>
-          <div class = "fishfry tweaked-color">Check out our May Specials</div>
-          <div class = "buttonrow"><CTAbuttonOutside class="slide-button " text='Order Now'  :link="'https://antoniospizzeria.hungerrush.com/'" />
-          <div @click = "modalswitchon('1')"><CTAbuttonOutside class="slide-button " text='Special Menu' /></div>
+          <div class = "fishfry tweaked-color">Coming Soon!</div>
+          <div class = "buttonrow">
+          <div @click = "modalswitchon('1')"><CTAbuttonOutside class="slide-button " text='Check out our brief post for more info' /></div>
           </div>
           <template #img>
             <img
               class="d-block w-100"
-              style="object-fit: contain; height:65vh;" 
+              style="object-fit: cover; height:65vh;" 
               width="960"
-              src="../assets/images/tacopizza.jpg"
+              src="../assets/images/newshop.jpg"
               alt="image slot"
             >
           </template>
         </b-carousel-slide>
 
-        <b-carousel-slide >
+        <!-- <b-carousel-slide >
           <template #img>
             <img
               class="d-block w-100 desktopimg"
@@ -51,7 +51,7 @@
           <div class = "fishfry taco  tweaked-color">Start your order with some Churros!</div>
           <CTAbuttonOutside class="slide-button " text='Order Now'  :link="'https://antoniospizzeria.hungerrush.com/Order/Menu/1#desserts'" />
          
-        </b-carousel-slide>
+        </b-carousel-slide> -->
 
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Tons of options for every taste</div>

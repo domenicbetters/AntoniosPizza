@@ -26,7 +26,7 @@ export default {
     return {
       menu: false,
       modals: [
-        {link: require('@/assets/images/stonermenu.jpg'),
+        {link: require('@/assets/images/newshopinfo.png'),
          showing: false,
          id: 1 },
          {link: require('@/assets/images/dom.jpg'),
