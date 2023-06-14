@@ -12,9 +12,9 @@
     { "name": "Spinach Feta Pizza", "desc": "Spinach, Tomatoes, Feta, Onions, Roasted Garlic White, Mozzarella" , "vegan": "yes"},
     { "name": "Supreme Pizza", "desc": "Pepperoni, Italian Sausage, Mushrooms, Banana Peppers, Black Olives, Mozzarella, Traditional" , "vegan": "yes"},
     { "name": "Veggie Pizza", "desc": "Mushrooms, Green Peppers, Onions, Black Olives, Banana Peppers, Tomatoes, Roasted Garlic White, Mozzarella", "vegan": "yes" },
-    { "name": "Walking Taco Pizza", "desc": "Mozzarella, Cheddar, Doritos, Lettuce, Tomatoes, Taco Beef" },
-    { "name": "Vegan Walking Taco Pizza", "desc": "Mozzarella, Fritos, Lettuce, Tomatoes, Vegan Chili", "vegan": "yes" },
-    { "name": "Elote Pizza", "desc": "Mexican Street Corn Pizza", "vegan": "yes"}
+    { "name": "Margherita Pizza", "desc": "Fresh Mozzarella, Tomatoes, Fresh Basil, Balsamic Glaze.", "vegan": "yes" },
+    { "name": "Reuben Pizza", "desc": "Swiss, Corned Beef, Sauerkraut, 1000 Island Dressing." }
+    
     
 ]
 

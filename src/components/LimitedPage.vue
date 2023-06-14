@@ -37,16 +37,11 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-    { name: 'Walking Taco Pizza', desc: "Taco beef, taco sauce, lettuce, tomato, and doritos", price: 'Specialty pizza prices'},
-    { name: 'Vegan Walking Taco Pizza', desc: "Vegan Chili, taco sauce, lettuce, tomato, and fritos", price: 'Specialty pizza prices', vegan: 'yes'},
-    { name: 'Elote Pizza', desc: "Mexican Street Corn Pizza", price: 'Specialty pizza prices', vegan: 'yes'},
-    { name: 'Buffalo Blunts', desc: "Buffalo chicken egg rolls served with ranch", price: '9.00'},
-    { name: 'Nachos', desc: "Choose beef or vegan and celebrate Cinco de Mayo correctly", price: '8.00', vegan: 'yes'},
     { name: 'Crunchy Bois', desc: "Crispy cheesey breadsticks topped with bacon.", price: '8.00', vegan: 'yes'},
     { name: 'Churros', desc: "Apple or Strawberry Filled", price: '7.00'},
-    { name: 'Blueberry Cheesecake Pizza', desc: "All proceeds of the sale will be donated to HDSA western PA chapter.", price: 'Specialty pizza prices'},
-    { name: 'Blueberry Cheesecake', desc: "All proceeds of the sale will be donated to HDSA western PA chapter", price: '6.00', vegan: 'yes'},
-    { name: 'Strawberry Crunchcake', desc: "It tastes just likea a strawberry crunch ice cream bar, and it's vegan!", price: '5.00', vegan: 'yes'},
+    { name: 'Blueberry Cheesecake Pizza',  price: 'Specialty pizza prices'},
+    { name: 'Blueberry Cheesecake',  price: '6.00', vegan: 'yes'},
+    { name: 'Funnel Cake Fries', desc: "Funnel cake fries topped with whipped cream and fruity pebbles", price: '8.00'},
     ],
 
     coupons: [
