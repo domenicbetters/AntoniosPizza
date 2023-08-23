@@ -1,0 +1,774 @@
+BEGIN:VCALENDAR
+PRODID:-//Facebook//NONSGML Facebook Events V1.0//EN
+X-WR-CALNAME:Antonio’s Pizzeria's Facebook Events
+X-PUBLISHED-TTL:PT12H
+X-ORIGINAL-URL:/events/
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20230716T221043Z
+LAST-MODIFIED:20230716T221043Z
+CREATED:20230716T214927Z
+SEQUENCE:1276
+ORGANIZER:MAILTO:noreply@facebookmail.com
+DTSTART:20230930T160000Z
+DTEND:20231001T000000Z
+UID:e233171209668674@facebook.com
+SUMMARY:Pittsburgh Pagan Community Days!
+LOCATION:Velum Fermentation
+URL:https://www.facebook.com/events/233171209668674/
+DESCRIPTION:a day to celebrate community! spea
+ kers\, workshops\, ritual\, kids area
+ . vendors. Family friendly event. 
+ come onecome all! free admission. 
+ would be lovely if donations for t
+ he food bank are dropped off\, or t
+ hose for feral cats!\n\nhttps://www.
+ facebook.com/events/23317120966867
+ 4/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230810T212439Z
+LAST-MODIFIED:20230810T212439Z
+CREATED:20230810T212439Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230929T230000Z
+DTEND:20230930T010000Z
+UID:e324878869977463@facebook.com
+SUMMARY:Acoustic Night
+LOCATION:Antonio's Pizzeria
+URL:https://www.facebook.com/events/324878853310798/?event_time_id=324878869977463
+DESCRIPTION:Every Friday\, we are hosting live 
+ music in our new dining room from 
+ 7-9pm. \n\nhttps://www.facebook.com/
+ events/324878853310798/?event_time
+ _id=324878869977463
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T201515Z
+LAST-MODIFIED:20230722T201515Z
+CREATED:20230722T201515Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230926T223000Z
+DTEND:20230927T003000Z
+UID:e295259829687833@facebook.com
+SUMMARY:Tuesday Game Nights at Antonio’s 
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/295259823021167/?event_time_id=295259829687833
+DESCRIPTION:Tuesdays are game nights at Antoni
+ o’s 🍕Every week we will play 
+ a different game\, please let us kn
+ ow what games you’d like to play
+ ! The event is free\, but of course
+  everyone is welcome to come buy s
+ ome food and drinks!\n\nhttps://www.
+ facebook.com/events/29525982302116
+ 7/?event_time_id=295259829687833
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230804T215801Z
+LAST-MODIFIED:20230804T215801Z
+CREATED:20230724T150405Z
+SEQUENCE:975236
+ORGANIZER;CN=Pittsburgh Vegan Expo:MAILTO:noreply@facebookmail.com
+DTSTART:20230924T210000Z
+DTEND:20230925T000000Z
+UID:e676067537669666@facebook.com
+SUMMARY:Spooky Arts Fair
+LOCATION:Thrive on Health
+URL:https://www.facebook.com/events/676067537669666/
+DESCRIPTION:Spooky Arts Fair\nSun. Sept. 24\, 20
+ 23\n5-8 p.m.\n\nFeatured Performer (6
+  p.m.):\n\nLeLe the Painter will do 
+ a live\, spooky painting! \n\nVegan F
+ ood\, Dessert\, Art\, Vendors\, Perfor
+ mances - with a Spooky theme! \n\nDr
+ ess Spooky! \n\nWe have an Arts Fair
+  every month or so\, at this locati
+ on\, each time with a different the
+ me. Support the arts!\n\nThrive on H
+ ealth \nDownstairs \n730 Brookline B
+ lvd.\nPittsburgh\, PA\n\nGeneral Admis
+ sion Tickets:\n$5/advance \n$8/door 
+ \nKids 17 and under get in free\nTic
+ kets: https://swipesimple.com/link
+ s/lnk_814dd1a9?mibextid=Zxz2cZ\n\nPl
+ ease be respectful of the performe
+ r and fans\, by keeping a low talki
+ ng volume and silenced phones duri
+ ng performances. \n\nSign up for our
+  email list on pittsburghvegan.com
+  and follow us on facebook & insta
+ gram @pittsburghveganexpo\n\nhttps:/
+ /www.facebook.com/events/676067537
+ 669666/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230810T212439Z
+LAST-MODIFIED:20230810T212439Z
+CREATED:20230810T212439Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230922T230000Z
+DTEND:20230923T010000Z
+UID:e324878866644130@facebook.com
+SUMMARY:Acoustic Night
+LOCATION:Antonio's Pizzeria
+URL:https://www.facebook.com/events/324878853310798/?event_time_id=324878866644130
+DESCRIPTION:Every Friday\, we are hosting live 
+ music in our new dining room from 
+ 7-9pm. \n\nhttps://www.facebook.com/
+ events/324878853310798/?event_time
+ _id=324878866644130
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T201515Z
+LAST-MODIFIED:20230722T201515Z
+CREATED:20230722T201515Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230919T223000Z
+DTEND:20230920T003000Z
+UID:e295259856354497@facebook.com
+SUMMARY:Tuesday Game Nights at Antonio’s 
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/295259823021167/?event_time_id=295259856354497
+DESCRIPTION:Tuesdays are game nights at Antoni
+ o’s 🍕Every week we will play 
+ a different game\, please let us kn
+ ow what games you’d like to play
+ ! The event is free\, but of course
+  everyone is welcome to come buy s
+ ome food and drinks!\n\nhttps://www.
+ facebook.com/events/29525982302116
+ 7/?event_time_id=295259856354497
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230810T212439Z
+LAST-MODIFIED:20230810T212439Z
+CREATED:20230810T212439Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230915T230000Z
+DTEND:20230916T010000Z
+UID:e324878883310795@facebook.com
+SUMMARY:Acoustic Night
+LOCATION:Antonio's Pizzeria
+URL:https://www.facebook.com/events/324878853310798/?event_time_id=324878883310795
+DESCRIPTION:Every Friday\, we are hosting live 
+ music in our new dining room from 
+ 7-9pm. \n\nhttps://www.facebook.com/
+ events/324878853310798/?event_time
+ _id=324878883310795
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T201515Z
+LAST-MODIFIED:20230722T201515Z
+CREATED:20230722T201515Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230912T223000Z
+DTEND:20230913T003000Z
+UID:e295259853021164@facebook.com
+SUMMARY:Tuesday Game Nights at Antonio’s 
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/295259823021167/?event_time_id=295259853021164
+DESCRIPTION:Tuesdays are game nights at Antoni
+ o’s 🍕Every week we will play 
+ a different game\, please let us kn
+ ow what games you’d like to play
+ ! The event is free\, but of course
+  everyone is welcome to come buy s
+ ome food and drinks!\n\nhttps://www.
+ facebook.com/events/29525982302116
+ 7/?event_time_id=295259853021164
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230627T152010Z
+LAST-MODIFIED:20230627T152010Z
+CREATED:20230627T152010Z
+SEQUENCE:0
+ORGANIZER;CN=Pittsburgh Musical Theater:MAILTO:noreply@facebookmail.com
+DTSTART:20230909T230000Z
+DTEND:20230910T003000Z
+UID:e108319982312675@facebook.com
+SUMMARY:Broadway at the Overlook
+LOCATION:West End Overlook
+URL:https://www.facebook.com/events/108319978979342/?event_time_id=108319982312675
+DESCRIPTION:A Pittsburgh CitiParks FREE event!
+ \n\nBroadway at the Overlook is PMT'
+ s fabulous season preview! Featuri
+ ng selections from Grease\, Million
+  Dollar Quartet\, Evil Dead The Mus
+ ical\, Les Misérables School Editi
+ on\, Disney's High School Musical J
+ R.\, and A Lyrical Christmas Carol!
+  \n\npittsburghmusicals.com/overlook
+ \n\nhttps://www.facebook.com/events/
+ 108319978979342/?event_time_id=108
+ 319982312675
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230810T212439Z
+LAST-MODIFIED:20230810T212439Z
+CREATED:20230810T212439Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230908T230000Z
+DTEND:20230909T010000Z
+UID:e324878873310796@facebook.com
+SUMMARY:Acoustic Night
+LOCATION:Antonio's Pizzeria
+URL:https://www.facebook.com/events/324878853310798/?event_time_id=324878873310796
+DESCRIPTION:Every Friday\, we are hosting live 
+ music in our new dining room from 
+ 7-9pm. \n\nhttps://www.facebook.com/
+ events/324878853310798/?event_time
+ _id=324878873310796
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230627T152010Z
+LAST-MODIFIED:20230627T152010Z
+CREATED:20230627T152010Z
+SEQUENCE:0
+ORGANIZER;CN=Pittsburgh Musical Theater:MAILTO:noreply@facebookmail.com
+DTSTART:20230908T230000Z
+DTEND:20230909T003000Z
+UID:e108319988979341@facebook.com
+SUMMARY:Broadway at the Overlook
+LOCATION:West End Overlook
+URL:https://www.facebook.com/events/108319978979342/?event_time_id=108319988979341
+DESCRIPTION:A Pittsburgh CitiParks FREE event!
+ \n\nBroadway at the Overlook is PMT'
+ s fabulous season preview! Featuri
+ ng selections from Grease\, Million
+  Dollar Quartet\, Evil Dead The Mus
+ ical\, Les Misérables School Editi
+ on\, Disney's High School Musical J
+ R.\, and A Lyrical Christmas Carol!
+  \n\npittsburghmusicals.com/overlook
+ \n\nhttps://www.facebook.com/events/
+ 108319978979342/?event_time_id=108
+ 319988979341
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230627T152010Z
+LAST-MODIFIED:20230627T152010Z
+CREATED:20230627T152010Z
+SEQUENCE:0
+ORGANIZER;CN=Pittsburgh Musical Theater:MAILTO:noreply@facebookmail.com
+DTSTART:20230907T230000Z
+DTEND:20230908T003000Z
+UID:e108319995646007@facebook.com
+SUMMARY:Broadway at the Overlook
+LOCATION:West End Overlook
+URL:https://www.facebook.com/events/108319978979342/?event_time_id=108319995646007
+DESCRIPTION:A Pittsburgh CitiParks FREE event!
+ \n\nBroadway at the Overlook is PMT'
+ s fabulous season preview! Featuri
+ ng selections from Grease\, Million
+  Dollar Quartet\, Evil Dead The Mus
+ ical\, Les Misérables School Editi
+ on\, Disney's High School Musical J
+ R.\, and A Lyrical Christmas Carol!
+  \n\npittsburghmusicals.com/overlook
+ \n\nhttps://www.facebook.com/events/
+ 108319978979342/?event_time_id=108
+ 319995646007
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T201515Z
+LAST-MODIFIED:20230722T201515Z
+CREATED:20230722T201515Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230905T223000Z
+DTEND:20230906T003000Z
+UID:e295259849687831@facebook.com
+SUMMARY:Tuesday Game Nights at Antonio’s 
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/295259823021167/?event_time_id=295259849687831
+DESCRIPTION:Tuesdays are game nights at Antoni
+ o’s 🍕Every week we will play 
+ a different game\, please let us kn
+ ow what games you’d like to play
+ ! The event is free\, but of course
+  everyone is welcome to come buy s
+ ome food and drinks!\n\nhttps://www.
+ facebook.com/events/29525982302116
+ 7/?event_time_id=295259849687831
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230810T212439Z
+LAST-MODIFIED:20230810T212439Z
+CREATED:20230810T212439Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230901T230000Z
+DTEND:20230902T010000Z
+UID:e324878863310797@facebook.com
+SUMMARY:Acoustic Night
+LOCATION:Antonio's Pizzeria
+URL:https://www.facebook.com/events/324878853310798/?event_time_id=324878863310797
+DESCRIPTION:Every Friday\, we are hosting live 
+ music in our new dining room from 
+ 7-9pm. \n\nhttps://www.facebook.com/
+ events/324878853310798/?event_time
+ _id=324878863310797
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T201515Z
+LAST-MODIFIED:20230722T201515Z
+CREATED:20230722T201515Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230829T223000Z
+DTEND:20230830T003000Z
+UID:e295259846354498@facebook.com
+SUMMARY:Tuesday Game Nights at Antonio’s 
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/295259823021167/?event_time_id=295259846354498
+DESCRIPTION:Tuesdays are game nights at Antoni
+ o’s 🍕Every week we will play 
+ a different game\, please let us kn
+ ow what games you’d like to play
+ ! The event is free\, but of course
+  everyone is welcome to come buy s
+ ome food and drinks!\n\nhttps://www.
+ facebook.com/events/29525982302116
+ 7/?event_time_id=295259846354498
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230810T224901Z
+LAST-MODIFIED:20230810T224901Z
+CREATED:20230810T224707Z
+SEQUENCE:114
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230826T150000Z
+DTEND:20230827T030000Z
+UID:e111147608727330@facebook.com
+SUMMARY:Grand Opening Celebration for our Dining Room
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/111147608727330/
+DESCRIPTION:We opened a new dining room\, and w
+ e want to celebrate it! All day lo
+ ng there will be fun things happen
+ ing\, so be sure to stop by and pla
+ n to hang out for a while. Musicia
+ ns\, kids activities\, freebie givea
+ ways\, belly dancing\, and of course
+ ... PIZZA! \n\nhttps://www.facebook.
+ com/events/111147608727330/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230810T212439Z
+LAST-MODIFIED:20230810T212439Z
+CREATED:20230810T212439Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230825T230000Z
+DTEND:20230826T010000Z
+UID:e324878856644131@facebook.com
+SUMMARY:Acoustic Night
+LOCATION:Antonio's Pizzeria
+URL:https://www.facebook.com/events/324878853310798/?event_time_id=324878856644131
+DESCRIPTION:Every Friday\, we are hosting live 
+ music in our new dining room from 
+ 7-9pm. \n\nhttps://www.facebook.com/
+ events/324878853310798/?event_time
+ _id=324878856644131
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T201515Z
+LAST-MODIFIED:20230722T201515Z
+CREATED:20230722T201515Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230822T223000Z
+DTEND:20230823T003000Z
+UID:e295259843021165@facebook.com
+SUMMARY:Tuesday Game Nights at Antonio’s 
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/295259823021167/?event_time_id=295259843021165
+DESCRIPTION:Tuesdays are game nights at Antoni
+ o’s 🍕Every week we will play 
+ a different game\, please let us kn
+ ow what games you’d like to play
+ ! The event is free\, but of course
+  everyone is welcome to come buy s
+ ome food and drinks!\n\nhttps://www.
+ facebook.com/events/29525982302116
+ 7/?event_time_id=295259843021165
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230810T212439Z
+LAST-MODIFIED:20230810T212439Z
+CREATED:20230810T212439Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230818T230000Z
+DTEND:20230819T010000Z
+UID:e324878879977462@facebook.com
+SUMMARY:Acoustic Night
+LOCATION:Antonio's Pizzeria
+URL:https://www.facebook.com/events/324878853310798/?event_time_id=324878879977462
+DESCRIPTION:Every Friday\, we are hosting live 
+ music in our new dining room from 
+ 7-9pm. \n\nhttps://www.facebook.com/
+ events/324878853310798/?event_time
+ _id=324878879977462
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230705T150329Z
+LAST-MODIFIED:20230705T150329Z
+CREATED:20230705T150329Z
+SEQUENCE:0
+ORGANIZER;CN=Patti's Pastries:MAILTO:noreply@facebookmail.com
+DTSTART:20230817T220000Z
+DTEND:20230820T220000Z
+UID:e1077375383240422@facebook.com
+SUMMARY:Bloomfield's Little Italy Days
+LOCATION:Liberty Ave\, Pittsburgh\, PA 15224\,
+  United States
+URL:https://www.facebook.com/events/1077375383240422/
+DESCRIPTION:Get ready to immerse yourself in t
+ he vibrant energy of Little Italy 
+ Days\, right in the heart of Bloomf
+ ield! From August 17th to 20th\, jo
+ in us as we showcase our most popu
+ lar Italian-flavored gourmet cupca
+ kes\, including the irresistible Ti
+ ramisu. But that's not all! We'll 
+ also be serving up a delightful se
+ lection of Lady Locks and mouthwat
+ ering Cannolis. Trust us\, these tr
+ eats are so good that they flew of
+ f the shelves last year!\n\nDon't mi
+ ss this opportunity to discover th
+ e enchanting flavors of Italy and 
+ soak up the festive atmosphere of 
+ Little Italy Days. It's the perfec
+ t chance to treat yourself to a de
+ lectable explosion of culinary del
+ ights that will leave you craving 
+ more. So mark your calendars and j
+ oin us for a enjoyable weekend tha
+ t will satisfy both your sweet too
+ th and your appetite for fun. Get 
+ ready to shout "bravo!" as you emb
+ ark on this unforgettable Italian 
+ culinary journey.\n\nhttps://www.fac
+ ebook.com/events/1077375383240422/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230712T184343Z
+LAST-MODIFIED:20230712T184343Z
+CREATED:20230712T184343Z
+SEQUENCE:0
+ORGANIZER;CN=Kennedy Twp. IVFC:MAILTO:noreply@facebookmail.com
+DTSTART:20230816T220000Z
+DTEND:20230820T020000Z
+UID:e247527458069461@facebook.com
+SUMMARY:Kennedy Twp Community Days
+LOCATION:Fairhaven Park
+URL:https://www.facebook.com/events/247527458069461/
+DESCRIPTION:Annual Kennedy Twp Community Days 
+ at Fairhaven Park.  This year it i
+ s from Aug 16-19 2023z  FIREMANS P
+ ARADE is set for Saturday August 1
+ 9 at 7pm.  Line up is 6pm at Kenne
+ dy Police Station\, just as in year
+ s past.  This is a judged parade f
+ or entering first responder compan
+ ies.  Fireworks will be Saturday a
+ s well at sun down.   There will b
+ e food\, games\, rides\, local busine
+ sses and vendors.  Times are:  Wed
+  & Thurs 6-10pm\,  Friday 6-11pm an
+ d saturday 4-(end of fireworks\,  9
+ /10pm?)   Times are subject to cha
+ nge due to weather.   For vendor r
+ elated questions\, please contact t
+ he township offices at 412-771-232
+ 1.  Hope to see you there!\n\nhttps:
+ //www.facebook.com/events/24752745
+ 8069461/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T201515Z
+LAST-MODIFIED:20230722T201515Z
+CREATED:20230722T201515Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230815T223000Z
+DTEND:20230816T003000Z
+UID:e295259839687832@facebook.com
+SUMMARY:Tuesday Game Nights at Antonio’s 
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/295259823021167/?event_time_id=295259839687832
+DESCRIPTION:Tuesdays are game nights at Antoni
+ o’s 🍕Every week we will play 
+ a different game\, please let us kn
+ ow what games you’d like to play
+ ! The event is free\, but of course
+  everyone is welcome to come buy s
+ ome food and drinks!\n\nhttps://www.
+ facebook.com/events/29525982302116
+ 7/?event_time_id=295259839687832
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230801T163419Z
+LAST-MODIFIED:20230801T163419Z
+CREATED:20230628T172416Z
+SEQUENCE:2934603
+ORGANIZER;CN=Pittsburgh Cannabis Festival:MAILTO:noreply@facebookmail.com
+DTSTART:20230813T160000Z
+DTEND:20230813T210000Z
+UID:e1444529906363348@facebook.com
+SUMMARY:Pittsburgh Cannabis Festival 2023
+LOCATION:Allegheny Commons Park
+URL:https://www.facebook.com/events/1444529906363348/
+DESCRIPTION:Save the Date for The Pittsburgh C
+ annabis Festival at Allegheny Comm
+ ons Park on Sunday\, August 13 from
+  Noon-5PM for cannabis education\, 
+ music\, art\, and wide spectrum of v
+ endors.\n\nAll are welcome to attend
+ .\n\nInterested in getting involved?
+  \nWe are seeking sponsors\, vendors
+ \, artists\, musicians\, food trucks\,
+  and advocates. Contact us at info
+ @pittsburghcannabisfest.com. \n\n Le
+ t's make the third annual fest big
+ ger and better than ever! \n#PghCan
+ naFest23 \n\n________________\n\nThe f
+ est will take place at the NE Foun
+ tain in Allegheny Commons Park loc
+ ated across from Allegheny General
+  Hospital in the North Side. Pleas
+ e use this Google Pin to help with
+  directions. https://goo.gl/maps/E
+ MT1DS2eD7v5NSFq7 \n\nhttps://www.fac
+ ebook.com/events/1444529906363348/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230714T003036Z
+LAST-MODIFIED:20230714T003036Z
+CREATED:20230603T145033Z
+SEQUENCE:3490803
+ORGANIZER;CN=Brookline Breezefest:MAILTO:noreply@facebookmail.com
+DTSTART:20230812T140000Z
+DTEND:20230812T170000Z
+UID:e1188117338548565@facebook.com
+SUMMARY:Brookline Breezefest
+LOCATION:Brookline Blvd\, Pittsburgh\, PA 152
+ 26\, United States
+URL:https://www.facebook.com/events/1188117338548565/
+DESCRIPTION:Looks like Brookline is about to b
+ e swept off its feet with the Bree
+ zefest coming up on August 12th! W
+ ith over 80 food and craft vendors
+ \, live music\, a Breeze 5k\, and a c
+ ar cruise\, there's something for e
+ veryone. Get your family together 
+ and come on down for a day of fun 
+ and free kid activities. #Breezefe
+ st #BrooklinePA #FamilyFun #Summer
+ Vibes\n\nhttps://www.facebook.com/ev
+ ents/1188117338548565/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230810T212439Z
+LAST-MODIFIED:20230810T212439Z
+CREATED:20230810T212439Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230811T230000Z
+DTEND:20230812T010000Z
+UID:e324878876644129@facebook.com
+SUMMARY:Acoustic Night
+LOCATION:Antonio's Pizzeria
+URL:https://www.facebook.com/events/324878853310798/?event_time_id=324878876644129
+DESCRIPTION:Every Friday\, we are hosting live 
+ music in our new dining room from 
+ 7-9pm. \n\nhttps://www.facebook.com/
+ events/324878853310798/?event_time
+ _id=324878876644129
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T201515Z
+LAST-MODIFIED:20230722T201515Z
+CREATED:20230722T201515Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230808T223000Z
+DTEND:20230809T003000Z
+UID:e295259836354499@facebook.com
+SUMMARY:Tuesday Game Nights at Antonio’s 
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/295259823021167/?event_time_id=295259836354499
+DESCRIPTION:Tuesdays are game nights at Antoni
+ o’s 🍕Every week we will play 
+ a different game\, please let us kn
+ ow what games you’d like to play
+ ! The event is free\, but of course
+  everyone is welcome to come buy s
+ ome food and drinks!\n\nhttps://www.
+ facebook.com/events/29525982302116
+ 7/?event_time_id=295259836354499
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230712T141749Z
+LAST-MODIFIED:20230712T141749Z
+CREATED:20230712T141749Z
+SEQUENCE:0
+ORGANIZER;CN=Carnegie Library of Pittsburgh:MAILTO:noreply@facebookmail.com
+DTSTART:20230802T213000Z
+DTEND:20230803T003000Z
+UID:e244221175058012@facebook.com
+SUMMARY:Allegheny County Park Rangers presents Meet Mr. McSlithers, Eastern Black Rat Snake
+LOCATION:CLP - Hazelwood
+URL:https://www.facebook.com/events/244221175058012/
+DESCRIPTION:Meet the Park Ranger Educational A
+ nimal\, an Eastern Black Rat Snake 
+ named Mr. McSlithers. Learn about 
+ his habitat\, diet and everyday lif
+ e. Get up close to learn about his
+  unique adaptations.\n\nhttps://www.
+ facebook.com/events/24422117505801
+ 2/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T201515Z
+LAST-MODIFIED:20230722T201515Z
+CREATED:20230722T201515Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230801T223000Z
+DTEND:20230802T003000Z
+UID:e295259833021166@facebook.com
+SUMMARY:Tuesday Game Nights at Antonio’s 
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/295259823021167/?event_time_id=295259833021166
+DESCRIPTION:Tuesdays are game nights at Antoni
+ o’s 🍕Every week we will play 
+ a different game\, please let us kn
+ ow what games you’d like to play
+ ! The event is free\, but of course
+  everyone is welcome to come buy s
+ ome food and drinks!\n\nhttps://www.
+ facebook.com/events/29525982302116
+ 7/?event_time_id=295259833021166
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230722T203915Z
+LAST-MODIFIED:20230722T203915Z
+CREATED:20230722T203915Z
+SEQUENCE:0
+ORGANIZER;CN=Antonio’s Pizzeria:MAILTO:noreply@facebookmail.com
+DTSTART:20230728T230000Z
+DTEND:20230729T010000Z
+UID:e781445460426827@facebook.com
+SUMMARY:Acoustic Night at Antonio’s
+LOCATION:Antonio’s Pizzeria
+URL:https://www.facebook.com/events/781445460426827/
+DESCRIPTION:Join us for an evening of live mus
+ ic with Jazzy Muse\, this Friday ev
+ ening! This is a free event\, come 
+ on in and check out our new dining
+  room\, grab some dinner\, and liste
+ n to an awesome local musician!\n\nh
+ ttps://www.facebook.com/events/781
+ 445460426827/
+CLASS:PUBLIC
+STATUS:CONFIRMED
+PARTSTAT:ACCEPTED
+END:VEVENT
+END:VCALENDAR

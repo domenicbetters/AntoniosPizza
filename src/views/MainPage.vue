@@ -17,7 +17,7 @@
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">It's Here, The Dining Room is Now Open!</div>
           <div class = "buttonrow">
-          <div @click = "modalswitchon('1')"><CTAbuttonOutside class="slide-button " text='See The Upcoming Events!' /></div>
+          <CTAbutton class="slide-button"  text='See What is Coming Up!' :rlink="'/AntoniosPizza/events'" />
           </div>
           <template #img>
             <img

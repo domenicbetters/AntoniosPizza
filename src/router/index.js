@@ -4,6 +4,7 @@ import LocationPage from "@/views/LocationPage.vue"
 import MenuPage from "@/views/MenuPage.vue"
 import VeganPage from "@/views/VeganPage.vue"
 import CateringPage from "@/views/CateringPage.vue"
+import EventPage from "@/views/EventPage.vue"
 import ContactPage from "@/views/ContactPage.vue"
 import AboutPage from "@/views/AboutPage.vue"
 import VueRouter from 'vue-router'
@@ -46,6 +47,11 @@ const routes = [
         path: "/AntoniosPizza/catering",
         name: "Catering",
         component: CateringPage
+    },
+    {
+        path: "/AntoniosPizza/events",
+        name: "Events",
+        component: EventPage
     },
     {
         path: "/AntoniosPizza/about",
