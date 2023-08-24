@@ -1,5 +1,5 @@
 <template>
-      <div  class="event-card" @mouseover="descshow = true" @mouseleave="descshow = false" @scroll="descshow=false">
+      <div  class="event-card" >
       <div class = "date-box">
         <div class = "day">{{event.day}}</div>
         <div class = "month">{{event.month}}</div>
@@ -7,8 +7,8 @@
       </div>
       <div class = "info-box">
       <div class = "title">{{event.title}}</div>
-      <div v-show="descshow" class = "desc">{{event.desc}}</div>
-      <div v-show="descshow"> <a :href ="event.link">Click Here for More Details</a></div>
+      <div class = "desc">{{event.desc}}</div>
+      <div class = "linky"> <a :href ="event.link">Click Here for More Details</a></div>
       </div>
       <div class = "picture-box">
           <img class = "pic" :src = "event.image" />
@@ -26,7 +26,6 @@
         },
         data(){
           return {
-            descshow: false
           }
         }
     }
@@ -40,12 +39,18 @@
   
 }
 
+
+
+.desc {
+  display: none;
+}
+
 .event-card {
   -webkit-animation: nohover 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	animation: nohover 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   width: 80vw;
   max-width: 65ch;
-  height: 100px;
+  height: 120px;
   background-color: rgb(38, 38, 38);
   border-radius: 15px;
   border: solid 5px #bbb878;
@@ -56,15 +61,21 @@
 .event-card:hover{
   -webkit-animation: hovering 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	animation: hovering 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  .date-box{
+    .desc{
+    display:block;
+    }
+    .date-box {
+      border-right: 5px double #FFFAA1;
+  };
+  .info-box {
   border-right: 5px double #FFFAA1;
   };
-  .info-box{
-  border-right: 5px double #FFFAA1;
-  }
   
-
 }
+
+
+
+ 
 
 .date-box {
   border-right: 5px double #bbb878;
@@ -74,6 +85,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 .day {
   font-size: 2em;
@@ -102,9 +114,7 @@
     font-size: 1.5em;
     font-weight: bold;
 }
-.desc{
-  border-top: solid 1px #FFFAA1;
-}
+
 a{
   color: #FFFAA1 !important;
   border-top: solid 1px #FFFAA1;
@@ -148,7 +158,7 @@ a:hover{
   100% {
   -webkit-transform: scale(1);
   transform: scale(1);
-  height: 100px;
+  height: 120px;
   }
   0% {
   -webkit-transform: scale(1.1);
@@ -162,7 +172,7 @@ a:hover{
   100% {
   -webkit-transform: scale(1);
   transform: scale(1);
-  height: 100px;
+  height: 120px;
   }
   0% {
   -webkit-transform: scale(1.1);
