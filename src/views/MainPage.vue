@@ -46,7 +46,7 @@
           </template>
         </b-carousel-slide> -->
 
-        <b-carousel-slide >
+        <!-- <b-carousel-slide >
           <template #img>
             <img
               class="d-block w-100 desktopimg"
@@ -67,7 +67,7 @@
           <div class = "fishfry taco  tweaked-color">The Grand Opening Celebration is Upon Us</div>
           <CTAbuttonOutside class="slide-button " text='August 26th | Click Here For All The Details'  :link="'https://www.facebook.com/events/111147608727330/'" />
          
-        </b-carousel-slide>
+        </b-carousel-slide> -->
 
         <b-carousel-slide>
           <div class = "fishfry tweaked-color">Tons of options for every taste</div>
@@ -101,12 +101,12 @@
 
 <script>
 import CTAbutton from "../components/CTAbutton.vue"
-import CTAbuttonOutside from "../components/CTAbuttonOutside.vue"
+// import CTAbuttonOutside from "../components/CTAbuttonOutside.vue"
   export default {
     name: 'MainPage',
     components: {
     CTAbutton,
-    CTAbuttonOutside,
+    // CTAbuttonOutside,
   },
   props: {
        stonermodal: String

@@ -7,7 +7,9 @@
       <img class = "eventimageover" src="../assets/images/eventover.jpg" alt = 'event image' />
     </div>
     <div class = "eventlist">
-     <EventCard :key="event.title" v-for="(event) in events" :event="event" />
+     <EventCard :key="standardevent.title" v-for="(standardevent) in standardevents" :event="standardevent" />
+     <div style="border-bottom: 3px solid #FFFAA1"></div>
+     <!-- <EventCard :key="event.title" v-for="(event) in events" :event="event" /> -->
     </div>
  
 
@@ -22,6 +24,7 @@
 import emailjs from 'emailjs-com';
 import EventCard from '@/components/EventCard.vue';
 import events from '@/assets/events.json'
+import standardevents from '@/assets/standardevents.json'
 
 // import CTAButtonOutside from '../components/CTAbuttonOutside.vue'
 
@@ -31,11 +34,8 @@ export default {
   name: 'EventPage',
   data() {
     return {
-      name: '',
-      address: '',
-      date: '',
-      message: '',
-      events: events
+      events: events,
+      standardevents: standardevents
     }
   },
   components: {
