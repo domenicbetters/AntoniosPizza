@@ -37,11 +37,9 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-    { name: 'Crunchy Bois', desc: "Crispy cheesey breadsticks topped with bacon.", price: '8.00', vegan: 'yes'},
-    { name: 'Churros', desc: "Apple or Strawberry Filled", price: '7.00'},
-    { name: 'Blueberry Cheesecake Pizza',  price: 'Specialty pizza prices'},
-    { name: 'Blueberry Cheesecake',  price: '6.00', vegan: 'yes'},
-    { name: 'Funnel Cake Fries', desc: "Funnel cake fries topped with whipped cream and fruity pebbles", price: '8.00'},
+    { name: "Thanksgiving Pizza", desc: "All your Thanksgiving fixings on one pizza!", price: "Specialty Pizza Prices", vegan: 'yes'},
+    { "name": "Most Gracious Hoagie", desc: "A Thanksgiving meal as a sandwich.", "price": "$15.00", vegan: 'yes'},
+    { "name": "Gratitude Fries", desc: "When you want your french fries covered in gravy and everything else on the holiday table.", "price": "$10.00", vegan: 'yes'}
     ],
 
     coupons: [

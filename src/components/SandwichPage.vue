@@ -57,6 +57,8 @@ export default {
     { name: 'Steak', desc: 'Italian Dressing, Lettuce, Tomatoes, Onions, Cheese' },
     { name: 'Turkey Club', desc: 'Bacon, American Cheese, Lettuce, Tomatoes, Onions, Mayo' },
     { name: 'Veggie', desc: 'Italian Dressing, Mushrooms, Green Peppers, Onions, Banana Peppers, Black Olives', vegan: 'yes' },
+    { name: 'Hummus', desc: 'Feta, Roasted Red Peppers, Spinach' },
+    { name: 'Muffaletta', desc: 'New Orleans Olive Salad, Mortadella, Salami, Ham, Fresh Mozzarella' },
       ],
 
     sizes: [
