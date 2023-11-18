@@ -14,8 +14,56 @@
       >
         <!-- Text slides with image -->
 
+          <b-carousel-slide >
+          <template #img>
+            <img
+              class="d-block w-100 desktopimg"
+              style="object-fit:cover; object-position: top; height:65vh;" 
+              width="960"
+              src="../assets/images/turkey.jpg"
+              alt="image slot"
+            >
+
+            <img
+              class="d-block w-100 mobileimg"
+              style="object-fit:cover; object-position: bottom; height:65vh;" 
+              width="960"
+              src="../assets/images/turkey.jpg"
+              alt="image slot"
+            >
+          </template>
+          <div class = "fishfry taco  tweaked-color">Thanksgiving time is upon us!</div>
+          <CTAbuttonOutside class="slide-button " text='Get your Thanksgiving dinner in pizza form now!'  :link="'https://antoniospizzeria.hungerrush.com/Order/Menu/1#pizza'" />
+         
+        </b-carousel-slide>
+
+
+        <b-carousel-slide >
+          <template #img>
+            <img
+              class="d-block w-100 desktopimg"
+              style="object-fit:cover; object-position: top; height:65vh;" 
+              width="960"
+              src="../assets/images/toysfortots.jpg"
+              alt="image slot"
+            >
+
+            <img
+              class="d-block w-100 mobileimg"
+              style="object-fit:cover; object-position: bottom; height:65vh;" 
+              width="960"
+              src="../assets/images/toysfortots.jpg"
+              alt="image slot"
+            >
+          </template>
+          <div class = "fishfry taco  tweaked-color">We are a designated drop-off site for Toys-For-Tots</div>
+          <CTAbuttonOutside class="slide-button " text='Learn more here'  :link="'https://www.toysfortots.org/'" />
+         
+        </b-carousel-slide>
+
+
         <b-carousel-slide>
-          <div class = "fishfry tweaked-color">It's Here, The Dining Room is Now Open!</div>
+          <div class = "fishfry tweaked-color">Relax in our dining room and enjoy any number of events.</div>
           <div class = "buttonrow">
           <CTAbutton class="slide-button"  text='See What is Coming Up!' :rlink="'/AntoniosPizza/events'" />
           </div>
@@ -101,12 +149,12 @@
 
 <script>
 import CTAbutton from "../components/CTAbutton.vue"
-// import CTAbuttonOutside from "../components/CTAbuttonOutside.vue"
+import CTAbuttonOutside from "../components/CTAbuttonOutside.vue"
   export default {
     name: 'MainPage',
     components: {
     CTAbutton,
-    // CTAbuttonOutside,
+    CTAbuttonOutside,
   },
   props: {
        stonermodal: String

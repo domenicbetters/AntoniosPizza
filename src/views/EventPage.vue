@@ -24,7 +24,6 @@
 import emailjs from 'emailjs-com';
 import EventCard from '@/components/EventCard.vue';
 import events from '@/assets/events.json'
-import standardevents from '@/assets/standardevents.json'
 
 // import CTAButtonOutside from '../components/CTAbuttonOutside.vue'
 
@@ -35,7 +34,39 @@ export default {
   data() {
     return {
       events: events,
-      standardevents: standardevents
+      standardevents: [ {
+      "link": "https://www.facebook.com/antoniospizzeriapgh",
+      "day": "Every Tues",
+      "month": "",
+      "title": "Game Night",
+      "desc": "Tuesdays are game nights at Antonio’s 🍕Every week we will play a different game, please let us know what games you’d like to play! The event is free, but of course everyone is welcome to come buy some food and drinks!",
+      "image": require("@/assets/images/gamenight.jpg")
+  },
+  {
+    "link": "https://www.facebook.com/antoniospizzeriapgh",
+    "day": "Every Wed",
+    "month": "",
+    "title": "Karaoke Night",
+    "desc": "Sing your heart out every Wednesday night while eating your favorite slice.  Need a little liquid courage?  As always we are BYOB friendly.  ",
+    "image": require("@/assets/images/karafun.jpg")
+  },
+  {
+    "link": "https://www.facebook.com/antoniospizzeriapgh",
+    "day": "Every Thurs",
+    "month": "",
+    "title": "Open Mic Night",
+    "desc": "Hosted by Jim Skiff every Thursday, you can sing, speak, or express yourself any other way you see fit.  If you'd rather just watch and listen, that's fine, come on by and just enjoy night with some good food and good people.",
+    "image": require("@/assets/images/livenight.jpg")
+  },
+  {
+    "link": "https://www.facebook.com/antoniospizzeriapgh",
+    "day": "Every Fri",
+    "month": "",
+    "title": "Live Music",
+    "desc": "Every Friday, come in to our dining room for a live musical act starting at 7 PM.  You can see anything from acoustic guitars to polkas to kettle drums.  As always, we are a BYOB friendly establishment.",
+    "image": require("@/assets/images/micnight.jpg")
+  }
+]
     }
   },
   components: {
