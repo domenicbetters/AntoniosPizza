@@ -29,9 +29,17 @@ const routes = [
         component: LocationPage
     },
     {
+      path: '/location',
+      redirect: { name: 'Location' }
+    },
+    {
         path: "/AntoniosPizza/menu/full",
         name: "Full Menu",
         component: MenuPage
+    },
+    {
+      path: '/menu/full',
+      redirect: { name: 'Full Menu' }
     },
     {
         path: "/AntoniosPizza/menu/vegan",
@@ -39,9 +47,17 @@ const routes = [
         component: MenuPage
     },
     {
+      path: '/menu/vegan',
+      redirect: { name: 'Vegan Menu' }
+    },
+    {
         path: "/AntoniosPizza/vegan",
         name: "Vegan",
         component: VeganPage
+    },
+    {
+      path: '/vegan',
+      redirect: { name: 'Vegan' }
     },
     {
         path: "/AntoniosPizza/catering",
@@ -49,19 +65,36 @@ const routes = [
         component: CateringPage
     },
     {
+      path: '/catering',
+      redirect: { name: 'Catering' }
+    },
+    {
         path: "/AntoniosPizza/events",
         name: "Events",
         component: EventPage
+    },
+    {
+      path: '/events',
+      redirect: { name: 'Events' }
     },
     {
         path: "/AntoniosPizza/about",
         name: "About",
         component: AboutPage
     },
+    
+    {
+        path: '/about',
+        redirect: { name: 'About' }
+      },
     {
         path: "/AntoniosPizza/contact",
         name: "Contact",
         component: ContactPage
+    },
+    {
+      path: '/contact',
+      redirect: { name: 'Contact' }
     },
       
   ]
