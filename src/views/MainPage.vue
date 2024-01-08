@@ -37,6 +37,22 @@
          
         </b-carousel-slide>
 
+        <b-carousel-slide>
+          <div class = "fishfry tweaked-color">Grab a cool, vegan friendly, Boba drink.</div>
+          <div class = "buttonrow">
+          <CTAbutton class="slide-button"  text='Try all our flavors!' :rlink="'/AntoniosPizza/menu/full'" />
+          </div>
+          <template #img>
+            <img
+              class="d-block w-100"
+              style="object-fit: cover; height:65vh;" 
+              width="960"
+              src="../assets/images/boba2.jpg"
+              alt="image slot"
+            >
+          </template>
+        </b-carousel-slide>
+
 
         <b-carousel-slide >
           <template #img>
