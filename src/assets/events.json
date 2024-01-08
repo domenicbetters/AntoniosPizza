@@ -2,11 +2,11 @@
    
     {
         "link": "https://www.facebook.com/events/295259823021167/295259846354498/",
-        "day": "29",
-        "month": "AUG",
-        "title": "Tuesday Game Night",
-        "desc": "Tuesdays are game nights at Antonio’s 🍕Every week we will play a different game, please let us know what games you’d like to play! The event is free, but of course everyone is welcome to come buy some food and drinks!",
-        "image": "require('./assets/images/bean.png')"
+        "day": "14",
+        "month": "JAN",
+        "title": "Winter Gods & Goddesses Arts Fair",
+        "desc": "Free Vegan Art Fair @Thrive on Health in Brookline, PA.  We will be serving up some tasty treats there from 5-8 PM.",
+        "image": "require('./assets/images/godsandgodess.jpg')"
     }
    
   ]

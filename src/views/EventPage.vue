@@ -9,7 +9,7 @@
     <div class = "eventlist">
      <EventCard :key="standardevent.title" v-for="(standardevent) in standardevents" :event="standardevent" />
      <div style="border-bottom: 3px solid #FFFAA1"></div>
-     <!-- <EventCard :key="event.title" v-for="(event) in events" :event="event" /> -->
+     <EventCard :key="event.title" v-for="(event) in events" :event="event" />
     </div>
  
 
@@ -23,7 +23,7 @@
 <script>
 import emailjs from 'emailjs-com';
 import EventCard from '@/components/EventCard.vue';
-import events from '@/assets/events.json'
+// import events from '@/assets/events.json'
 
 // import CTAButtonOutside from '../components/CTAbuttonOutside.vue'
 
@@ -33,8 +33,21 @@ export default {
   name: 'EventPage',
   data() {
     return {
-      events: events,
-      standardevents: [ {
+      events: [ 
+        {"link": "https://www.facebook.com/events/864252471635384",
+        "day": "14",
+        "month": "JAN",
+        "title": "Winter Gods & Goddesses Arts Fair",
+        "desc": "Free Vegan Art Fair @Thrive on Health in Brookline, PA.  We will be serving up some tasty treats there from 5-8 PM.",
+        "image": require("@/assets/images/godsandgodess.jpg")},
+        {"link": "https://www.facebook.com/antoniospizzeriapgh",
+        "day": "29",
+        "month": "JAN",
+        "title": "Vegan Chill Lounge",
+        "desc": "The first of a new weekly event featuring chill music, vegan treats, relaxation and fun.",
+        "image": require("@/assets/images/mondaychill.jpg")}],
+      
+        standardevents: [ {
       "link": "https://www.facebook.com/antoniospizzeriapgh",
       "day": "Every Tues",
       "month": "",

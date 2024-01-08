@@ -1,15 +1,15 @@
 <template>
   <div class = "menu-section">
     <div class = "buffer">
-      <h1>Drinks</h1>
+      <h1>Boba Drinks</h1>
     </div>
-    <div class = "right-side ">
-      <div class = "food-box">
+    <div class = "right-side">
+      <div class = "food-box salad-box">
       <SaladItem class="food-list"  v-show="item.vegan === 'yes' && veganOnly === true" :key="item.name" v-for="(item) in items" :item="item" />
       <SaladItem class="food-list"  v-show="veganOnly === false" :key="item.name" v-for="(item) in items" :item="item" />
       </div>
       <div class = "food-box topping-box">
-        <h2>Flavors</h2>
+        <h2>Pepsi Products</h2>
         <div class="topping-list">
           <ToppingList class="topping-item"  :key="topping.name" v-for="(topping) in toppings" :topping="topping" />
          </div>
@@ -18,9 +18,9 @@
    
     
     <div class = "picture-box">
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/kickstart.png')" :altname="'kickstart'" name = "Kick Start" />
+      <RosterCard class="rostercard" :imagelink="require('../assets/images/boba1.jpg')" :altname="'kickstart'" name = "Kick Start" />
       <RosterCard class="rostercard" :imagelink="require('../assets/images/pepsi 1.jpg')" :altname="'Pepsi'" name = "Pepsi" />
-      <RosterCard class="rostercard" :imagelink="require('../assets/images/starry.png')" :altname="'Starry'" name = "Starry" />
+      <RosterCard class="rostercard" :imagelink="require('../assets/images/boba2.jpg')" :altname="'Starry'" name = "Starry" />
     </div>
   </div>
   </div>
@@ -42,36 +42,43 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-    { name: '20 oz.', price: '$1.98', vegan: 'yes'},
-    { name: '2 Liter', price: '$3.48', vegan: 'yes'},
+    { "name": "Tangerine Green Tea Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Raspberry Black Tea Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Strawberry Kiwi Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Black Tea Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Raspberry Black Tea Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Peach Black Tea Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Blackberry Black Tea Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Pina Colada Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Matcha Latte Boba Drink", "price": "$6.00", "vegan": "yes"},
+{ "name": "Coffee Latte Boba Drink", "price": "$6.00", "vegan": "yes"},
+{ "name": "Strawberry Kiwi Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Pomegranate White Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Peach Nectar Tumeric Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "London Fog Boba", "price": "$6.00", "vegan": "yes"},
+{ "name": "Peach Black Tea Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Thai Tea Boba", "price": "$6.00", "vegan": "yes"},
+{ "name": "Earl Grey Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Black Tea Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Blackberry Black Tea Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Fruit Punch Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Pina Colada Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Matcha Latte Boba Drink", "price": "$6.00", "vegan": "yes"},
+{ "name": "Coffee Latte Boba Drink", "price": "$6.00", "vegan": "yes"},
+{ "name": "Tropical Fruit Punch", "price": "$5.00", "vegan": "yes"},
+{ "name": "Candy Cane Matcha", "price": "$6.00", "vegan": "yes"},
+{ "name": "Sugar Plum Fairy", "price": "$5.00", "vegan": "yes"},
+{ "name": "Santas Milk n Cookies", "price": "$6.00", "vegan": "yes"},
+{ "name": "Eggnog Latte", "price": "$6.00", "vegan": "yes"},
+{ "name": "Rudolphs Red Nosed Boba", "price": "$5.00", "vegan": "yes"},
+{ "name": "Winter Wassail", "price": "$5.00", "vegan": "yes"},
     
         
     ],
 
     toppings : [
-    { name: 'Dole Lemonade'},
-    { name: 'Ginger Ale'},
-    { name: 'Lipton  Peach Tea'},
-    { name: 'Mt Dew Zero'},
-    { name: 'Pepsi Zero'},
-    { name: 'Bubbly Lime'},
-    { name: 'Lipton Citrus Green Tea'},
-    { name: 'Pepsi'},
-    { name: 'Diet Pepsi'},
-    { name: 'Mt Dew'},
-    { name: 'Orange Crush'},
-    { name: 'Grape Crush'},
-    { name: 'Brisk Ice Tea'},
-    { name: 'Sierra Mist'},
-    { name: 'Mug Root Beer'},
-    { name: 'Cherry Pepsi'},
-    { name: 'Kickstarter Black Cherry'},
-    { name: 'Kickstarter Pineapple'},
-    { name: 'Water Bottled'},
-    { name: 'Bubbly Raspberry'},
-    { name: 'Pure Leaf Lemon Tea'},
-    { name: 'Pure Leaf Organic Black'},
-    { name: 'Pure Leaf Raspberry Tea'},
+    { name: '20 oz. Bottle - $1.98'},
+    { name: '2 Liter Bottle - $3.48'}
         ],
 
   }
@@ -169,8 +176,12 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   overflow-y: scroll;
+}
+
+.salad-box {
+  height: 600px;
 }
 
 .topping-list {

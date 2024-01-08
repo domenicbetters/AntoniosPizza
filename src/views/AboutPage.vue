@@ -18,7 +18,6 @@
   <div class="about-roster-box fade-in">
     <RosterCard :imagelink="require('../assets/images/buddy.jpg')" :altname="'Buddy'" name = "Buddy" stats1="Chief Mozzarella stick taste tester" stats2="Brings an extra level of cuteness to the storefront on a semi daily basis" />
     <RosterCard :imagelink="require('../assets/images/dom.jpg')" :altname="'Dom'" name = "Dom" stats1="Gave up and ran away to play on his stupid computer" stats2="Still lurks in the rafters to help in a pinch when something breaks" /> 
-    <RosterCard :imagelink="require('../assets/images/grant.jpg')" :altname="'grant'" name = "Grant" stats1="Daytime Manager and all around swell guy.  More organized than your gradeschool trapper keeper." stats2="Shoof" /> 
     <RosterCard :imagelink="require('../assets/images/nok.jpg')" :altname="'nok'" name = "Nok" stats1="The jerk that got us into this mess in the first place.  Occasionally good at making pizza." stats2="Oh My" />  
     <RosterCard :imagelink="require('../assets/images/betty.jpg')" :altname="'betty'" name = "Betty" stats1="Craziest Girl in the World." stats2="Likes to cook, and make a mess.  Mostly makes a mess." />  
    

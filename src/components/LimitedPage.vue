@@ -37,9 +37,7 @@ export default {
     sizeColumnWidth: '',
     foodColumnWidth: '',
     items: [
-    { name: "Thanksgiving Pizza", desc: "All your Thanksgiving fixings on one pizza!", price: "Specialty Pizza Prices", vegan: 'yes'},
-    { "name": "Most Gracious Hoagie", desc: "A Thanksgiving meal as a sandwich.", "price": "$15.00", vegan: 'yes'},
-    { "name": "Gratitude Fries", desc: "When you want your french fries covered in gravy and everything else on the holiday table.", "price": "$10.00", vegan: 'yes'}
+    // { name: "Thanksgiving Pizza", desc: "All your Thanksgiving fixings on one pizza!", price: "Specialty Pizza Prices", vegan: 'yes'}
     ],
 
     coupons: [

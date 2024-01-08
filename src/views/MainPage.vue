@@ -18,22 +18,22 @@
           <template #img>
             <img
               class="d-block w-100 desktopimg"
-              style="object-fit:cover; object-position: top; height:65vh;" 
+              style="object-fit:contain; object-position: top; height:65vh;" 
               width="960"
-              src="../assets/images/turkey.jpg"
+              src="../assets/images/mondaychill.jpg"
               alt="image slot"
             >
 
             <img
               class="d-block w-100 mobileimg"
-              style="object-fit:cover; object-position: bottom; height:65vh;" 
+              style="object-fit:contain; object-position: middle; height:65vh;" 
               width="960"
-              src="../assets/images/turkey.jpg"
+              src="../assets/images/mondaychill.jpg"
               alt="image slot"
             >
           </template>
-          <div class = "fishfry taco  tweaked-color">Thanksgiving time is upon us!</div>
-          <CTAbuttonOutside class="slide-button " text='Get your Thanksgiving dinner in pizza form now!'  :link="'https://antoniospizzeria.hungerrush.com/Order/Menu/1#pizza'" />
+          <!-- <div class = "fishfry taco  tweaked-color">Introducing a new weekly event!</div> -->
+          <!-- <CTAbuttonOutside class="slide-button " text='Get your Thanksgiving dinner in pizza form now!'  :link="'https://antoniospizzeria.hungerrush.com/Order/Menu/1#pizza'" /> -->
          
         </b-carousel-slide>
 
@@ -42,9 +42,9 @@
           <template #img>
             <img
               class="d-block w-100 desktopimg"
-              style="object-fit:cover; object-position: top; height:65vh;" 
+              style="object-fit:contain; object-position: top; height:65vh;" 
               width="960"
-              src="../assets/images/toysfortots.jpg"
+              src="../assets/images/livemusicfri.jpg"
               alt="image slot"
             >
 
@@ -52,12 +52,12 @@
               class="d-block w-100 mobileimg"
               style="object-fit:cover; object-position: bottom; height:65vh;" 
               width="960"
-              src="../assets/images/toysfortots.jpg"
+              src="../assets/images/livemusicfri.jpg"
               alt="image slot"
             >
           </template>
-          <div class = "fishfry taco  tweaked-color">We are a designated drop-off site for Toys-For-Tots</div>
-          <CTAbuttonOutside class="slide-button " text='Learn more here'  :link="'https://www.toysfortots.org/'" />
+          <div class = "fishfry taco  tweaked-color">Live Music Every Friday Night</div>
+          <CTAbuttonOutside class="slide-button " text='Check our Facebook Page for Details'  :link="'https://www.facebook.com/antoniospittsburgh'" />
          
         </b-carousel-slide>
 
