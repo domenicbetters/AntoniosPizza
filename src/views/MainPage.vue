@@ -16,21 +16,22 @@
 
           <b-carousel-slide >
           <template #img>
+            <router-link to="/AntoniosPizza/events">
             <img
               class="d-block w-100 desktopimg"
               style="object-fit:contain; object-position: top; height:65vh;" 
               width="960"
-              src="../assets/images/mondaychill.jpg"
+              src="../assets/images/bookclub.jpg"
               alt="image slot"
-            >
+            ></router-link>
 
-            <img
+            <router-link to="/AntoniosPizza/events"><img
               class="d-block w-100 mobileimg"
               style="object-fit:contain; object-position: middle; height:65vh;" 
               width="960"
-              src="../assets/images/mondaychill.jpg"
+              src="../assets/images/bookclub.jpg"
               alt="image slot"
-            >
+            ></router-link>
           </template>
           <!-- <div class = "fishfry taco  tweaked-color">Introducing a new weekly event!</div> -->
           <!-- <CTAbuttonOutside class="slide-button " text='Get your Thanksgiving dinner in pizza form now!'  :link="'https://antoniospizzeria.hungerrush.com/Order/Menu/1#pizza'" /> -->

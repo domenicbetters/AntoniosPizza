@@ -33,21 +33,23 @@ export default {
   name: 'EventPage',
   data() {
     return {
-      events: [ 
-        {"link": "https://www.facebook.com/events/864252471635384",
-        "day": "14",
-        "month": "JAN",
-        "title": "Winter Gods & Goddesses Arts Fair",
-        "desc": "Free Vegan Art Fair @Thrive on Health in Brookline, PA.  We will be serving up some tasty treats there from 5-8 PM.",
-        "image": require("@/assets/images/godsandgodess.jpg")},
-        {"link": "https://www.facebook.com/antoniospizzeriapgh",
-        "day": "29",
-        "month": "JAN",
-        "title": "Vegan Chill Lounge",
-        "desc": "The first of a new weekly event featuring chill music, vegan treats, relaxation and fun.",
-        "image": require("@/assets/images/mondaychill.jpg")}],
+      events: [{
+        "link": "/AntoniosPizza",
+        "month": "FEB",
+        "day": "12",
+        "title": "Steel City Scary Book Club",
+        "desc": "Meeting from 7 - 8 PM.  Now Reading: Exquisite Corpse by Poppy Z. Brite.  WARNING: EXTREME CONTENT",
+        "image": require("@/assets/images/exquisite.jpg")}],
       
-        standardevents: [ {
+        standardevents: [{
+      "link": "https://www.facebook.com/antoniospizzeriapgh",
+      "day": "Every Mon",
+      "month": "",
+      "title": "Vegan Chill Lounge",
+      "desc": "Chill Music, Huge Vegan Menu, Bubble Tea, Dessert, Healing Arts, Relaxation, and Fun!",
+      "image": require("@/assets/images/mondaychill.jpg")
+          }, 
+          {
       "link": "https://www.facebook.com/antoniospizzeriapgh",
       "day": "Every Tues",
       "month": "",
