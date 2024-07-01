@@ -253,6 +253,8 @@ a:hover {
   z-index: 99;
   height: 60vh;
   top: 200px;
+}
+.peakybean {
   -webkit-animation: peekaboo 120s;
   animation: peekaboo 120s;
   animation-delay: 120s;
@@ -679,6 +681,26 @@ a:hover {
     100% {
       transform: translateX(0);
       -webkit-transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes go-away{
+    0% {
+              
+    }
+    100% {
+              /* opacity: 0; */
+              transform: translateX(-80vw);
+              -webkit-transform: translateX(-80vw);
+    }
+  }
+  @keyframes go-away{
+    0% {
+              
+    }
+    100% {
+              /* opacity: 0; */
+              transform: translateX(-80vw);
+              -webkit-transform: translateX(-80vw);
     }
   }
 

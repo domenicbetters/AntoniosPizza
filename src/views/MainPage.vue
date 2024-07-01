@@ -16,12 +16,12 @@
 
           <b-carousel-slide >
           <template #img>
-            <router-link to="/AntoniosPizza/events">
+            <router-link to="/AntoniosPizza/location">
             <img
               class="d-block w-100 desktopimg"
               style="object-fit:contain; object-position: top; height:65vh;" 
               width="960"
-              src="../assets/images/bookclub.jpg"
+              src="../assets/images/antfront.jpg"
               alt="image slot"
             ></router-link>
 
@@ -29,13 +29,28 @@
               class="d-block w-100 mobileimg"
               style="object-fit:contain; object-position: middle; height:65vh;" 
               width="960"
-              src="../assets/images/bookclub.jpg"
+              src="../assets/images/antfront.jpg"
               alt="image slot"
             ></router-link>
           </template>
           <!-- <div class = "fishfry taco  tweaked-color">Introducing a new weekly event!</div> -->
           <!-- <CTAbuttonOutside class="slide-button " text='Get your Thanksgiving dinner in pizza form now!'  :link="'https://antoniospizzeria.hungerrush.com/Order/Menu/1#pizza'" /> -->
          
+        </b-carousel-slide>
+
+        <b-carousel-slide>
+          <div class = "fishfry tweaked-color">Tons of options for every taste</div>
+       <CTAbutton class="slide-button"  text='Check out our Menu' :rlink="'/AntoniosPizza/menu/full'" />
+          <template #img>
+            <img
+              class="d-block w-100"
+              style="object-fit: cover; height: 65vh;"
+              width="960"
+              height="780"
+              src="../assets/images/supreme pizza.jpg"
+              alt="image slot"
+            >
+          </template>
         </b-carousel-slide>
 
         <b-carousel-slide>
@@ -53,6 +68,8 @@
             >
           </template>
         </b-carousel-slide>
+
+      
 
 
         <b-carousel-slide >
@@ -134,20 +151,7 @@
          
         </b-carousel-slide> -->
 
-        <b-carousel-slide>
-          <div class = "fishfry tweaked-color">Tons of options for every taste</div>
-       <CTAbutton class="slide-button"  text='Check out our Menu' :rlink="'/AntoniosPizza/menu/full'" />
-          <template #img>
-            <img
-              class="d-block w-100"
-              style="object-fit: cover; height: 65vh;"
-              width="960"
-              height="780"
-              src="../assets/images/supreme pizza.jpg"
-              alt="image slot"
-            >
-          </template>
-        </b-carousel-slide>
+        
 
 
 

@@ -1,7 +1,10 @@
 <template> 
 <div id="app">
   <ModalPop :key="modal.link" v-for="(modal) in modals" :link = "modal.link" v-show="modal.showing" @modal-switch-off="modalswitch" :modal="modal"/>
-  <img class = "bean" src="@/assets/images/bean.png" />
+  <img v-on:pointermove="($event) => [$event.target.classList.add('goaway'), $event.target.classList.remove('peakybean')]" 
+       v-on:touchstart="($event) => [$event.target.classList.add('goaway'), $event.target.classList.remove('peakybean')]" 
+       v-on:animationend="($event) => [$event.target.classList.add('peakybean'), $event.target.classList.remove('goaway')]" 
+    class = "bean peakybean" src="@/assets/images/bean.png" />
     <div class ="header-menu"><NavBar/></div>
       <h1 class="juice" v-if="this.$route.path == '/AntoniosPizza/menu/full'">Full Menu</h1>
       <h1 class="juice"  v-if="this.$route.path == '/AntoniosPizza/menu/vegan'">Vegan Menu</h1>
@@ -109,4 +112,12 @@ export default {
   font-size: 2em;
   color: #FFFAA1;
 }
+.goaway{
+  -webkit-animation: go-away 6s;
+  animation: go-away 6s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  
+}
+
 </style>
